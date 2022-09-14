@@ -239,16 +239,18 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @class NSCoder;
 @class WKUserContentController;
 @class WKScriptMessage;
+@class WKWebView;
+@class WKNavigation;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
-@interface CardOnFileSwitcherViewController : UIViewController <WKScriptMessageHandler>
+@interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -498,16 +500,18 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @class NSCoder;
 @class WKUserContentController;
 @class WKScriptMessage;
+@class WKWebView;
+@class WKNavigation;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
-@interface CardOnFileSwitcherViewController : UIViewController <WKScriptMessageHandler>
+@interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 

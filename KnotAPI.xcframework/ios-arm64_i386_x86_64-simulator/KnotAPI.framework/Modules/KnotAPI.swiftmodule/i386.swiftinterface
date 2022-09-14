@@ -29,12 +29,12 @@ public typealias onErrorHandler = (Swift.String, Swift.String) -> Swift.Void
 public typealias onEventHandler = (Swift.String, Swift.String) -> Swift.Void
 public typealias onExitHandler = () -> Swift.Void
 public typealias finishedHandler = () -> Swift.Void
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, delegate: KnotAPI.CardOnFileDelegate?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
