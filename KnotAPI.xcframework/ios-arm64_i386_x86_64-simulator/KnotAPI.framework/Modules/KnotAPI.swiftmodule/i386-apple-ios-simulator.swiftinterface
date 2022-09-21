@@ -15,8 +15,17 @@ import os
   @objc func onExit()
   @objc func onFinished()
 }
+@objc public enum Environment : Swift.Int, Swift.RawRepresentable {
+  case sandbox
+  case production
+  public typealias RawValue = Swift.String
+  public var rawValue: KnotAPI.Environment.RawValue {
+    get
+  }
+  public init?(rawValue: KnotAPI.Environment.RawValue)
+}
 @objc public class CardOnFileSwitcherSession : ObjectiveC.NSObject {
-  @objc public init(sessionId: Swift.String)
+  @objc public init(sessionId: Swift.String, environment: KnotAPI.Environment)
   @objc public func setPrimaryColor(primaryColor: Swift.String)
   @objc public func setTextColor(textColor: Swift.String)
   @objc public func setCompanyName(companyName: Swift.String)
@@ -30,7 +39,7 @@ public typealias onEventHandler = (Swift.String, Swift.String) -> Swift.Void
 public typealias onExitHandler = () -> Swift.Void
 public typealias finishedHandler = () -> Swift.Void
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, delegate: KnotAPI.CardOnFileDelegate?)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -40,3 +49,5 @@ public typealias finishedHandler = () -> Swift.Void
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
+extension KnotAPI.Environment : Swift.Equatable {}
+extension KnotAPI.Environment : Swift.Hashable {}

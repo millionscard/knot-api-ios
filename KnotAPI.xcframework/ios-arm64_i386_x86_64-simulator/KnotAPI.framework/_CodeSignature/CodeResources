@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
-		daLabAUQi7iY7FN/T0T8jce/0jM=
+		pGms70kDr0cH3u0e2UJZVjVRahw=
 		</data>
 		<key>Headers/KnotAPI-umbrella.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UsHuu7Yl+M8yHtte2bgT4U6BE4c=
+		TT9LScA+ydvd52d82y4sh5UBwG8=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dMfbhQoGnU1PvOIZscP+hZyBrQA=
+		2VPjrdRIW8kORmWle+Jy4l2wT1Y=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ODsDDN7Ty0lUsJa82kgqdKwnNvc=
+		EX6kqnA/RxVJshg/vP/8bFAKnsE=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		dMfbhQoGnU1PvOIZscP+hZyBrQA=
+		2VPjrdRIW8kORmWle+Jy4l2wT1Y=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ODsDDN7Ty0lUsJa82kgqdKwnNvc=
+		EX6kqnA/RxVJshg/vP/8bFAKnsE=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HoxaP4bgu/N52r8gNW+rGj9ePpU=
+		4EGi6W+DXqPG5vHyoZs3/eTb0dY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TPYMNTGDMGec9OG+Y3XeysUTJDU=
+		Kq0Po4VftrXd7t0FWqsVJK2XFSE=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/i386.swiftinterface</key>
 		<data>
-		HoxaP4bgu/N52r8gNW+rGj9ePpU=
+		4EGi6W+DXqPG5vHyoZs3/eTb0dY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/i386.swiftmodule</key>
 		<data>
-		TPYMNTGDMGec9OG+Y3XeysUTJDU=
+		Kq0Po4VftrXd7t0FWqsVJK2XFSE=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		s8HqfUl9i9RatYUOy06Zf+5B/Dk=
+		AOemK7ILv2DjjOLB+hN9iENB28Y=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+4KdivSnuS+KTBRRUUaZn5Qce3w=
+		2fteUXIszhuN8QX4ZWoaRtKl71g=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		s8HqfUl9i9RatYUOy06Zf+5B/Dk=
+		AOemK7ILv2DjjOLB+hN9iENB28Y=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		+4KdivSnuS+KTBRRUUaZn5Qce3w=
+		2fteUXIszhuN8QX4ZWoaRtKl71g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			daLabAUQi7iY7FN/T0T8jce/0jM=
+			pGms70kDr0cH3u0e2UJZVjVRahw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+h+C/oRslNucqqtvlE4Ts3l8H8N7xZ6bsi3937QyjnA=
+			bhTIfPiLEXIMuu5nq3G4oYCr4RQ4T5ISNhcEp4DXNw8=
 			</data>
 		</dict>
 		<key>Headers/KnotAPI-umbrella.h</key>
@@ -147,22 +147,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dMfbhQoGnU1PvOIZscP+hZyBrQA=
+			2VPjrdRIW8kORmWle+Jy4l2wT1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jdu4PI93x31x5fcLWlpbt8v+H8eNwZM3btHid58LE6M=
+			L2afs5AH6/C/UkA1hCPd6vHeoqzsZCp7W9Io2gAb2v8=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ODsDDN7Ty0lUsJa82kgqdKwnNvc=
+			EX6kqnA/RxVJshg/vP/8bFAKnsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jcr/yX8LbHXmElSTJkowQ/19Y6oHkyNPW64XmSelRh0=
+			2wfRGaJnTI74jvRpweGabj0eJ3Xa+v6aqD1VkUmqZqE=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64.swiftdoc</key>
@@ -180,22 +180,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dMfbhQoGnU1PvOIZscP+hZyBrQA=
+			2VPjrdRIW8kORmWle+Jy4l2wT1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jdu4PI93x31x5fcLWlpbt8v+H8eNwZM3btHid58LE6M=
+			L2afs5AH6/C/UkA1hCPd6vHeoqzsZCp7W9Io2gAb2v8=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ODsDDN7Ty0lUsJa82kgqdKwnNvc=
+			EX6kqnA/RxVJshg/vP/8bFAKnsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jcr/yX8LbHXmElSTJkowQ/19Y6oHkyNPW64XmSelRh0=
+			2wfRGaJnTI74jvRpweGabj0eJ3Xa+v6aqD1VkUmqZqE=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -213,22 +213,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HoxaP4bgu/N52r8gNW+rGj9ePpU=
+			4EGi6W+DXqPG5vHyoZs3/eTb0dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mt8kAdaejKGTWOMPfDZp3hXzqDILBL+TatL6bKfoUM0=
+			rM0FUfCXiUU1jaXQ4PlC3MuihuspGbaipA4/iJdOFhc=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TPYMNTGDMGec9OG+Y3XeysUTJDU=
+			Kq0Po4VftrXd7t0FWqsVJK2XFSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jgEkvalIQctaaQi7e75bGZG7ZBSZFpryxsH2KFlA218=
+			R6xQEDQoFN6dJmgDFiLae8IaY+PmCz4sdgvkLIOhbic=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/i386.swiftdoc</key>
@@ -246,22 +246,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HoxaP4bgu/N52r8gNW+rGj9ePpU=
+			4EGi6W+DXqPG5vHyoZs3/eTb0dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mt8kAdaejKGTWOMPfDZp3hXzqDILBL+TatL6bKfoUM0=
+			rM0FUfCXiUU1jaXQ4PlC3MuihuspGbaipA4/iJdOFhc=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TPYMNTGDMGec9OG+Y3XeysUTJDU=
+			Kq0Po4VftrXd7t0FWqsVJK2XFSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jgEkvalIQctaaQi7e75bGZG7ZBSZFpryxsH2KFlA218=
+			R6xQEDQoFN6dJmgDFiLae8IaY+PmCz4sdgvkLIOhbic=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -279,22 +279,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s8HqfUl9i9RatYUOy06Zf+5B/Dk=
+			AOemK7ILv2DjjOLB+hN9iENB28Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			kwNtxpf1sXaatkyFfjbrHtANHoVieWseLonUzaF0Qyk=
+			jVHQd1sc1N0QM/bjVfALp+r5TOvUjPh3oP6HJPRpkek=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+4KdivSnuS+KTBRRUUaZn5Qce3w=
+			2fteUXIszhuN8QX4ZWoaRtKl71g=
 			</data>
 			<key>hash2</key>
 			<data>
-			U0dBfJMAyKg9tm+uPuM+9ygyVgVitqe+fXNH3OdtdOc=
+			0RIiqzfIE0gOk0JjQoz5/MeYA1Dd9Di3VwK4T5vj4do=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64.swiftdoc</key>
@@ -312,22 +312,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s8HqfUl9i9RatYUOy06Zf+5B/Dk=
+			AOemK7ILv2DjjOLB+hN9iENB28Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			kwNtxpf1sXaatkyFfjbrHtANHoVieWseLonUzaF0Qyk=
+			jVHQd1sc1N0QM/bjVfALp+r5TOvUjPh3oP6HJPRpkek=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+4KdivSnuS+KTBRRUUaZn5Qce3w=
+			2fteUXIszhuN8QX4ZWoaRtKl71g=
 			</data>
 			<key>hash2</key>
 			<data>
-			U0dBfJMAyKg9tm+uPuM+9ygyVgVitqe+fXNH3OdtdOc=
+			0RIiqzfIE0gOk0JjQoz5/MeYA1Dd9Di3VwK4T5vj4do=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
