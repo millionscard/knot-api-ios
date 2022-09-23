@@ -25,7 +25,7 @@ import os
   public init?(rawValue: KnotAPI.Environment.RawValue)
 }
 @objc public class CardOnFileSwitcherSession : ObjectiveC.NSObject {
-  @objc public init(sessionId: Swift.String, environment: KnotAPI.Environment)
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc public func setPrimaryColor(primaryColor: Swift.String)
   @objc public func setTextColor(textColor: Swift.String)
   @objc public func setCompanyName(companyName: Swift.String)
@@ -39,7 +39,7 @@ public typealias onEventHandler = (Swift.String, Swift.String) -> Swift.Void
 public typealias onExitHandler = () -> Swift.Void
 public typealias finishedHandler = () -> Swift.Void
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)

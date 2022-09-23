@@ -227,7 +227,7 @@ enum Environment : NSInteger;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : NSObject
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
@@ -246,7 +246,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -494,7 +494,7 @@ enum Environment : NSInteger;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : NSObject
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
@@ -513,7 +513,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -761,7 +761,7 @@ enum Environment : NSInteger;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : NSObject
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
@@ -780,7 +780,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
