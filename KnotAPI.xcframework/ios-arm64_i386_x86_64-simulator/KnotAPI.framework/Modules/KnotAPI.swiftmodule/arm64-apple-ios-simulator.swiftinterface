@@ -31,6 +31,7 @@ import os
   @objc public func setCompanyName(companyName: Swift.String)
   @objc public func setDelegate(delegate: KnotAPI.CardOnFileDelegate)
   @objc public func openOnCardFileSwitcher(merchants: [Swift.Int])
+  @objc public func openOnSubscriptionCanceler(merchants: [Swift.Int])
   @objc deinit
 }
 public typealias onSuccessHandler = (Swift.String) -> Swift.Void
@@ -39,6 +40,10 @@ public typealias onEventHandler = (Swift.String, Swift.String) -> Swift.Void
 public typealias onExitHandler = () -> Swift.Void
 public typealias finishedHandler = () -> Swift.Void
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @objc set
+  }
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -47,6 +52,14 @@ public typealias finishedHandler = () -> Swift.Void
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler {
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, delegate: KnotAPI.CardOnFileDelegate?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @objc deinit
 }
 extension KnotAPI.Environment : Swift.Equatable {}

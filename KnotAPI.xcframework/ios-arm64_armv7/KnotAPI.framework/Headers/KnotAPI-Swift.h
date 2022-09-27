@@ -233,6 +233,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setDelegateWithDelegate:(id <CardOnFileDelegate> _Nonnull)delegate;
 - (void)openOnCardFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)openOnSubscriptionCancelerWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -246,6 +247,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
+@property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidAppear:(BOOL)animated;
@@ -259,6 +261,18 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
   EnvironmentProduction = 1,
 };
+
+
+SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
+@interface SubscriptionCancelerViewController : UIViewController <WKScriptMessageHandler>
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)loadView;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -500,6 +514,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setDelegateWithDelegate:(id <CardOnFileDelegate> _Nonnull)delegate;
 - (void)openOnCardFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)openOnSubscriptionCancelerWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -513,6 +528,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
+@property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidAppear:(BOOL)animated;
@@ -526,6 +542,18 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
   EnvironmentProduction = 1,
 };
+
+
+SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
+@interface SubscriptionCancelerViewController : UIViewController <WKScriptMessageHandler>
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)loadView;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
