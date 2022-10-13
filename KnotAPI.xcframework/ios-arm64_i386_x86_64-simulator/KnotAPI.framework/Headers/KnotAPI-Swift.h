@@ -224,6 +224,7 @@ SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
 
 enum Environment : NSInteger;
 @class NSNumber;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : NSObject
@@ -231,9 +232,11 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
+- (void)setAmountWithAmount:(BOOL)amount;
 - (void)setDelegateWithDelegate:(id <CardOnFileDelegate> _Nonnull)delegate;
 - (void)openOnCardFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
 - (void)openOnSubscriptionCancelerWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -265,7 +268,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : UIViewController <WKScriptMessageHandler>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;
@@ -505,6 +508,7 @@ SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
 
 enum Environment : NSInteger;
 @class NSNumber;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : NSObject
@@ -512,9 +516,11 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
+- (void)setAmountWithAmount:(BOOL)amount;
 - (void)setDelegateWithDelegate:(id <CardOnFileDelegate> _Nonnull)delegate;
 - (void)openOnCardFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
 - (void)openOnSubscriptionCancelerWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -546,7 +552,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : UIViewController <WKScriptMessageHandler>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;
@@ -786,6 +792,7 @@ SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
 
 enum Environment : NSInteger;
 @class NSNumber;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : NSObject
@@ -793,9 +800,11 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
+- (void)setAmountWithAmount:(BOOL)amount;
 - (void)setDelegateWithDelegate:(id <CardOnFileDelegate> _Nonnull)delegate;
 - (void)openOnCardFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
 - (void)openOnSubscriptionCancelerWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -827,7 +836,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : UIViewController <WKScriptMessageHandler>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadView;
 - (void)viewDidAppear:(BOOL)animated;
