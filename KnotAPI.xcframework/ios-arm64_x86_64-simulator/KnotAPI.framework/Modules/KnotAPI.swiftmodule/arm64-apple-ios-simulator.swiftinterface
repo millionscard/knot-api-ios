@@ -1,0 +1,87 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 effective-4.2 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name KnotAPI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import KnotAPI
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import os
+@objc public protocol CardOnFileDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func onSuccess(merchant: Swift.String)
+  @objc func onError(error: Swift.String, message: Swift.String)
+  @objc func onEvent(event: Swift.String, message: Swift.String)
+  @objc func onExit()
+  @objc func onFinished()
+}
+@objc @_inheritsConvenienceInitializers public class CardOnFileSwitcherSession : KnotAPI.KnotProduct {
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
+  @objc public func setPrimaryColor(primaryColor: Swift.String)
+  @objc public func setTextColor(textColor: Swift.String)
+  @objc public func setCompanyName(companyName: Swift.String)
+  @objc public func setDelegate(delegate: KnotAPI.CardOnFileDelegate)
+  @objc public func openCardOnFileSwitcher(merchants: [Swift.Int])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : KnotAPI.KnotViewController {
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
+  @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
+  @objc deinit
+}
+@objc public enum Environment : Swift.Int, Swift.RawRepresentable {
+  case sandbox
+  case production
+  public typealias RawValue = Swift.String
+  public var rawValue: KnotAPI.Environment.RawValue {
+    get
+  }
+  public init?(rawValue: KnotAPI.Environment.RawValue)
+}
+@_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class KnotProduct : ObjectiveC.NSObject {
+  @objc public func presentViewController(vc: UIKit.UIViewController)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, webUrl: Swift.String, userScript: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) public func handleEvents(message: WebKit.WKScriptMessage) throws
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) public func onClose()
+  @objc deinit
+}
+@objc public protocol SubscriptionCancelerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func onSuccess(merchant: Swift.String)
+  @objc func onError(error: Swift.String, message: Swift.String)
+  @objc func onEvent(event: Swift.String, message: Swift.String)
+  @objc func onExit()
+  @objc func onFinished()
+}
+@objc @_inheritsConvenienceInitializers public class SubscriptionCancelerSession : KnotAPI.KnotProduct {
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
+  @objc public func setPrimaryColor(primaryColor: Swift.String)
+  @objc public func setTextColor(textColor: Swift.String)
+  @objc public func setCompanyName(companyName: Swift.String)
+  @objc public func setAmount(amount: Swift.Bool)
+  @objc public func setDelegate(delegate: KnotAPI.SubscriptionCancelerDelegate)
+  @objc public func openSubscriptionCanceler()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerViewController : KnotAPI.KnotViewController {
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, amount: Swift.Bool, delegate: KnotAPI.SubscriptionCancelerDelegate?, environment: KnotAPI.Environment)
+  @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
+  @objc deinit
+}
+extension KnotAPI.Environment : Swift.Equatable {}
+extension KnotAPI.Environment : Swift.Hashable {}
