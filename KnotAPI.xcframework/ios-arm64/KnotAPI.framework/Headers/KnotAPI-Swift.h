@@ -275,15 +275,21 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 @end
 
 enum Environment : NSInteger;
+@class CardSwitcherConfiguration;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
-@interface CardOnFileSwitcherSession : KnotProduct
+@interface CardOnFileSwitcherSession : KnotProduct <CardOnFileDelegate>
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
-- (void)setDelegateWithDelegate:(id <CardOnFileDelegate> _Nonnull)delegate;
+- (void)setConfigurationWithConfig:(CardSwitcherConfiguration * _Nonnull)config;
 - (void)openCardOnFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
+- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
+- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
+- (void)onExit;
+- (void)onFinished;
 @end
 
 @class NSCoder;
@@ -312,12 +318,34 @@ SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
+
+SWIFT_CLASS("_TtC7KnotAPI25CardSwitcherConfiguration")
+@interface CardSwitcherConfiguration : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
+- (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
+- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onEvent;
+- (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
+- (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
+@end
+
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
   EnvironmentProduction = 1,
 };
 
 
+
+
+SWIFT_CLASS("_TtC7KnotAPI33SubscriptionCancelerConfiguration")
+@interface SubscriptionCancelerConfiguration : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
+- (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
+- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onEvent;
+- (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
+- (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
+@end
 
 
 SWIFT_PROTOCOL("_TtP7KnotAPI28SubscriptionCancelerDelegate_")
@@ -331,14 +359,19 @@ SWIFT_PROTOCOL("_TtP7KnotAPI28SubscriptionCancelerDelegate_")
 
 
 SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
-@interface SubscriptionCancelerSession : KnotProduct
+@interface SubscriptionCancelerSession : KnotProduct <SubscriptionCancelerDelegate>
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setAmountWithAmount:(BOOL)amount;
-- (void)setDelegateWithDelegate:(id <SubscriptionCancelerDelegate> _Nonnull)delegate;
+- (void)setConfigurationWithConfiguration:(SubscriptionCancelerConfiguration * _Nonnull)configuration;
 - (void)openSubscriptionCanceler;
+- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
+- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
+- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
+- (void)onExit;
+- (void)onFinished;
 @end
 
 

@@ -17,13 +17,27 @@ import os
   @objc func onExit()
   @objc func onFinished()
 }
-@objc @_inheritsConvenienceInitializers public class CardOnFileSwitcherSession : KnotAPI.KnotProduct {
+@objc @_inheritsConvenienceInitializers public class CardSwitcherConfiguration : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
+  @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @objc public func setOnExit(onExit: @escaping () -> Swift.Void)
+  @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
   @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc public func setPrimaryColor(primaryColor: Swift.String)
   @objc public func setTextColor(textColor: Swift.String)
   @objc public func setCompanyName(companyName: Swift.String)
-  @objc public func setDelegate(delegate: KnotAPI.CardOnFileDelegate)
+  @objc public func setConfiguration(config: KnotAPI.CardSwitcherConfiguration)
   @objc public func openCardOnFileSwitcher(merchants: [Swift.Int])
+  @objc public func onSuccess(merchant: Swift.String)
+  @objc public func onError(error: Swift.String, message: Swift.String)
+  @objc public func onEvent(event: Swift.String, message: Swift.String)
+  @objc public func onExit()
+  @objc public func onFinished()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : KnotAPI.KnotViewController {
@@ -61,6 +75,15 @@ import os
   @_Concurrency.MainActor(unsafe) public func onClose()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class SubscriptionCancelerConfiguration : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
+  @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @objc public func setOnExit(onExit: @escaping () -> Swift.Void)
+  @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
+  @objc deinit
+}
 @objc public protocol SubscriptionCancelerDelegate : ObjectiveC.NSObjectProtocol {
   @objc func onSuccess(merchant: Swift.String)
   @objc func onError(error: Swift.String, message: Swift.String)
@@ -68,14 +91,19 @@ import os
   @objc func onExit()
   @objc func onFinished()
 }
-@objc @_inheritsConvenienceInitializers public class SubscriptionCancelerSession : KnotAPI.KnotProduct {
+@objc @_inheritsConvenienceInitializers public class SubscriptionCancelerSession : KnotAPI.KnotProduct, KnotAPI.SubscriptionCancelerDelegate {
   @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc public func setPrimaryColor(primaryColor: Swift.String)
   @objc public func setTextColor(textColor: Swift.String)
   @objc public func setCompanyName(companyName: Swift.String)
   @objc public func setAmount(amount: Swift.Bool)
-  @objc public func setDelegate(delegate: KnotAPI.SubscriptionCancelerDelegate)
+  @objc public func setConfiguration(configuration: KnotAPI.SubscriptionCancelerConfiguration)
   @objc public func openSubscriptionCanceler()
+  @objc public func onSuccess(merchant: Swift.String)
+  @objc public func onError(error: Swift.String, message: Swift.String)
+  @objc public func onEvent(event: Swift.String, message: Swift.String)
+  @objc public func onExit()
+  @objc public func onFinished()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerViewController : KnotAPI.KnotViewController {
