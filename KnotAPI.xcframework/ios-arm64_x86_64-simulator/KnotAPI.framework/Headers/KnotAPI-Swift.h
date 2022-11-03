@@ -284,7 +284,9 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setConfigurationWithConfig:(CardSwitcherConfiguration * _Nonnull)config;
-- (void)openCardOnFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
+- (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
+- (void)openCardOnFileSwitcher;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -314,7 +316,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
@@ -366,6 +368,8 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setAmountWithAmount:(BOOL)amount;
 - (void)setConfigurationWithConfiguration:(SubscriptionCancelerConfiguration * _Nonnull)configuration;
+- (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
+- (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openSubscriptionCanceler;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
@@ -377,7 +381,7 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
@@ -675,7 +679,9 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setConfigurationWithConfig:(CardSwitcherConfiguration * _Nonnull)config;
-- (void)openCardOnFileSwitcherWithMerchants:(NSArray<NSNumber *> * _Nonnull)merchants;
+- (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
+- (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
+- (void)openCardOnFileSwitcher;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -705,7 +711,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchants:(NSArray<NSNumber *> * _Nonnull)merchants primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
@@ -757,6 +763,8 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
 - (void)setAmountWithAmount:(BOOL)amount;
 - (void)setConfigurationWithConfiguration:(SubscriptionCancelerConfiguration * _Nonnull)configuration;
+- (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
+- (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openSubscriptionCanceler;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
@@ -768,7 +776,7 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 

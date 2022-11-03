@@ -32,7 +32,9 @@ import os
   @objc public func setTextColor(textColor: Swift.String)
   @objc public func setCompanyName(companyName: Swift.String)
   @objc public func setConfiguration(config: KnotAPI.CardSwitcherConfiguration)
-  @objc public func openCardOnFileSwitcher(merchants: [Swift.Int])
+  @objc public func setMerchantIds(merchantIds: [Swift.Int])
+  @objc public func setMerchantNames(merchantNames: [Swift.String])
+  @objc public func openCardOnFileSwitcher()
   @objc public func onSuccess(merchant: Swift.String)
   @objc public func onError(error: Swift.String, message: Swift.String)
   @objc public func onEvent(event: Swift.String, message: Swift.String)
@@ -41,7 +43,7 @@ import os
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : KnotAPI.KnotViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchants: [Swift.Int], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @objc deinit
 }
@@ -98,6 +100,8 @@ import os
   @objc public func setCompanyName(companyName: Swift.String)
   @objc public func setAmount(amount: Swift.Bool)
   @objc public func setConfiguration(configuration: KnotAPI.SubscriptionCancelerConfiguration)
+  @objc public func setMerchantIds(merchantIds: [Swift.Int])
+  @objc public func setMerchantNames(merchantNames: [Swift.String])
   @objc public func openSubscriptionCanceler()
   @objc public func onSuccess(merchant: Swift.String)
   @objc public func onError(error: Swift.String, message: Swift.String)
@@ -107,7 +111,7 @@ import os
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerViewController : KnotAPI.KnotViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, amount: Swift.Bool, delegate: KnotAPI.SubscriptionCancelerDelegate?, environment: KnotAPI.Environment)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, amount: Swift.Bool, delegate: KnotAPI.SubscriptionCancelerDelegate?, environment: KnotAPI.Environment)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @objc deinit
 }

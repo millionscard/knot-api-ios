@@ -684,8 +684,8 @@
           },
           {
             "kind": "Function",
-            "name": "openCardOnFileSwitcher",
-            "printedName": "openCardOnFileSwitcher(merchants:)",
+            "name": "setMerchantIds",
+            "printedName": "setMerchantIds(merchantIds:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -708,10 +708,67 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)openCardOnFileSwitcherWithMerchants:",
-            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF09merchantsySaySiG_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)setMerchantIdsWithMerchantIds:",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC14setMerchantIds08merchantJ0ySaySiG_tF",
             "moduleName": "KnotAPI",
-            "objc_name": "openCardOnFileSwitcherWithMerchants:",
+            "objc_name": "setMerchantIdsWithMerchantIds:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMerchantNames",
+            "printedName": "setMerchantNames(merchantNames:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)setMerchantNamesWithMerchantNames:",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC16setMerchantNames08merchantJ0ySaySSG_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setMerchantNamesWithMerchantNames:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openCardOnFileSwitcher",
+            "printedName": "openCardOnFileSwitcher()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)openCardOnFileSwitcher",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF0yyF",
+            "moduleName": "KnotAPI",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -964,7 +1021,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:clientId:merchants:primaryColor:textColor:companyName:environment:delegate:)",
+            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -994,6 +1051,20 @@
                     "name": "Int",
                     "printedName": "Swift.Int",
                     "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sa"
@@ -1062,10 +1133,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)initWithSessionId:clientId:merchants:primaryColor:textColor:companyName:environment:delegate:",
-            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC9sessionId06clientJ09merchants12primaryColor04textN011companyName11environment8delegateACSS_SSSaySiGSSSgA2mA11EnvironmentOAA0cdE8Delegate_pSgtcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:",
+            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC9sessionId06clientJ011merchantIds0L5Names12primaryColor04textP011companyName11environment8delegateACSS_SSSaySiGSaySSGSSSgA2oA11EnvironmentOAA0cdE8Delegate_pSgtcfc",
             "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:merchants:primaryColor:textColor:companyName:environment:delegate:",
+            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -2899,6 +2970,78 @@
           },
           {
             "kind": "Function",
+            "name": "setMerchantIds",
+            "printedName": "setMerchantIds(merchantIds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setMerchantIdsWithMerchantIds:",
+            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC14setMerchantIds08merchantH0ySaySiG_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setMerchantIdsWithMerchantIds:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMerchantNames",
+            "printedName": "setMerchantNames(merchantNames:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setMerchantNamesWithMerchantNames:",
+            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC16setMerchantNames08merchantH0ySaySSG_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setMerchantNamesWithMerchantNames:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "openSubscriptionCanceler",
             "printedName": "openSubscriptionCanceler()",
             "children": [
@@ -3164,7 +3307,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:clientId:primaryColor:textColor:companyName:amount:delegate:environment:)",
+            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3183,6 +3326,34 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
               },
               {
                 "kind": "TypeNominal",
@@ -3254,10 +3425,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:primaryColor:textColor:companyName:amount:delegate:environment:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH012primaryColor04textK011companyName6amount8delegate11environmentACSS_S2SSgA2LSbAA0cD8Delegate_pSgAA11EnvironmentOtcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:",
+            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName6amount8delegate11environmentACSS_SSSaySiGSaySSGSSSgA2PSbAA0cD8Delegate_pSgAA11EnvironmentOtcfc",
             "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:primaryColor:textColor:companyName:amount:delegate:environment:",
+            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:",
             "declAttributes": [
               "Custom",
               "AccessControl",
