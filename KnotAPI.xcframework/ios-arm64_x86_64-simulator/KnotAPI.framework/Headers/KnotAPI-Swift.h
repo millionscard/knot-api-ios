@@ -334,6 +334,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardSwitcherConfiguration")
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
   EnvironmentProduction = 1,
+  EnvironmentDevelopment = 2,
 };
 
 
@@ -729,6 +730,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardSwitcherConfiguration")
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
   EnvironmentProduction = 1,
+  EnvironmentDevelopment = 2,
 };
 
 
