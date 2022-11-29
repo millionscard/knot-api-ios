@@ -1808,6 +1808,13 @@
         "moduleName": "KnotAPI"
       },
       {
+        "kind": "Import",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
         "kind": "TypeDecl",
         "name": "KnotViewController",
         "printedName": "KnotViewController",
@@ -3731,63 +3738,63 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 337,
+      "offset": 350,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 394,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 423,
+      "offset": 436,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 466,
+      "offset": 479,
       "length": 13,
       "value": "\"socketEvent\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 527,
       "length": 10,
       "value": "\"finished\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 607,
+      "offset": 620,
       "length": 9,
       "value": "\"#0F0F0F\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 645,
+      "offset": 658,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 698,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 201,
       "length": 18,
       "value": "\"KnotAPI.KnotViewController\""
     },
