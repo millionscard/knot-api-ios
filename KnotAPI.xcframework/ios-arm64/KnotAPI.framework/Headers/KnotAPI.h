@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <Lottie/Lottie-Swift.h>
 //! Project version number for KnotAPI.
 FOUNDATION_EXPORT double KnotAPIVersionNumber;
 
