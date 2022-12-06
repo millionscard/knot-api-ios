@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "KnotAPI"
-  s.version       = "0.1.34"
+  s.version       = "0.1.35"
   s.summary       = "Connect to your customers online accounts easily"
   s.description   = "Change Card on File Information, Cancel Subscriptions, Change Passwords, and more via Knot."
   s.homepage      = "https://www.knotapi.com/"
@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/millionscard/knot-api-ios.git", :tag => "#{s.version}" }
   s.vendored_frameworks = "KnotAPI.xcframework"
   s.dependency "lottie-ios"
+  s.resources = ["KnotAPI/knotLoading.json"]
 
 end
