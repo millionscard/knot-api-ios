@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.swift_version = "4.2"
   s.source        = { :git => "https://github.com/millionscard/knot-api-ios.git", :tag => "#{s.version}" }
   s.vendored_frameworks = "KnotAPI.xcframework"
-  s.dependency "lottie-ios"
+  s.dependency "lottie-ios", "~> 3.5.0"
 
 end
