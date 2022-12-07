@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage      = "https://www.knotapi.com/"
   s.license       = "MIT"
   s.author        = "Tarik"
-  s.platform      = :ios, "10.0"
+  s.platform      = :ios, "11.0"
   s.swift_version = "4.2"
   s.source        = { :git => "https://github.com/millionscard/knot-api-ios.git", :tag => "#{s.version}" }
   s.vendored_frameworks = "KnotAPI.xcframework"
