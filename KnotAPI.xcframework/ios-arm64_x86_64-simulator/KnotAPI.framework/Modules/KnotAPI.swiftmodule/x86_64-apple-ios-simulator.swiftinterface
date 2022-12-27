@@ -44,7 +44,7 @@ import os
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherViewController : KnotAPI.KnotViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?, useCategories: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, environment: KnotAPI.Environment, delegate: KnotAPI.CardOnFileDelegate?, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, logo: Swift.String)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @objc deinit
 }
@@ -63,6 +63,9 @@ import os
 }
 @objc @_hasMissingDesignatedInitializers public class KnotProduct : ObjectiveC.NSObject {
   @objc public func setUseCategories(useCategories: Swift.Bool)
+  @objc public func setUseSelection(useSelection: Swift.Bool)
+  @objc public func setUseSingleFlow(useSingleFlow: Swift.Bool)
+  @objc public func setLogo(logo: Swift.String)
   @objc public func presentViewController(vc: UIKit.UIViewController)
   @objc deinit
 }
@@ -114,7 +117,7 @@ import os
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerViewController : KnotAPI.KnotViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, amount: Swift.Bool, delegate: KnotAPI.SubscriptionCancelerDelegate?, environment: KnotAPI.Environment, useCategories: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, amount: Swift.Bool, delegate: KnotAPI.SubscriptionCancelerDelegate?, environment: KnotAPI.Environment, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, logo: Swift.String)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @objc deinit
 }

@@ -270,6 +270,9 @@ SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
 SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 @interface KnotProduct : NSObject
 - (void)setUseCategoriesWithUseCategories:(BOOL)useCategories;
+- (void)setUseSelectionWithUseSelection:(BOOL)useSelection;
+- (void)setUseSingleFlowWithUseSingleFlow:(BOOL)useSingleFlow;
+- (void)setLogoWithLogo:(NSString * _Nonnull)logo;
 - (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
@@ -317,7 +320,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate useCategories:(BOOL)useCategories OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
@@ -383,7 +386,7 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
@@ -667,6 +670,9 @@ SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
 SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 @interface KnotProduct : NSObject
 - (void)setUseCategoriesWithUseCategories:(BOOL)useCategories;
+- (void)setUseSelectionWithUseSelection:(BOOL)useSelection;
+- (void)setUseSingleFlowWithUseSingleFlow:(BOOL)useSingleFlow;
+- (void)setLogoWithLogo:(NSString * _Nonnull)logo;
 - (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
@@ -714,7 +720,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate useCategories:(BOOL)useCategories OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
@@ -780,7 +786,7 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 

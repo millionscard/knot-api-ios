@@ -1021,7 +1021,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:useCategories:)",
+            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:useCategories:useSelection:useSingleFlow:logo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1136,13 +1136,31 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:useCategories:",
-            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC9sessionId06clientJ011merchantIds0L5Names12primaryColor04textP011companyName11environment8delegate13useCategoriesACSS_SSSaySiGSaySSGSSSgA2pA11EnvironmentOAA0cdE8Delegate_pSgSbtcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:useCategories:useSelection:useSingleFlow:logo:",
+            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC9sessionId06clientJ011merchantIds0L5Names12primaryColor04textP011companyName11environment8delegate13useCategories0V9Selection0V10SingleFlow4logoACSS_SSSaySiGSaySSGSSSgA2sA11EnvironmentOAA0cdE8Delegate_pSgS3bSStcfc",
             "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:useCategories:",
+            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:environment:delegate:useCategories:useSelection:useSingleFlow:logo:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -1691,6 +1709,90 @@
             "mangledName": "$s7KnotAPI0A7ProductC16setUseCategories03useF0ySb_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setUseCategoriesWithUseCategories:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseSelection",
+            "printedName": "setUseSelection(useSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSelectionWithUseSelection:",
+            "mangledName": "$s7KnotAPI0A7ProductC15setUseSelection03useF0ySb_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setUseSelectionWithUseSelection:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseSingleFlow",
+            "printedName": "setUseSingleFlow(useSingleFlow:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSingleFlowWithUseSingleFlow:",
+            "mangledName": "$s7KnotAPI0A7ProductC16setUseSingleFlow03usefG0ySb_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setUseSingleFlowWithUseSingleFlow:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLogo",
+            "printedName": "setLogo(logo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setLogoWithLogo:",
+            "mangledName": "$s7KnotAPI0A7ProductC7setLogo4logoySS_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setLogoWithLogo:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -3389,7 +3491,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:useCategories:)",
+            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:useCategories:useSelection:useSingleFlow:logo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3510,13 +3612,31 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:useCategories:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName6amount8delegate11environment13useCategoriesACSS_SSSaySiGSaySSGSSSgA2QSbAA0cD8Delegate_pSgAA11EnvironmentOSbtcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:useCategories:useSelection:useSingleFlow:logo:",
+            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName6amount8delegate11environment13useCategories0U9Selection0U10SingleFlow4logoACSS_SSSaySiGSaySSGSSSgA2TSbAA0cD8Delegate_pSgAA11EnvironmentOS3bSStcfc",
             "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:useCategories:",
+            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:amount:delegate:environment:useCategories:useSelection:useSingleFlow:logo:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -3774,6 +3894,27 @@
       "offset": 256,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "BooleanLiteral",
+      "offset": 291,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "BooleanLiteral",
+      "offset": 327,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 356,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
