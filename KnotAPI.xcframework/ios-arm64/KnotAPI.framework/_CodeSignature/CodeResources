@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/Lottie.framework/Info.plist</key>
+		<data>
+		qY6wF7DnQqkpBNDKT2dlNMZ/DWw=
+		</data>
+		<key>Frameworks/Lottie.framework/Lottie</key>
+		<data>
+		r9BrTlrAugiNM4DEWW1UmL7+bpk=
+		</data>
+		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
+		<data>
+		mbQjvCNbEGMFjJN0TjY1FuO+8YI=
+		</data>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
 		SfdmswzX5ZgAxBHozhG3tZ5gATs=
@@ -47,6 +59,27 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/Lottie.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yZc7DF/ALBRWDFHEQ9d1BaqD58V1u13EWoOSvCCXXTM=
+			</data>
+		</dict>
+		<key>Frameworks/Lottie.framework/Lottie</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VhdtzSaa/acaDjoRcRGppsVm6eXrjZzALPkJ+Nk5joE=
+			</data>
+		</dict>
+		<key>Frameworks/Lottie.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YPRhr5i22fM21tBbeHDaiWsF4sX68R3ItLabpL+uN8o=
+			</data>
+		</dict>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
