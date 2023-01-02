@@ -1,5 +1,5 @@
 framework module KnotAPI {
-  umbrella header "KnotAPI-umbrella.h"
+  umbrella header "KnotAPI.h"
 
   export *
   module * { export * }
