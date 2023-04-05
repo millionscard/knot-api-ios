@@ -272,6 +272,7 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 - (void)setUseCategoriesWithUseCategories:(BOOL)useCategories;
 - (void)setUseSelectionWithUseSelection:(BOOL)useSelection;
 - (void)setUseSingleFlowWithUseSingleFlow:(BOOL)useSingleFlow;
+- (void)setUseSearchWithUseSearch:(BOOL)useSearch;
 - (void)setLogoWithLogo:(NSString * _Nonnull)logo;
 - (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -279,6 +280,7 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 @end
 
 enum Environment : NSInteger;
+@class NSNumber;
 @class CardSwitcherConfiguration;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
@@ -287,6 +289,9 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
+- (void)setButtonCornersWithButtonCorners:(NSNumber * _Nonnull)buttonCorners;
+- (void)setButtonFontSizeWithButtonFontSize:(NSNumber * _Nonnull)buttonFontSize;
+- (void)setButtonPaddingsWithButtonPaddings:(NSNumber * _Nonnull)buttonPaddings;
 - (void)setConfigurationWithConfig:(CardSwitcherConfiguration * _Nonnull)config;
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
@@ -302,17 +307,21 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @class WKUserContentController;
 @class WKScriptMessage;
 @class WKWebView;
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 @class WKNavigation;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
-@interface KnotViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler>
+@interface KnotViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 @property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -320,8 +329,9 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 
 SWIFT_CLASS("_TtC7KnotAPI32CardOnFileSwitcherViewController")
 @interface CardOnFileSwitcherViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment delegate:(id <CardOnFileDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
 
@@ -371,6 +381,9 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
 - (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
+- (void)setButtonCornersWithButtonCorners:(NSNumber * _Nonnull)buttonCorners;
+- (void)setButtonFontSizeWithButtonFontSize:(NSNumber * _Nonnull)buttonFontSize;
+- (void)setButtonPaddingsWithButtonPaddings:(NSNumber * _Nonnull)buttonPaddings;
 - (void)setAmountWithAmount:(BOOL)amount;
 - (void)setConfigurationWithConfiguration:(SubscriptionCancelerConfiguration * _Nonnull)configuration;
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
@@ -386,8 +399,9 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 
 SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 @interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
 
 
