@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name          = "KnotAPI"
-  s.version       = "0.2.01"
+  s.version       = "0.2.2"
   s.summary       = "Connect to your customers online accounts easily"
   s.description   = "Change Card on File Information, Cancel Subscriptions, Change Passwords, and more via Knot."
   s.homepage      = "https://www.knotapi.com/"
