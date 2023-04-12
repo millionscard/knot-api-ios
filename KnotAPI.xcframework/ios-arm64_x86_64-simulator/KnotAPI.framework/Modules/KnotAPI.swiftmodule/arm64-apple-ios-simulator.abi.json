@@ -15,171 +15,28 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "CardOnFileDelegate",
-        "printedName": "CardOnFileDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onSuccess",
-            "printedName": "onSuccess(merchant:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onSuccessWithMerchant:",
-            "mangledName": "$s7KnotAPI18CardOnFileDelegateP9onSuccess8merchantySS_tF",
-            "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onError",
-            "printedName": "onError(error:message:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onErrorWithError:message:",
-            "mangledName": "$s7KnotAPI18CardOnFileDelegateP7onError5error7messageySS_SStF",
-            "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onEvent",
-            "printedName": "onEvent(event:message:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onEventWithEvent:message:",
-            "mangledName": "$s7KnotAPI18CardOnFileDelegateP7onEvent5event7messageySS_SStF",
-            "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onExit",
-            "printedName": "onExit()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onExit",
-            "mangledName": "$s7KnotAPI18CardOnFileDelegateP6onExityyF",
-            "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onFinished",
-            "printedName": "onFinished()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onFinished",
-            "mangledName": "$s7KnotAPI18CardOnFileDelegateP10onFinishedyyF",
-            "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate",
-        "mangledName": "$s7KnotAPI18CardOnFileDelegateP",
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "KnotAPI",
-        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
-        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
+          "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
       },
       {
         "kind": "Import",
@@ -510,6 +367,33 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -1022,1113 +906,6 @@
             "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate",
             "mangledName": "$s7KnotAPI18CardOnFileDelegateP"
           },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "Import",
-        "name": "os",
-        "printedName": "os",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CardOnFileSwitcherViewController",
-        "printedName": "CardOnFileSwitcherViewController",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:delegate:useCategories:useSelection:useSingleFlow:useSearch:logo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CardOnFileSwitcherViewController",
-                "printedName": "KnotAPI.CardOnFileSwitcherViewController",
-                "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "KnotAPI.Environment",
-                "usr": "c:@M@KnotAPI@E@Environment"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KnotAPI.CardOnFileDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardOnFileDelegate",
-                    "printedName": "KnotAPI.CardOnFileDelegate",
-                    "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:delegate:useCategories:useSelection:useSingleFlow:useSearch:logo:",
-            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC9sessionId06clientJ011merchantIds0L5Names12primaryColor04textP011companyName13buttonCorners0T8FontSize0T8Paddings11environment8delegate13useCategories12useSelection13useSingleFlow9useSearch4logoACSS_SSSaySiGSaySSGSSSgA2WSo8NSNumberCSgA2zA11EnvironmentOAA0cdE8Delegate_pSgS4bSStcfc",
-            "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:delegate:useCategories:useSelection:useSingleFlow:useSearch:logo:",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "handleEvents",
-            "printedName": "handleEvents(message:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WKScriptMessage",
-                "printedName": "WebKit.WKScriptMessage",
-                "usr": "c:objc(cs)WKScriptMessage"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7KnotAPI32CardOnFileSwitcherViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
-            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
-            "moduleName": "KnotAPI",
-            "overriding": true,
-            "declAttributes": [
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewWillDisappear",
-            "printedName": "viewWillDisappear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)viewWillDisappear:",
-            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC17viewWillDisappearyySbF",
-            "moduleName": "KnotAPI",
-            "overriding": true,
-            "objc_name": "viewWillDisappear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(sessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CardOnFileSwitcherViewController",
-                "printedName": "KnotAPI.CardOnFileSwitcherViewController",
-                "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "KnotAPI.Environment",
-                "usr": "c:@M@KnotAPI@E@Environment"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController(im)initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
-            "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC9sessionId06clientJ012primaryColor04textM011companyName13buttonCorners0Q8FontSize0Q8Paddings11environment6webUrl10userScriptACSS_S2SSgA2OSo8NSNumberCSgA2rA11EnvironmentOS2Stcfc",
-            "moduleName": "KnotAPI",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
-            "declAttributes": [
-              "ObjC",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherViewController",
-        "mangledName": "$s7KnotAPI32CardOnFileSwitcherViewControllerC",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:@M@KnotAPI@objc(cs)KnotViewController",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "KnotAPI.KnotViewController",
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Environment",
-        "printedName": "Environment",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "sandbox",
-            "printedName": "sandbox",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KnotAPI.Environment.Type) -> KnotAPI.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "KnotAPI.Environment",
-                    "usr": "c:@M@KnotAPI@E@Environment"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KnotAPI.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "KnotAPI.Environment",
-                        "usr": "c:@M@KnotAPI@E@Environment"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@KnotAPI@E@Environment@EnvironmentSandbox",
-            "mangledName": "$s7KnotAPI11EnvironmentO7sandboxyA2CmF",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "production",
-            "printedName": "production",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KnotAPI.Environment.Type) -> KnotAPI.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "KnotAPI.Environment",
-                    "usr": "c:@M@KnotAPI@E@Environment"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KnotAPI.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "KnotAPI.Environment",
-                        "usr": "c:@M@KnotAPI@E@Environment"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@KnotAPI@E@Environment@EnvironmentProduction",
-            "mangledName": "$s7KnotAPI11EnvironmentO10productionyA2CmF",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "development",
-            "printedName": "development",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KnotAPI.Environment.Type) -> KnotAPI.Environment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "KnotAPI.Environment",
-                    "usr": "c:@M@KnotAPI@E@Environment"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KnotAPI.Environment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "KnotAPI.Environment",
-                        "usr": "c:@M@KnotAPI@E@Environment"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@KnotAPI@E@Environment@EnvironmentDevelopment",
-            "mangledName": "$s7KnotAPI11EnvironmentO11developmentyA2CmF",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7KnotAPI11EnvironmentO8rawValueSSvp",
-            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSSvp",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7KnotAPI11EnvironmentO8rawValueSSvg",
-                "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSSvg",
-                "moduleName": "KnotAPI",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KnotAPI.Environment?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "KnotAPI.Environment",
-                    "usr": "c:@M@KnotAPI@E@Environment"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7KnotAPI11EnvironmentO8rawValueACSgSS_tcfc",
-            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueACSgSS_tcfc",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@KnotAPI@E@Environment",
-        "mangledName": "$s7KnotAPI11EnvironmentO",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KnotapiExceptionHandler",
-        "printedName": "KnotapiExceptionHandler",
-        "declKind": "Class",
-        "usr": "s:7KnotAPI23KnotapiExceptionHandlerC",
-        "mangledName": "$s7KnotAPI23KnotapiExceptionHandlerC",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KnotProduct",
-        "printedName": "KnotProduct",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "setUseCategories",
-            "printedName": "setUseCategories(useCategories:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseCategoriesWithUseCategories:",
-            "mangledName": "$s7KnotAPI0A7ProductC16setUseCategories03useF0ySb_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setUseCategoriesWithUseCategories:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setUseSelection",
-            "printedName": "setUseSelection(useSelection:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSelectionWithUseSelection:",
-            "mangledName": "$s7KnotAPI0A7ProductC15setUseSelection03useF0ySb_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setUseSelectionWithUseSelection:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setUseSingleFlow",
-            "printedName": "setUseSingleFlow(useSingleFlow:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSingleFlowWithUseSingleFlow:",
-            "mangledName": "$s7KnotAPI0A7ProductC16setUseSingleFlow03usefG0ySb_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setUseSingleFlowWithUseSingleFlow:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setUseSearch",
-            "printedName": "setUseSearch(useSearch:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSearchWithUseSearch:",
-            "mangledName": "$s7KnotAPI0A7ProductC12setUseSearch03useF0ySb_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setUseSearchWithUseSearch:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setLogo",
-            "printedName": "setLogo(logo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setLogoWithLogo:",
-            "mangledName": "$s7KnotAPI0A7ProductC7setLogo4logoySS_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setLogoWithLogo:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "presentViewController",
-            "printedName": "presentViewController(vc:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)presentViewControllerWithVc:",
-            "mangledName": "$s7KnotAPI0A7ProductC21presentViewController2vcySo06UIViewF0C_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "presentViewControllerWithVc:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KnotProduct",
-                "printedName": "KnotAPI.KnotProduct",
-                "usr": "c:@M@KnotAPI@objc(cs)KnotProduct"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)init",
-            "mangledName": "$s7KnotAPI0A7ProductCACycfc",
-            "moduleName": "KnotAPI",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)KnotProduct",
-        "mangledName": "$s7KnotAPI0A7ProductC",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2810,9 +1587,927 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SubscriptionCancelerConfiguration",
-        "printedName": "SubscriptionCancelerConfiguration",
+        "name": "CardOnFileDelegate",
+        "printedName": "CardOnFileDelegate",
         "children": [
+          {
+            "kind": "Function",
+            "name": "onSuccess",
+            "printedName": "onSuccess(merchant:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onSuccessWithMerchant:",
+            "mangledName": "$s7KnotAPI18CardOnFileDelegateP9onSuccess8merchantySS_tF",
+            "moduleName": "KnotAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(error:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onErrorWithError:message:",
+            "mangledName": "$s7KnotAPI18CardOnFileDelegateP7onError5error7messageySS_SStF",
+            "moduleName": "KnotAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onEvent",
+            "printedName": "onEvent(event:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onEventWithEvent:message:",
+            "mangledName": "$s7KnotAPI18CardOnFileDelegateP7onEvent5event7messageySS_SStF",
+            "moduleName": "KnotAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onExit",
+            "printedName": "onExit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onExit",
+            "mangledName": "$s7KnotAPI18CardOnFileDelegateP6onExityyF",
+            "moduleName": "KnotAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onFinished",
+            "printedName": "onFinished()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate(im)onFinished",
+            "mangledName": "$s7KnotAPI18CardOnFileDelegateP10onFinishedyyF",
+            "moduleName": "KnotAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.CardOnFileDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.CardOnFileDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@KnotAPI@objc(pl)CardOnFileDelegate",
+        "mangledName": "$s7KnotAPI18CardOnFileDelegateP",
+        "moduleName": "KnotAPI",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SubscriptionCancelerViewController",
+        "printedName": "SubscriptionCancelerViewController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionCancelerViewController",
+                "printedName": "KnotAPI.SubscriptionCancelerViewController",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KnotAPI.SubscriptionCancelerDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SubscriptionCancelerDelegate",
+                    "printedName": "KnotAPI.SubscriptionCancelerDelegate",
+                    "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KnotAPI.Environment",
+                "usr": "c:@M@KnotAPI@E@Environment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:",
+            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName13buttonCorners0R8FontSize0R8Paddings6amount8delegate11environment13useCategories0Z9Selection0Z10SingleFlow0Z6Search4logoACSS_SSSaySiGSaySSGSSSgA2XSo8NSNumberCSgA_A_SbAA0cD8Delegate_pSgAA11EnvironmentOS4bSStcfc",
+            "moduleName": "KnotAPI",
+            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "handleEvents",
+            "printedName": "handleEvents(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7KnotAPI34SubscriptionCancelerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
+            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
+            "moduleName": "KnotAPI",
+            "overriding": true,
+            "declAttributes": [
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)viewWillDisappear:",
+            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "KnotAPI",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionCancelerViewController",
+                "printedName": "KnotAPI.SubscriptionCancelerViewController",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KnotAPI.Environment",
+                "usr": "c:@M@KnotAPI@E@Environment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
+            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH012primaryColor04textK011companyName13buttonCorners0O8FontSize0O8Paddings11environment6webUrl10userScriptACSS_S2SSgA2OSo8NSNumberCSgA2rA11EnvironmentOS2Stcfc",
+            "moduleName": "KnotAPI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController",
+        "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@KnotAPI@objc(cs)KnotViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "KnotAPI.KnotViewController",
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KnotapiExceptionHandler",
+        "printedName": "KnotapiExceptionHandler",
+        "declKind": "Class",
+        "usr": "s:7KnotAPI23KnotapiExceptionHandlerC",
+        "mangledName": "$s7KnotAPI23KnotapiExceptionHandlerC",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KnotProduct",
+        "printedName": "KnotProduct",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setUseCategories",
+            "printedName": "setUseCategories(useCategories:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseCategoriesWithUseCategories:",
+            "mangledName": "$s7KnotAPI0A7ProductC16setUseCategories03useF0ySb_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setUseCategoriesWithUseCategories:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseSelection",
+            "printedName": "setUseSelection(useSelection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSelectionWithUseSelection:",
+            "mangledName": "$s7KnotAPI0A7ProductC15setUseSelection03useF0ySb_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setUseSelectionWithUseSelection:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseSingleFlow",
+            "printedName": "setUseSingleFlow(useSingleFlow:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSingleFlowWithUseSingleFlow:",
+            "mangledName": "$s7KnotAPI0A7ProductC16setUseSingleFlow03usefG0ySb_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setUseSingleFlowWithUseSingleFlow:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseSearch",
+            "printedName": "setUseSearch(useSearch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setUseSearchWithUseSearch:",
+            "mangledName": "$s7KnotAPI0A7ProductC12setUseSearch03useF0ySb_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setUseSearchWithUseSearch:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLogo",
+            "printedName": "setLogo(logo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)setLogoWithLogo:",
+            "mangledName": "$s7KnotAPI0A7ProductC7setLogo4logoySS_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setLogoWithLogo:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "presentViewController",
+            "printedName": "presentViewController(vc:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)presentViewControllerWithVc:",
+            "mangledName": "$s7KnotAPI0A7ProductC21presentViewController2vcySo06UIViewF0C_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "presentViewControllerWithVc:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -2820,260 +2515,36 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerConfiguration",
-                "printedName": "KnotAPI.SubscriptionCancelerConfiguration",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration"
+                "name": "KnotProduct",
+                "printedName": "KnotAPI.KnotProduct",
+                "usr": "c:@M@KnotAPI@objc(cs)KnotProduct"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)init",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationCACycfc",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotProduct(im)init",
+            "mangledName": "$s7KnotAPI0A7ProductCACycfc",
             "moduleName": "KnotAPI",
             "overriding": true,
+            "implicit": true,
             "objc_name": "init",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Override",
-              "AccessControl"
+              "Override"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "setOnSuccess",
-            "printedName": "setOnSuccess(onSuccess:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnSuccessOnSuccess:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC12setOnSuccess02onH0yySSc_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setOnSuccessOnSuccess:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setOnError",
-            "printedName": "setOnError(onError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String, Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.String, Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnErrorOnError:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC10setOnError02onH0yySS_SStc_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setOnErrorOnError:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setOnEvent",
-            "printedName": "setOnEvent(onEvent:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String, Swift.String) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.String, Swift.String)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnEventOnEvent:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC10setOnEvent02onH0yySS_SStc_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setOnEventOnEvent:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setOnExit",
-            "printedName": "setOnExit(onExit:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnExitOnExit:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC9setOnExit02onH0yyyc_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setOnExitOnExit:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setOnFinished",
-            "printedName": "setOnFinished(onFinished:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnFinishedOnFinished:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC13setOnFinished02onH0yyyc_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setOnFinishedOnFinished:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration",
-        "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC",
+        "usr": "c:@M@KnotAPI@objc(cs)KnotProduct",
+        "mangledName": "$s7KnotAPI0A7ProductC",
         "moduleName": "KnotAPI",
         "declAttributes": [
           "AccessControl",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -3904,13 +3375,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KnotAPI",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
       },
       {
         "kind": "Import",
@@ -3921,400 +3399,217 @@
       },
       {
         "kind": "Import",
-        "name": "os",
-        "printedName": "os",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "KnotAPI"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
-        "name": "SubscriptionCancelerViewController",
-        "printedName": "SubscriptionCancelerViewController",
+        "name": "Environment",
+        "printedName": "Environment",
         "children": [
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:)",
+            "kind": "Var",
+            "name": "sandbox",
+            "printedName": "sandbox",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "SubscriptionCancelerViewController",
-                "printedName": "KnotAPI.SubscriptionCancelerViewController",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.Int]",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KnotAPI.Environment.Type) -> KnotAPI.Environment",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
+                    "name": "Environment",
+                    "printedName": "KnotAPI.Environment",
+                    "usr": "c:@M@KnotAPI@E@Environment"
+                  },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Metatype",
+                    "printedName": "KnotAPI.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KnotAPI.Environment",
+                        "usr": "c:@M@KnotAPI@E@Environment"
+                      }
+                    ]
                   }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KnotAPI.SubscriptionCancelerDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SubscriptionCancelerDelegate",
-                    "printedName": "KnotAPI.SubscriptionCancelerDelegate",
-                    "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "KnotAPI.Environment",
-                "usr": "c:@M@KnotAPI@E@Environment"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                ]
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName13buttonCorners0R8FontSize0R8Paddings6amount8delegate11environment13useCategories0Z9Selection0Z10SingleFlow0Z6Search4logoACSS_SSSaySiGSaySSGSSSgA2XSo8NSNumberCSgA_A_SbAA0cD8Delegate_pSgAA11EnvironmentOS4bSStcfc",
+            "declKind": "EnumElement",
+            "usr": "c:@M@KnotAPI@E@Environment@EnvironmentSandbox",
+            "mangledName": "$s7KnotAPI11EnvironmentO7sandboxyA2CmF",
             "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:",
             "declAttributes": [
-              "Custom",
-              "AccessControl",
               "ObjC"
             ],
-            "init_kind": "Designated"
+            "fixedbinaryorder": 0
           },
           {
-            "kind": "Function",
-            "name": "handleEvents",
-            "printedName": "handleEvents(message:)",
+            "kind": "Var",
+            "name": "production",
+            "printedName": "production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KnotAPI.Environment.Type) -> KnotAPI.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KnotAPI.Environment",
+                    "usr": "c:@M@KnotAPI@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KnotAPI.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KnotAPI.Environment",
+                        "usr": "c:@M@KnotAPI@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KnotAPI@E@Environment@EnvironmentProduction",
+            "mangledName": "$s7KnotAPI11EnvironmentO10productionyA2CmF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "development",
+            "printedName": "development",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KnotAPI.Environment.Type) -> KnotAPI.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KnotAPI.Environment",
+                    "usr": "c:@M@KnotAPI@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KnotAPI.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KnotAPI.Environment",
+                        "usr": "c:@M@KnotAPI@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KnotAPI@E@Environment@EnvironmentDevelopment",
+            "mangledName": "$s7KnotAPI11EnvironmentO11developmentyA2CmF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WKScriptMessage",
-                "printedName": "WebKit.WKScriptMessage",
-                "usr": "c:objc(cs)WKScriptMessage"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
-            "declKind": "Func",
-            "usr": "s:7KnotAPI34SubscriptionCancelerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
+            "declKind": "Var",
+            "usr": "s:7KnotAPI11EnvironmentO8rawValueSSvp",
+            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSSvp",
             "moduleName": "KnotAPI",
-            "overriding": true,
             "declAttributes": [
-              "Custom",
-              "Override",
               "AccessControl"
             ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "viewWillDisappear",
-            "printedName": "viewWillDisappear(_:)",
-            "children": [
+            "accessors": [
               {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI11EnvironmentO8rawValueSSvg",
+                "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSSvg",
+                "moduleName": "KnotAPI",
+                "accessorKind": "get"
               }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)viewWillDisappear:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC17viewWillDisappearyySbF",
-            "moduleName": "KnotAPI",
-            "overriding": true,
-            "objc_name": "viewWillDisappear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
+            ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:)",
+            "printedName": "init(rawValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerViewController",
-                "printedName": "KnotAPI.SubscriptionCancelerViewController",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "KnotAPI.Environment?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Environment",
+                    "printedName": "KnotAPI.Environment",
+                    "usr": "c:@M@KnotAPI@E@Environment"
                   }
                 ],
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "KnotAPI.Environment",
-                "usr": "c:@M@KnotAPI@E@Environment"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -4324,35 +3619,367 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH012primaryColor04textK011companyName13buttonCorners0O8FontSize0O8Paddings11environment6webUrl10userScriptACSS_S2SSgA2OSo8NSNumberCSgA2rA11EnvironmentOS2Stcfc",
+            "usr": "s:7KnotAPI11EnvironmentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueACSgSS_tcfc",
             "moduleName": "KnotAPI",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
             "declAttributes": [
-              "ObjC",
-              "Custom",
-              "Override"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController",
-        "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC",
+        "declKind": "Enum",
+        "usr": "c:@M@KnotAPI@E@Environment",
+        "mangledName": "$s7KnotAPI11EnvironmentO",
         "moduleName": "KnotAPI",
         "declAttributes": [
-          "Custom",
           "AccessControl",
           "ObjC"
         ],
-        "superclassUsr": "c:@M@KnotAPI@objc(cs)KnotViewController",
-        "hasMissingDesignatedInitializers": true,
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SubscriptionCancelerConfiguration",
+        "printedName": "SubscriptionCancelerConfiguration",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SubscriptionCancelerConfiguration",
+                "printedName": "KnotAPI.SubscriptionCancelerConfiguration",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)init",
+            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationCACycfc",
+            "moduleName": "KnotAPI",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnSuccess",
+            "printedName": "setOnSuccess(onSuccess:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnSuccessOnSuccess:",
+            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC12setOnSuccess02onH0yySSc_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setOnSuccessOnSuccess:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnError",
+            "printedName": "setOnError(onError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnErrorOnError:",
+            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC10setOnError02onH0yySS_SStc_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setOnErrorOnError:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnEvent",
+            "printedName": "setOnEvent(onEvent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnEventOnEvent:",
+            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC10setOnEvent02onH0yySS_SStc_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setOnEventOnEvent:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnExit",
+            "printedName": "setOnExit(onExit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnExitOnExit:",
+            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC9setOnExit02onH0yyyc_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setOnExitOnExit:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnFinished",
+            "printedName": "setOnFinished(onFinished:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnFinishedOnFinished:",
+            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC13setOnFinished02onH0yyyc_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "setOnFinishedOnFinished:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration",
+        "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "KnotAPI.KnotViewController",
-          "UIKit.UIViewController",
-          "UIKit.UIResponder",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -4404,13 +4031,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -4585,186 +4205,277 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/CardSwitcherViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/CardSwitcherViewController.swift",
+      "kind": "Array",
+      "offset": 603,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/CardSwitcherViewController.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 181,
       "length": 32,
       "value": "\"KnotAPI.CardOnFileSwitcherViewController\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 152,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
-      "kind": "IntegerLiteral",
-      "offset": 172,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/JsScripts.swift",
       "kind": "StringLiteral",
-      "offset": 149,
-      "length": 2,
-      "value": "\"\""
+      "offset": 112,
+      "length": 2034,
+      "value": "\"(function() {\n    function interceptRequestHeaders(url, headers) {\n        webkit.messageHandlers.headerInterceptor.postMessage({url: url, headers: headers});\n    }\n\n    \/\/ Intercept XMLHttpRequest\n    var originalXHR = XMLHttpRequest;\n    var XHR = function() {\n        var xhr = new originalXHR();\n        var requestHeaders = {};\n        xhr.setRequestHeader = function(header, value) {\n            requestHeaders[header] = value;\n            originalXHR.prototype.setRequestHeader.call(xhr, header, value);\n        };\n\n        xhr.open = function(method, url) {\n            this.addEventListener(\"loadstart\", function() {\n                interceptRequestHeaders(url, requestHeaders);\n            }, false);\n            originalXHR.prototype.open.call(xhr, method, url);\n        };\n        return xhr;\n    };\n    window.XMLHttpRequest = XHR;\n\n    \/\/ Intercept Fetch API\n    var originalFetch = window.fetch;\n    window.fetch = function(input, init) {\n        if (init && init.headers) {\n            var headers = {};\n            if (init.headers instanceof Headers) {\n                init.headers.forEach(function(value, key) {\n                    headers[key] = value;\n                });\n            } else {\n                headers = init.headers;\n            }\n            interceptRequestHeaders(input, headers);\n        }\n        return originalFetch(input, init);\n    };\n})();\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 179,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
-      "kind": "BooleanLiteral",
-      "offset": 256,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
-      "kind": "BooleanLiteral",
-      "offset": 291,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
-      "kind": "BooleanLiteral",
-      "offset": 327,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
-      "kind": "BooleanLiteral",
-      "offset": 359,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
-      "kind": "StringLiteral",
-      "offset": 387,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotProduct.swift",
-      "kind": "StringLiteral",
-      "offset": 97,
-      "length": 11,
-      "value": "\"KnotAPI.KnotProduct\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 4587,
+      "offset": 366,
       "length": 9,
       "value": "\"success\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4631,
+      "offset": 410,
       "length": 7,
       "value": "\"close\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4673,
+      "offset": 452,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4716,
+      "offset": 495,
       "length": 13,
       "value": "\"socketEvent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4764,
+      "offset": 543,
       "length": 10,
       "value": "\"finished\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4857,
+      "offset": 586,
+      "length": 16,
+      "value": "\"cardSwitchInit\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
       "length": 9,
       "value": "\"#0F0F0F\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4895,
+      "offset": 723,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4935,
+      "offset": 763,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4972,
+      "offset": 800,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 5011,
+      "offset": 839,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 5050,
+      "offset": 878,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4424,
+      "offset": 203,
       "length": 18,
       "value": "\"KnotAPI.KnotViewController\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/SubscriptionCancelerSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 438,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/SubscriptionCancelerViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/SubscriptionCancelerViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 234,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/SubscriptionCancelerViewController.swift",
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/SubscriptionCancelerViewController.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 34,
       "value": "\"KnotAPI.SubscriptionCancelerViewController\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Bot.swift",
+      "kind": "Array",
+      "offset": 136,
+      "length": 8,
+      "value": "[10, 13]"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Bot.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 19,
+      "value": "\"cardSwitchSuccess\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Bot.swift",
+      "kind": "StringLiteral",
+      "offset": 625,
+      "length": 17,
+      "value": "\"cardSwitchError\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Bot.swift",
+      "kind": "BooleanLiteral",
+      "offset": 669,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Bot.swift",
+      "kind": "BooleanLiteral",
+      "offset": 764,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Bot.swift",
+      "kind": "StringLiteral",
+      "offset": 152,
+      "length": 3,
+      "value": "\"KnotAPI.Bot\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 149,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 179,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "BooleanLiteral",
+      "offset": 256,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "BooleanLiteral",
+      "offset": 291,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "BooleanLiteral",
+      "offset": 327,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "BooleanLiteral",
+      "offset": 359,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 387,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/KnotProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 97,
+      "length": 11,
+      "value": "\"KnotAPI.KnotProduct\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/SubscriptionCancelerSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 438,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/LoginViewController.swift",
+      "kind": "Array",
+      "offset": 602,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/LoginViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 632,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/LoginViewController.swift",
+      "kind": "Dictionary",
+      "offset": 753,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/LoginViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 317,
+      "length": 19,
+      "value": "\"KnotAPI.LoginViewController\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Environment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 152,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Models\/Environment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 172,
+      "length": 11,
+      "value": "2"
     }
   ]
 }
