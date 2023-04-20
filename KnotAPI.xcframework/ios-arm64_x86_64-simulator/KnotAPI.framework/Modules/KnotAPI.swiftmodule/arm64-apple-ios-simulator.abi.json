@@ -4459,6 +4459,13 @@
     {
       "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/LoginViewController.swift",
       "kind": "StringLiteral",
+      "offset": 814,
+      "length": 16,
+      "value": "\"loginViewClose\""
+    },
+    {
+      "filePath": "\/Users\/tarikaitmbarek\/WebstormProjects\/@knotapi\/knotapi-ios-sdk\/KnotAPI\/Controllers\/LoginViewController.swift",
+      "kind": "StringLiteral",
       "offset": 317,
       "length": 19,
       "value": "\"KnotAPI.LoginViewController\""

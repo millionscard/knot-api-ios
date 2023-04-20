@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		c7kgeeXabUHSDhhauaCMYidFXnM=
+		E6pvB5Bw5ndMvvw7tL4nHzhc5U8=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZPU8w8q+Qt4f2NeNYsFBT7OflEI=
+		u5KxQVD/1Bjo2VYMOfAghr1gx2A=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KsaNxUxeZ/BsGrucjh33oTmk3ak=
+		ecNX1n8guqCsrqMdX7SAQh91RxI=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZPU8w8q+Qt4f2NeNYsFBT7OflEI=
+		u5KxQVD/1Bjo2VYMOfAghr1gx2A=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ao26aFi6Ji4e4LJdQwLlshGhP+c=
+		SwHnFXuMSpmb225Yr7bfm7BhWCQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z7ejcmMv1VAtm+aYIesKU1BzdjFRL3TZD3GQuwTgNqs=
+			upRK1LGMriJ2AVmBsVTXBZvxW8lj91KNQBMQkG8kmcw=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			to5EJjpfO2fxiXip7ICuX7go8LoEK8T62Oew850i/wE=
+			56tfQ807ex1DnZfAU7y/rVtTH/H4CvId+Vgkj/gDmnY=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z7ejcmMv1VAtm+aYIesKU1BzdjFRL3TZD3GQuwTgNqs=
+			upRK1LGMriJ2AVmBsVTXBZvxW8lj91KNQBMQkG8kmcw=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JYIWwrn3fz3kHVu5x4ASoFCCRur153tX/9fU4OEHFr0=
+			zC12nasVurhOmXuzul8LQJjdtvo99ZwkaCBdKAylrgo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
