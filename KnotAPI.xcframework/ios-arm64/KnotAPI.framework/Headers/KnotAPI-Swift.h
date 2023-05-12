@@ -274,7 +274,7 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 - (void)setUseSingleFlowWithUseSingleFlow:(BOOL)useSingleFlow;
 - (void)setUseSearchWithUseSearch:(BOOL)useSearch;
 - (void)setLogoWithLogo:(NSString * _Nonnull)logo;
-- (void)presentViewControllerWithVc:(UIViewController * _Nonnull)vc;
+- (void)presentViewController:(UIViewController * _Nonnull)vc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -394,6 +394,8 @@ SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
 - (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
+
+
 
 
 #endif
