@@ -77,7 +77,8 @@ import os
   @objc public func setUseSingleFlow(useSingleFlow: Swift.Bool)
   @objc public func setUseSearch(useSearch: Swift.Bool)
   @objc public func setLogo(logo: Swift.String)
-  @objc public func presentViewController(_ vc: UIKit.UIViewController)
+  @objc public func setOpenWithFullScreen(openWithFullScreen: Swift.Bool)
+  @objc public func presentViewController(_ vc: UIKit.UIViewController, openWithFullScreen: Swift.Bool)
   @objc deinit
 }
 @objc public protocol SubscriptionCancelerDelegate : ObjectiveC.NSObjectProtocol {
@@ -121,6 +122,7 @@ extension UIKit.UIImage {
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
   public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
 }
+infix operator =~ : DefaultPrecedence
 @objc @_inheritsConvenienceInitializers public class SubscriptionCancelerConfiguration : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
