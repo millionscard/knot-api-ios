@@ -84,6 +84,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4636,7 +4646,7 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SimpleSubFlowViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 554,
+      "offset": 580,
       "length": 5,
       "value": "false"
     },
@@ -4660,6 +4670,13 @@
       "offset": 181,
       "length": 32,
       "value": "\"KnotAPI.CardOnFileSwitcherViewController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/LoadingView.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 24,
+      "value": "\"animation_640_lchm0dij\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Helpers\/JsScripts.swift",
@@ -4695,13 +4712,6 @@
       "offset": 118,
       "length": 20,
       "value": "\"KnotAPI.GooglePopupViewModel\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/WebFlowView.swift",
-      "kind": "StringLiteral",
-      "offset": 3092,
-      "length": 24,
-      "value": "\"animation_640_lchm0dij\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/WebFlowView.swift",
