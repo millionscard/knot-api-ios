@@ -1,0 +1,11 @@
+framework module KnotAPI {
+  umbrella header "KnotAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module KnotAPI.Swift {
+  header "KnotAPI-Swift.h"
+  requires objc
+}
