@@ -14,22 +14,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "KnotAPI",
-            url: "https://github.com/millionscard/knot-api-ios/releases/download/0.3.1/KnotAPI.xcframework.zip")
-    ]
-)
-
-let package = Package(
-    name: "Intercom",
-    products: [
-        .library(
-            name: "Intercom",
-            targets: ["Intercom"]),
-    ],
-    targets: [
-        .binaryTarget(
-            name: "Intercom",
-            url: "https://github.com/intercom/intercom-ios/releases/download/15.0.0/Intercom.xcframework.zip",
-            checksum: "dc8c092b07debb5189f272a2b242ce8996b06308ecedc4b4f92ec70f3851989a"
-        ),
+            url: "https://github.com/millionscard/knot-api-ios/releases/download/0.3.1/KnotAPI.xcframework.zip",
+            checksum: "97345884150a7efb973bea99d0769aee75e54ec6e3b705a5b42e4c9e9daa41e1")
     ]
 )
