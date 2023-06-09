@@ -22,6 +22,9 @@ import os
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
+  public var vc: KnotAPI.KnotViewController? {
+    get
+  }
   @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc public func setPrimaryColor(primaryColor: Swift.String)
   @objc public func setTextColor(textColor: Swift.String)
