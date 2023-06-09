@@ -280,12 +280,14 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class KnotViewController;
 enum Environment : NSInteger;
 @class NSNumber;
 @class CardSwitcherConfiguration;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : KnotProduct <CardOnFileDelegate>
+@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
