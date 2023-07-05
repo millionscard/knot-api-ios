@@ -21,26 +21,26 @@ import os
   @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
-  @objc public var vc: KnotAPI.KnotViewController? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController? {
     @objc get
   }
-  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
-  @objc public func setPrimaryColor(primaryColor: Swift.String)
-  @objc public func setTextColor(textColor: Swift.String)
-  @objc public func setCompanyName(companyName: Swift.String)
-  @objc public func setButtonCorners(buttonCorners: Foundation.NSNumber)
-  @objc public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
-  @objc public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
-  @objc public func setConfiguration(config: KnotAPI.CardSwitcherConfiguration)
-  @objc public func setMerchantIds(merchantIds: [Swift.Int])
-  @objc public func setMerchantNames(merchantNames: [Swift.String])
-  @objc public func openCardOnFileSwitcher()
-  @objc public func onSuccess(merchant: Swift.String)
-  @objc public func onError(error: Swift.String, message: Swift.String)
-  @objc public func onEvent(event: Swift.String, message: Swift.String)
-  @objc public func onExit()
-  @objc public func onFinished()
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
+  @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setCompanyName(companyName: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setButtonCorners(buttonCorners: Foundation.NSNumber)
+  @objc @_Concurrency.MainActor(unsafe) public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
+  @objc @_Concurrency.MainActor(unsafe) public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
+  @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(config: KnotAPI.CardSwitcherConfiguration)
+  @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
+  @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
+  @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher()
+  @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func onExit()
+  @_Concurrency.MainActor(unsafe) @objc public func onFinished()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
@@ -74,14 +74,15 @@ import os
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class KnotProduct : ObjectiveC.NSObject {
-  @objc public func setUseCategories(useCategories: Swift.Bool)
-  @objc public func setUseSelection(useSelection: Swift.Bool)
-  @objc public func setUseSingleFlow(useSingleFlow: Swift.Bool)
-  @objc public func setUseSearch(useSearch: Swift.Bool)
-  @objc public func setLogo(logo: Swift.String)
-  @objc public func setOpenWithFullScreen(openWithFullScreen: Swift.Bool)
-  @objc public func presentViewController(_ vc: UIKit.UIViewController, openWithFullScreen: Swift.Bool)
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotProduct : ObjectiveC.NSObject, UIKit.UIViewControllerTransitioningDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public func setUseCategories(useCategories: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setUseSelection(useSelection: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setUseSingleFlow(useSingleFlow: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setUseSearch(useSearch: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setLogo(logo: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setOpenWithFullScreen(openWithFullScreen: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func presentViewController(_ vc: UIKit.UIViewController, openWithFullScreen: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
   @objc deinit
 }
 @objc public protocol SubscriptionCancelerDelegate : ObjectiveC.NSObjectProtocol {
@@ -91,24 +92,24 @@ import os
   @objc func onExit()
   @objc func onFinished()
 }
-@objc @_inheritsConvenienceInitializers public class SubscriptionCancelerSession : KnotAPI.KnotProduct, KnotAPI.SubscriptionCancelerDelegate {
-  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
-  @objc public func setPrimaryColor(primaryColor: Swift.String)
-  @objc public func setTextColor(textColor: Swift.String)
-  @objc public func setCompanyName(companyName: Swift.String)
-  @objc public func setButtonCorners(buttonCorners: Foundation.NSNumber)
-  @objc public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
-  @objc public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
-  @objc public func setAmount(amount: Swift.Bool)
-  @objc public func setConfiguration(configuration: KnotAPI.SubscriptionCancelerConfiguration)
-  @objc public func setMerchantIds(merchantIds: [Swift.Int])
-  @objc public func setMerchantNames(merchantNames: [Swift.String])
-  @objc public func openSubscriptionCanceler()
-  @objc public func onSuccess(merchant: Swift.String)
-  @objc public func onError(error: Swift.String, message: Swift.String)
-  @objc public func onEvent(event: Swift.String, message: Swift.String)
-  @objc public func onExit()
-  @objc public func onFinished()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerSession : KnotAPI.KnotProduct, KnotAPI.SubscriptionCancelerDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
+  @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setCompanyName(companyName: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func setButtonCorners(buttonCorners: Foundation.NSNumber)
+  @objc @_Concurrency.MainActor(unsafe) public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
+  @objc @_Concurrency.MainActor(unsafe) public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
+  @objc @_Concurrency.MainActor(unsafe) public func setAmount(amount: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(configuration: KnotAPI.SubscriptionCancelerConfiguration)
+  @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
+  @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
+  @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionCanceler()
+  @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc public func onExit()
+  @_Concurrency.MainActor(unsafe) @objc public func onFinished()
   @objc deinit
 }
 @objc public enum Environment : Swift.Int, Swift.RawRepresentable {
