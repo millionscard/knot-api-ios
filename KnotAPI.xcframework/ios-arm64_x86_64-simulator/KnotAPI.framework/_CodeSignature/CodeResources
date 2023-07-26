@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W2tlh4fIyQe9aQu2IYYLyPgVl+I=
+		kDuOL1o9upyaY/sA/ryAC+NbkZg=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		638wA4aSVGf3AH5lH3n+9CEFir8=
+		EzDcm1KySmkGpxaCZ2kGYvFGTMM=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yjMAV3k5/z9X8DCnitwf/tF3mAY=
+		JgoE0Zc9U3etxfyjVJnblc5r/uc=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		638wA4aSVGf3AH5lH3n+9CEFir8=
+		EzDcm1KySmkGpxaCZ2kGYvFGTMM=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ihKudEg0qJJK7UM7ktfdMMRrR6U=
+		byryj/2rrKviNfAL9eHhJELLqeY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>back_button.png</key>
 		<data>
-		DAjwVs17oA1MDLCKf5t5AA19aeY=
+		G3mvRWpkLaV1vx6MOEhZ20JXeng=
 		</data>
 		<key>close_icon.png</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MWEwJYLa4Pi4BqOAbiwj70VDadctAf/BCo+6zxurqWg=
+			Acw3mVOxkGZg5SJK/x1as93MGBBlV2+gfi6+9glTVLM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			if9tigfzdJsdBQdbbM+ztPTfqU/RdV49Pg63kpxycrQ=
+			/RAkJMtHSZq/ha29Hu4ZmXQGRL65fmmWtrjwEbO6Bjc=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MWEwJYLa4Pi4BqOAbiwj70VDadctAf/BCo+6zxurqWg=
+			Acw3mVOxkGZg5SJK/x1as93MGBBlV2+gfi6+9glTVLM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w7PrwU2XxUmWLLuNF5cYR6uT41/Va8CPtSPXm/OFVSk=
+			8nZySp473gskmtg9cTePCTNeBls89khugRghcbDCDIE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -170,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+n4VgQbg/1lTgsvK5Q1kTyj5Bz1JslsLzVKnKC7TaK8=
+			79k/aPlbLLSzb8HURPFIPqGeIPojx/5ouCvjiLvcnec=
 			</data>
 		</dict>
 		<key>close_icon.png</key>
