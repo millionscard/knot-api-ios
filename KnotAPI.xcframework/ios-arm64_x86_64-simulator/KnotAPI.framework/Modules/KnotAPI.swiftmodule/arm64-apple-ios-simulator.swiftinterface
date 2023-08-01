@@ -83,6 +83,9 @@ import os
   @objc @_Concurrency.MainActor(unsafe) public func setOpenWithFullScreen(openWithFullScreen: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func presentViewController(_ vc: UIKit.UIViewController, openWithFullScreen: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc public func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
+  @_Concurrency.MainActor(unsafe) public static var version: Swift.String? {
+    get
+  }
   @objc deinit
 }
 @objc public protocol SubscriptionCancelerDelegate : ObjectiveC.NSObjectProtocol {
