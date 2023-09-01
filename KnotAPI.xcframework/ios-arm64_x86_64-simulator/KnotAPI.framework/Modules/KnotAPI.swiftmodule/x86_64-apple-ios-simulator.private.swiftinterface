@@ -74,6 +74,11 @@ import os
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var modelIdentifier: Swift.String {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotProduct : ObjectiveC.NSObject, UIKit.UIViewControllerTransitioningDelegate {
   @objc @_Concurrency.MainActor(unsafe) public func setUseCategories(useCategories: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func setUseSelection(useSelection: Swift.Bool)
