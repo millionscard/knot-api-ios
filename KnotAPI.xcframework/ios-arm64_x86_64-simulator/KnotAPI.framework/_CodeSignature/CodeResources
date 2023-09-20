@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vWOPFoGv0CTot1GljKcwFNspgzw=
+		ZxJCQaNAKmWRiyIP/MQTui1u80E=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cwi1Upz/uTGIQef5WhGJa5hUbXA=
+		1AsyxmpK4BPLOSxpP0dMtGwepDs=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JhLmAJzgVUIGXMx/gaCq3MdB42E=
+		lFSUJc9jjfsFGvPu6CKhxZ+9S5Y=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cwi1Upz/uTGIQef5WhGJa5hUbXA=
+		1AsyxmpK4BPLOSxpP0dMtGwepDs=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Gihr7UtgIiksiAQ/I7KJHPO3qp0=
+		kXuna/BI9/VGQlManGvoDypJY/s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rhDr2mIMgxm9ASRlUOhttvGl8nK2ir7DVNqryxsJToI=
+			HCr6451OipmQcqfD1m4vFY5rDdSZbTDa9RdVdmIk3bY=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b/WbDM1pDa8JZvUlNKmVyVFn1E336UeycGCu6tDcwzo=
+			8teJXM9oQ8dlCorYp0vmubmrxFVIIL8/c7Lizm3tEuI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rhDr2mIMgxm9ASRlUOhttvGl8nK2ir7DVNqryxsJToI=
+			HCr6451OipmQcqfD1m4vFY5rDdSZbTDa9RdVdmIk3bY=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QGkG5sZRybdxkddD3QRLu4jBoSyu+edeaCALXW8ho4E=
+			Nb2tWpUH6G27s3N/ppDsRUZUP9qaRrq/gdDEJ3DBhnE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
