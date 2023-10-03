@@ -120,7 +120,7 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) @objc public func onFinished()
   @objc deinit
 }
-@objc public enum Environment : Swift.Int, Swift.RawRepresentable {
+@objc public enum Environment : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
   case sandbox
   case production
   case development
@@ -129,6 +129,10 @@ extension UIKit.UIDevice {
     get
   }
   public init?(rawValue: KnotAPI.Environment.RawValue)
+  public typealias AllCases = [KnotAPI.Environment]
+  public static var allCases: [KnotAPI.Environment] {
+    get
+  }
 }
 extension UIKit.UIImage {
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?

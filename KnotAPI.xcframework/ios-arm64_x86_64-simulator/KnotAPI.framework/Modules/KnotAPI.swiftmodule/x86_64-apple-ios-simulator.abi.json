@@ -4770,6 +4770,63 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[KnotAPI.Environment]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KnotAPI.Environment",
+                    "usr": "c:@M@KnotAPI@E@Environment"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KnotAPI11EnvironmentO8allCasesSayACGvpZ",
+            "mangledName": "$s7KnotAPI11EnvironmentO8allCasesSayACGvpZ",
+            "moduleName": "KnotAPI",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KnotAPI.Environment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KnotAPI.Environment",
+                        "usr": "c:@M@KnotAPI@E@Environment"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI11EnvironmentO8allCasesSayACGvgZ",
+                "mangledName": "$s7KnotAPI11EnvironmentO8allCasesSayACGvgZ",
+                "moduleName": "KnotAPI",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -4817,6 +4874,36 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KnotAPI.Environment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "KnotAPI.Environment",
+                        "usr": "c:@M@KnotAPI@E@Environment"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -6532,14 +6619,14 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 152,
+      "offset": 166,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 172,
+      "offset": 186,
       "length": 11,
       "value": "2"
     },
