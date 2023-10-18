@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yYKTJPJsxcii5HoUaQCi/kmvHus=
+		9yhc91qz/dix9n/9VznQVTPsLFo=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zFPHfabf7/a9siB1iOEtYjMcNn4=
+		xPjvjxHjsZ54uCVObFkXzodLvQQ=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jm+39WFmWUtNpMxGpMeISrjOjtA=
+		VIoHoLDxWVonmLFYudH7BUNSqJs=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zFPHfabf7/a9siB1iOEtYjMcNn4=
+		xPjvjxHjsZ54uCVObFkXzodLvQQ=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3+zncaV9OSuaFE4H7UqEh+Sj1XU=
+		fajtf0KgqMPuj8Cdy1QchB5EZdQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			scBAB0gsDSl8PW80Ilypt/F6wvCm6D9HW/K6ZzO+fjY=
+			kYGNNXbcCVdDDpx69iww7/XzWRHu3ZRSvZ0HwJ+GTKE=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPyO1yxzYI1J/F350NiIpa7zJjwctxGXVDN3BZdTl4g=
+			uc07NjjeuQA6R0ITCxe3X+E9DxNb41SyY/xF2262d1U=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			scBAB0gsDSl8PW80Ilypt/F6wvCm6D9HW/K6ZzO+fjY=
+			kYGNNXbcCVdDDpx69iww7/XzWRHu3ZRSvZ0HwJ+GTKE=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			neK/8yf7sUziq0kdoYvKfaTQu6UgvUlwSOeo3XM1Te0=
+			YMBs242Dc/8ULDZhdY4BLReXhKIoIO280MnBoDXWGJs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
