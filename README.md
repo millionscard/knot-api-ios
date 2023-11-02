@@ -25,7 +25,7 @@ pod init
 3. Add this line to your Podfile:
 
 ```ruby
-pod 'KnotAPI', '0.2.5'
+pod 'KnotAPI', '0.5.7'
 ```
 
 4. Run the following command:
