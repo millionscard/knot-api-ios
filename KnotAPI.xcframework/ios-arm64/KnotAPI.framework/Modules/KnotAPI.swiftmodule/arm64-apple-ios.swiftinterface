@@ -36,6 +36,7 @@ import os
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
   @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher()
+  @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher(entryPoint: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
@@ -54,7 +55,7 @@ import os
   @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) public func handleEvents(message: WebKit.WKScriptMessage) throws
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) public func onClose()
   @objc deinit
 }

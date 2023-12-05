@@ -16,16 +16,6 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -40,6 +30,16 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -116,6 +116,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "KnotAPI",
         "declAttributes": [
@@ -585,6 +595,23 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KnotAPI"
       },
@@ -1063,6 +1090,35 @@
           },
           {
             "kind": "Function",
+            "name": "openCardOnFileSwitcher",
+            "printedName": "openCardOnFileSwitcher(entryPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)openCardOnFileSwitcherWithEntryPoint:",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF010entryPointySS_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "openCardOnFileSwitcherWithEntryPoint:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onSuccess",
             "printedName": "onSuccess(merchant:)",
             "children": [
@@ -1317,23 +1373,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -1425,6 +1464,23 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1526,6 +1582,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
       },
       {
         "kind": "Import",
@@ -2021,7 +2094,7 @@
           {
             "kind": "Function",
             "name": "webView",
-            "printedName": "webView(_:didFinish:)",
+            "printedName": "webView(_:didCommit:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2050,10 +2123,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)KnotViewController(im)webView:didFinishNavigation:",
-            "mangledName": "$s7KnotAPI0A14ViewControllerC03webC0_9didFinishySo05WKWebC0C_So12WKNavigationCSgtF",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotViewController(im)webView:didCommitNavigation:",
+            "mangledName": "$s7KnotAPI0A14ViewControllerC03webC0_9didCommitySo05WKWebC0C_So12WKNavigationCSgtF",
             "moduleName": "KnotAPI",
-            "objc_name": "webView:didFinishNavigation:",
+            "objc_name": "webView:didCommitNavigation:",
             "declAttributes": [
               "ObjC",
               "Custom",
@@ -2242,6 +2315,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -3898,6 +3981,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -5118,6 +5211,16 @@
       },
       {
         "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5479,35 +5582,28 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KnotAPI",
         "declAttributes": [
@@ -5845,20 +5941,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/GoogleSSOViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 205,
-      "length": 234,
-      "value": "\"(() => {\n    var spans = document.querySelectorAll('span');\n    for (var i = 0; i < spans.length; ++i) {\n        spans[i].setAttribute(\"style\", \"color:black;\")\n    }\n})()\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/GoogleSSOViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 548,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SimpleSubFlowViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 890,
@@ -5950,6 +6032,20 @@
       "value": "\"navigationCompletion\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/GoogleSSOViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 234,
+      "value": "\"(() => {\n    var spans = document.querySelectorAll('span');\n    for (var i = 0; i < spans.length; ++i) {\n        spans[i].setAttribute(\"style\", \"color:black;\")\n    }\n})()\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/GoogleSSOViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 548,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/LoadingView.swift",
       "kind": "StringLiteral",
       "offset": 465,
@@ -6020,6 +6116,27 @@
       "value": "\"function type(input, value) {\n    try {\n        input.dispatchEvent(new FocusEvent('focus'));\n        input.focus();\n        input.dispatchEvent(new KeyboardEvent('keydown'));\n        input.dispatchEvent(new KeyboardEvent('keypress'));\n        Object.getOwnPropertyDescriptor(\n            window.HTMLInputElement.prototype,\n            'value'\n        ).set.call(input, value);\n        input.dispatchEvent(\n            new InputEvent('beforeinput', {\n                data: value,\n                inputType: 'insertText',\n            })\n        );\n        let event = new InputEvent('input', {data: value, inputType: 'insertText'});\n        event._source = 'KNOT_CRAWLER';\n        input.dispatchEvent(event);\n        event = new Event('input', {bubbles: true});\n        event._source = 'KNOT_CRAWLER';\n        input.dispatchEvent(event);\n        input.dispatchEvent(new KeyboardEvent('keyup'));\n        input.dispatchEvent(new Event('change', {bubbles: true}));\n    } catch (e) {\n        console.error('type error', e);\n        sendSwitcherErrorCallback({\n          errorMessage: 'error occurred',\n        });\n    }\n}\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Helpers\/JsScripts.swift",
+      "kind": "StringLiteral",
+      "offset": 5862,
+      "length": 236,
+      "value": "\"function showNativeErrorScreen(title, content, action) {\n    const payload = {\n        title: title,\n        content: content,\n        action: action\n    };\n\n    window.webkit?.messageHandlers.nativeError.postMessage(payload);\n}\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Helpers\/JsScripts.swift",
+      "kind": "StringLiteral",
+      "offset": 6127,
+      "length": 819,
+      "value": "\"function findFirstVisibleElement() {\n    var allElements = document.querySelectorAll('*');\n    for (var i = 0; i < allElements.length; i++) {\n        var el = allElements[i];\n        var rect = el.getBoundingClientRect();\n        if (rect.top >= 0 && rect.bottom <= window.innerHeight &&\n            getComputedStyle(el).display !== 'none') {\n            return el.tagName; \/\/ Or any other identifier\n        }\n    }\n    return null;\n}\n\nvar observer = new MutationObserver(function(mutations) {\n    mutations.forEach(function(mutation) {\n        if (mutation.addedNodes.length) {\n            var firstVisibleElement = findFirstVisibleElement();\n            window.webkit.messageHandlers.loadingFinished.postMessage({});\n        }\n    });\n});\n\nobserver.observe(document.body, { childList: true, subtree: true });\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Helpers\/JsScripts.swift",
+      "kind": "StringLiteral",
+      "offset": 6973,
+      "length": 2532,
+      "value": "\"function matchesTargetText(elementText) {\n    const normalizedText = elementText.trim().toLowerCase();\n\n    const patterns = {\n        apple: \/\\bapple\\b\/,\n        google: \/\\bgoogle\\b\/,\n        facebook: \/\\bfacebook\\b\/,\n        signUp: \/\\bsign[-\\s]?up\\b|\\bregister\\b|\\bjoin\\b|\\bcreate\\saccount\\b|\\bcrear\\scuenta\\b|\\bcréer\\sun\\scompte\\b|\\bregistro\\b|\\binscription\\b|\\banmelden\\b\/,\n        phoneOrEmail: \/\\blogin\\b|\\blog\\s?in\\b|\\bsign\\s?in\\b|\\bsignin\\b|\\bcontinue\\b|\\bcontinuar\\b|\\bcontinuer\\b|\\bcorreo\\selectrónico\\b|\\bemail\\b|\\be-mail\\b|\\bconnexion\\b|\\bconexión\\b|\\bteléfono\\b|\\btéléphone\\b|\\bphone\\b|\\bmobile\\b|\\bcellular\\b|\\baccount\\b|\\buser\\b|\\busername\\b|\\bmember\\b\/\n    };\n\n    for (const key in patterns) {\n        if(patterns[key].test(normalizedText)) {\n            return key === 'signUp' ? 'SIGN_UP' : key.toUpperCase() + '_LOGIN';\n        }\n    }\n    return null;\n}\nfunction trackButtonClickEvents () {\n    document.addEventListener('click', function(event) {\n        const element = event.target;\n        const eventType = matchesTargetText(element.textContent);\n\n        if (eventType) {\n            const eventData = {\n                eventType: eventType,\n                elementId: element.id,\n                elementClasses: element.className,\n                elementText: element.textContent,\n                \/\/ Include any other relevant data\n            };\n            window.webkit.messageHandlers.merchantTracking.postMessage(eventData);\n        }\n    });\n\n}\n\n\nfunction debounce(func, delay) {\n    let debounceTimer;\n    return function() {\n        const context = this, args = arguments;\n        clearTimeout(debounceTimer);\n        debounceTimer = setTimeout(function() {\n            func.apply(context, args);\n        }, delay);\n    };\n}\n\nfunction trackInputEvents () {\n    const otpInputs = document.querySelectorAll('input[type=\"text\"], input[type=\"number\"], input[type=\"tel\"]'); \/\/ Adjust the selector as needed\n\n    const handleInput = debounce(function (event) {\n        const input = event.target;\n        const otpData = {\n            id: input.id,\n            classes: input.className,\n            placeholder: input.placeholder,\n        };\n        window.webkit.messageHandlers.merchantTracking.postMessage({...otpData, eventType: 'OTP_INPUT'});\n    }, 1500);\n\n    otpInputs.forEach(function(input) {\n        input.addEventListener('input', handleInput);\n    });\n}\n\ntrackButtonClickEvents();\ntrackInputEvents();\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/Events\/WebFlowErrorEvent.swift",
       "kind": "StringLiteral",
       "offset": 299,
@@ -6055,18 +6172,25 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSOPopupViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/SSOPopupViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 320,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSOPopupViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/SSOPopupViewModel.swift",
       "kind": "StringLiteral",
       "offset": 133,
       "length": 17,
       "value": "\"KnotAPI.SSOPopupViewModel\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/GoogleMassSwitcherViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 140,
+      "length": 27,
+      "value": "\"KnotAPI.GoogleMassSwitcherViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/ConfigScriptTrigger.swift",
@@ -6155,7 +6279,7 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SimpleFlowViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2528,
+      "offset": 2568,
       "length": 4,
       "value": "true"
     },
@@ -6165,13 +6289,6 @@
       "offset": 150,
       "length": 19,
       "value": "\"KnotAPI.SimpleFlowViewModel\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AirbnbViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 128,
-      "length": 15,
-      "value": "\"KnotAPI.AirbnbViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CrunchyrollViewModel.swift",
@@ -6209,28 +6326,28 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/GoogleSessionManager.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/GoogleSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 948,
       "length": 502,
       "value": "\"(async () => {\n    \""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/GoogleSessionManager.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/GoogleSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 1007,
       "length": 3,
       "value": "\"\n\n    var emailInput = await waitForSelector('input[name=\"identifier\"]');\n    if (emailInput) {\n        window.webkit.messageHandlers.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/GoogleSessionManager.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/GoogleSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 1,
       "value": "\".postMessage(emailInput.value);\n    }\n\n    emailInput.addEventListener(\"input\", (event) => {\n        window.webkit.messageHandlers.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/GoogleSessionManager.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/GoogleSessionManager.swift",
       "kind": "StringLiteral",
       "offset": 1378,
       "length": 1,
@@ -6251,6 +6368,48 @@
       "value": "\"KnotAPI.AdobeViewModel\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
+      "kind": "StringLiteral",
+      "offset": 2972,
+      "length": 561,
+      "value": "\"    function adjustViewPort() {\n        try {\n            var meta = document.createElement('meta');\n            meta.setAttribute('name', 'viewport');\n            meta.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover');\n            const head = document.querySelector('head');\n            head.appendChild(meta);\n\n        } catch(e) {\n            console.log(e)\n        }\n    };\n    adjustViewPort()\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3567,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
+      "kind": "Array",
+      "offset": 3772,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15280,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24501,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
+      "kind": "StringLiteral",
+      "offset": 256,
+      "length": 21,
+      "value": "\"KnotAPI.MerchantViewModelBase\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/RunScriptTrigger.swift",
       "kind": "StringLiteral",
       "offset": 281,
@@ -6265,9 +6424,9 @@
       "value": "\"urlPattern\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/Expedia\/ExpediaSSOPopupViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/AutostartSSOPopupViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 276,
+      "offset": 278,
       "length": 234,
       "value": "\"(() => {\n    var spans = document.querySelectorAll('span');\n    for (var i = 0; i < spans.length; ++i) {\n        spans[i].setAttribute(\"style\", \"color:black;\")\n    }\n})()\""
     },
@@ -6357,15 +6516,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
+      "kind": "BooleanLiteral",
+      "offset": 961,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
+      "kind": "BooleanLiteral",
+      "offset": 999,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1037,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
       "kind": "Dictionary",
-      "offset": 976,
+      "offset": 1090,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
       "kind": "Array",
-      "offset": 1012,
+      "offset": 1126,
       "length": 2,
       "value": "[]"
     },
@@ -6435,42 +6615,49 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 629,
+      "length": 17,
+      "value": "\"loadingFinished\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
       "length": 9,
       "value": "\"#0F0F0F\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 723,
+      "offset": 767,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 763,
+      "offset": 807,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 800,
+      "offset": 844,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 839,
+      "offset": 883,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 878,
+      "offset": 922,
       "length": 3,
       "value": "0.0"
     },
@@ -6510,7 +6697,7 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/Expedia\/ExpediaViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/ExpediaViewModel.swift",
       "kind": "StringLiteral",
       "offset": 114,
       "length": 16,
@@ -6533,28 +6720,28 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AppleViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1785,
+      "offset": 1793,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AppleViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2611,
+      "offset": 2619,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AppleViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5839,
+      "offset": 5847,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AppleViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4926,
+      "offset": 4934,
       "length": 23,
       "value": "\"KnotAPI.AppsPageIFrameViewModel\""
     },
@@ -6610,7 +6797,7 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Services\/AssetService.swift",
       "kind": "StringLiteral",
-      "offset": 300,
+      "offset": 305,
       "length": 3,
       "value": "\"\/\""
     },
@@ -6916,48 +7103,6 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PopupMerchantSSOViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 2814,
-      "length": 561,
-      "value": "\"    function adjustViewPort() {\n        try {\n            var meta = document.createElement('meta');\n            meta.setAttribute('name', 'viewport');\n            meta.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover');\n            const head = document.querySelector('head');\n            head.appendChild(meta);\n\n        } catch(e) {\n            console.log(e)\n        }\n    };\n    adjustViewPort()\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PopupMerchantSSOViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 3409,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PopupMerchantSSOViewModel.swift",
-      "kind": "Array",
-      "offset": 3786,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PopupMerchantSSOViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14458,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PopupMerchantSSOViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 25458,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PopupMerchantSSOViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 251,
-      "length": 25,
-      "value": "\"KnotAPI.PopupMerchantSSOViewModel\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/ZendeskViewModel.swift",
       "kind": "StringLiteral",
       "offset": 114,
@@ -6965,18 +7110,53 @@
       "value": "\"KnotAPI.ZendeskViewModel\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1872,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1915,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1957,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2000,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2043,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 114,
+      "length": 16,
+      "value": "\"KnotAPI.CashAppViewModel\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/DeltaViewModel.swift",
       "kind": "StringLiteral",
       "offset": 112,
       "length": 14,
       "value": "\"KnotAPI.DeltaViewModel\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/SlingTVModel.swift",
-      "kind": "StringLiteral",
-      "offset": 125,
-      "length": 12,
-      "value": "\"KnotAPI.SlingTVModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/CookieJar.swift",
@@ -7010,6 +7190,20 @@
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/ErrorViewModel.swift",
       "kind": "StringLiteral",
       "offset": 307,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/ErrorViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/ErrorViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
       "length": 2,
       "value": "\"\""
     },

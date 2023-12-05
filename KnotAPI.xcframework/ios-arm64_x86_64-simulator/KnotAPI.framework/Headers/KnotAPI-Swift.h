@@ -301,6 +301,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openCardOnFileSwitcher;
+- (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nonnull)entryPoint;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -345,7 +346,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 - (void)viewDidLoad;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -716,6 +717,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openCardOnFileSwitcher;
+- (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nonnull)entryPoint;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -760,7 +762,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 - (void)viewDidLoad;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
