@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
-		g0KUXGuP7k2Le2IytpqEQ2irHsA=
+		lolLUiJGFmR6YZLv9De9LLoQH4Q=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3SKe8awHhx3whRqF7UP/2jUNyY4=
+		d/m4DD3utf9xvPYtvef7JpQ/aFk=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2GFCPuaqglCk2e2hZAFpuck6vn4=
+		utYXycbPPlWRi5fL5q8TNDJfKWE=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		blF8H1nxZBbxnCtLIsvrYd/LSNo=
+		cI514gmqfav1dLFQkNEzNCRlqbY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		blF8H1nxZBbxnCtLIsvrYd/LSNo=
+		cI514gmqfav1dLFQkNEzNCRlqbY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		LrAuv8ueHB6Ize2A/qZ7pyZInAg=
+		irADR6Anq+RePkiTYSaEM8fdxHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,21 +59,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fR7w9d0NKtwWZ8CVfF1BN/qLznIK9WnXGp9g3wFVos=
+			X8UTIXX5bI+xZSyDJZG/3uLnEUPgCBZrbyduTGCWRgw=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7MeE2NJyDfB44s5e5xDesjNLqvlU/6X9i1p9oEWTnWM=
+			6h6sVEWmOvsgdjge/h8yJ3KpILlGk8/d0Gw7fWw/SKY=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRBdnlOu1dDuZcmCXeg1E/evI6sU0glQPagvPJvW1dM=
+			HSuebDSiqR4HUI7u3Wvbv1z3kuE64MknHEw4sCrfQQM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -87,14 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gRBdnlOu1dDuZcmCXeg1E/evI6sU0glQPagvPJvW1dM=
+			HSuebDSiqR4HUI7u3Wvbv1z3kuE64MknHEw4sCrfQQM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4NZ8D1AiBDU88mYpSAp2CfvZTMMiLPKz27uZh0jWPhs=
+			v+e4Ga52OEZJwZm7v7s/Ib5aV6bQNEwTsomN9L1AH/8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -338,7 +338,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
-@interface KnotViewController : UIViewController <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
+@interface KnotViewController : UIViewController <UIWebViewDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
 @property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -347,6 +347,7 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
