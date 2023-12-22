@@ -289,7 +289,7 @@ enum Environment : NSInteger;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 @interface CardOnFileSwitcherSession : KnotProduct <CardOnFileDelegate>
-@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
+@property (nonatomic, strong) KnotViewController * _Nullable vc;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -302,6 +302,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openCardOnFileSwitcher;
 - (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nonnull)entryPoint;
+- (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;

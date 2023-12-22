@@ -22,9 +22,7 @@ import os
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController? {
-    @objc get
-  }
+  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController?
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
@@ -37,6 +35,7 @@ import os
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
   @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher()
   @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher(entryPoint: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
@@ -59,6 +58,7 @@ import os
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) public func onClose()
+  @_Concurrency.MainActor(unsafe) public func updateSessionId(sessionId: Swift.String)
   @objc deinit
 }
 @objc public protocol CardOnFileDelegate : ObjectiveC.NSObjectProtocol {

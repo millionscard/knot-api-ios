@@ -709,10 +709,13 @@
             "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC2vcAA0A14ViewControllerCSgvp",
             "moduleName": "KnotAPI",
             "declAttributes": [
+              "HasInitialValue",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -738,10 +741,64 @@
                 "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)vc",
                 "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC2vcAA0A14ViewControllerCSgvg",
                 "moduleName": "KnotAPI",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KnotAPI.KnotViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KnotViewController",
+                        "printedName": "KnotAPI.KnotViewController",
+                        "usr": "c:@M@KnotAPI@objc(cs)KnotViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)setVc:",
+                "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC2vcAA0A14ViewControllerCSgvs",
+                "moduleName": "KnotAPI",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI25CardOnFileSwitcherSessionC2vcAA0A14ViewControllerCSgvM",
+                "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC2vcAA0A14ViewControllerCSgvM",
+                "moduleName": "KnotAPI",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -1110,6 +1167,35 @@
             "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF010entryPointySS_tF",
             "moduleName": "KnotAPI",
             "objc_name": "openCardOnFileSwitcherWithEntryPoint:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateSession",
+            "printedName": "updateSession(sessionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)updateSessionWithSessionId:",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC06updateG09sessionIdySS_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "updateSessionWithSessionId:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -2254,6 +2340,33 @@
             "declKind": "Func",
             "usr": "s:7KnotAPI0A14ViewControllerC7onCloseyyF",
             "mangledName": "$s7KnotAPI0A14ViewControllerC7onCloseyyF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateSessionId",
+            "printedName": "updateSessionId(sessionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7KnotAPI0A14ViewControllerC15updateSessionId07sessionG0ySS_tF",
+            "mangledName": "$s7KnotAPI0A14ViewControllerC15updateSessionId07sessionG0ySS_tF",
             "moduleName": "KnotAPI",
             "declAttributes": [
               "Custom",
@@ -5344,6 +5457,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -6818,28 +6941,42 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1663,
+      "offset": 1238,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1302,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1753,
       "length": 26,
       "value": "\"Loading SDK URL \""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1688,
+      "offset": 1778,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1812,
+      "offset": 1894,
       "length": 30,
       "value": "\" took \""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1838,
+      "offset": 1920,
       "length": 2,
       "value": "\" ms\""
     },
@@ -7437,6 +7574,27 @@
       "offset": 208,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/Events\/LoadSpeedEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 169,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/Events\/LoadSpeedEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/Events\/LoadSpeedEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/CashAppViewModel.swift",
