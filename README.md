@@ -25,7 +25,7 @@ pod init
 3. Add this line to your Podfile:
 
 ```ruby
-pod 'KnotAPI', '0.5.7'
+pod 'KnotAPI', '0.5.14'
 ```
 
 4. Run the following command:
@@ -92,6 +92,25 @@ session.openCardOnFileSwitcher()
 
 ```objectivec
 [session openOnCardFileSwitcherWithMerchants:@[]];
+```
+
+This creates the view controller and presents it in a popup.
+
+### Create Card on File Switcher view controller and embed it into your UI hierarchy
+
+This is supported since the version 0.5.14
+
+```swift
+class MyViewController : UIViewController {
+
+  func configureKnot() {
+    let controller = session.createCardSwitcherVC()
+    view.addSubview(controller.view)
+    addChild(controller)
+  }
+
+  ...
+}
 ```
 
 ### Open with specific merchants
