@@ -300,8 +300,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setConfigurationWithConfig:(CardSwitcherConfiguration * _Nonnull)config;
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
-- (void)openCardOnFileSwitcher;
-- (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nonnull)entryPoint;
+- (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nullable)maybeEntryPoint;
 - (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;

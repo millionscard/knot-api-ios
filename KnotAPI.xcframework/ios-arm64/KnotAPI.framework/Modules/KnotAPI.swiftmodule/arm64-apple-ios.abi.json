@@ -833,6 +833,28 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "createCardSwitcherVC",
+            "printedName": "createCardSwitcherVC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KnotViewController",
+                "printedName": "KnotAPI.KnotViewController",
+                "usr": "c:@M@KnotAPI@objc(cs)KnotViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7KnotAPI25CardOnFileSwitcherSessionC06createcF2VCAA0A14ViewControllerCyF",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC06createcF2VCAA0A14ViewControllerCyF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(sessionId:clientId:environment:)",
@@ -1156,28 +1178,6 @@
           {
             "kind": "Function",
             "name": "openCardOnFileSwitcher",
-            "printedName": "openCardOnFileSwitcher()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)openCardOnFileSwitcher",
-            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF0yyF",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "openCardOnFileSwitcher",
             "printedName": "openCardOnFileSwitcher(entryPoint:)",
             "children": [
               {
@@ -1187,14 +1187,23 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@KnotAPI@objc(cs)CardOnFileSwitcherSession(im)openCardOnFileSwitcherWithEntryPoint:",
-            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF010entryPointySS_tF",
+            "mangledName": "$s7KnotAPI25CardOnFileSwitcherSessionC04opencdeF010entryPointySSSg_tF",
             "moduleName": "KnotAPI",
             "objc_name": "openCardOnFileSwitcherWithEntryPoint:",
             "declAttributes": [

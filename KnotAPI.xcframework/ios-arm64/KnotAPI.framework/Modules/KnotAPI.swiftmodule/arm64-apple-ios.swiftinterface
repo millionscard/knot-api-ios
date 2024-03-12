@@ -23,6 +23,7 @@ import os
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
   @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController?
+  @_Concurrency.MainActor(unsafe) public func createCardSwitcherVC() -> KnotAPI.KnotViewController
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
@@ -33,8 +34,7 @@ import os
   @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(config: KnotAPI.CardSwitcherConfiguration)
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
-  @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher()
-  @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher(entryPoint: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher(entryPoint maybeEntryPoint: Swift.String? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
