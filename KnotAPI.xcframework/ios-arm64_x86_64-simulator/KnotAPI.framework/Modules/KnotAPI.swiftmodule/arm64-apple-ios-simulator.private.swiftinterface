@@ -21,6 +21,20 @@ import os
   @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
   @objc deinit
 }
+@objc public enum Product : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
+  case card_switcher
+  case subscription_manager
+  case transactions_link
+  public typealias RawValue = Swift.String
+  public var rawValue: KnotAPI.Product.RawValue {
+    get
+  }
+  public init?(rawValue: KnotAPI.Product.RawValue)
+  public typealias AllCases = [KnotAPI.Product]
+  public static var allCases: [KnotAPI.Product] {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
   @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController?
   @_Concurrency.MainActor(unsafe) public func createCardSwitcherVC() -> KnotAPI.KnotViewController
@@ -68,8 +82,8 @@ import os
   @objc func onExit()
   @objc func onFinished()
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerViewController : KnotAPI.KnotViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, amount: Swift.Bool, delegate: KnotAPI.SubscriptionCancelerDelegate?, environment: KnotAPI.Environment, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerViewController : KnotAPI.KnotViewController, WebKit.WKHTTPCookieStoreObserver {
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, delegate: KnotAPI.SubscriptionManagerDelegate?, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc deinit
@@ -96,14 +110,15 @@ extension UIKit.UIDevice {
   }
   @objc deinit
 }
-@objc public protocol SubscriptionCancelerDelegate : ObjectiveC.NSObjectProtocol {
+@objc public protocol SubscriptionManagerDelegate : ObjectiveC.NSObjectProtocol {
   @objc func onSuccess(merchant: Swift.String)
   @objc func onError(error: Swift.String, message: Swift.String)
   @objc func onEvent(event: Swift.String, message: Swift.String)
   @objc func onExit()
   @objc func onFinished()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionCancelerSession : KnotAPI.KnotProduct, KnotAPI.SubscriptionCancelerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerSession : KnotAPI.KnotProduct, KnotAPI.SubscriptionManagerDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController?
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
@@ -111,11 +126,12 @@ extension UIKit.UIDevice {
   @objc @_Concurrency.MainActor(unsafe) public func setButtonCorners(buttonCorners: Foundation.NSNumber)
   @objc @_Concurrency.MainActor(unsafe) public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
   @objc @_Concurrency.MainActor(unsafe) public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setAmount(amount: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(configuration: KnotAPI.SubscriptionCancelerConfiguration)
+  @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(config: KnotAPI.SubscriptionManagerConfiguration)
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
-  @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionCanceler()
+  @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionManager()
+  @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionManager(entryPoint: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
@@ -142,7 +158,7 @@ extension UIKit.UIImage {
   public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
 }
 infix operator =~ : DefaultPrecedence
-@objc @_inheritsConvenienceInitializers public class SubscriptionCancelerConfiguration : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class SubscriptionManagerConfiguration : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
   @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
@@ -151,5 +167,7 @@ infix operator =~ : DefaultPrecedence
   @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
   @objc deinit
 }
+extension KnotAPI.Product : Swift.Equatable {}
+extension KnotAPI.Product : Swift.Hashable {}
 extension KnotAPI.Environment : Swift.Equatable {}
 extension KnotAPI.Environment : Swift.Hashable {}

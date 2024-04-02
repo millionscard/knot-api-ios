@@ -565,6 +565,346 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Product",
+        "printedName": "Product",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "card_switcher",
+            "printedName": "card_switcher",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KnotAPI.Product.Type) -> KnotAPI.Product",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "KnotAPI.Product",
+                    "usr": "c:@M@KnotAPI@E@Product"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KnotAPI.Product.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "KnotAPI.Product",
+                        "usr": "c:@M@KnotAPI@E@Product"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KnotAPI@E@Product@ProductCard_switcher",
+            "mangledName": "$s7KnotAPI7ProductO13card_switcheryA2CmF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "subscription_manager",
+            "printedName": "subscription_manager",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KnotAPI.Product.Type) -> KnotAPI.Product",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "KnotAPI.Product",
+                    "usr": "c:@M@KnotAPI@E@Product"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KnotAPI.Product.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "KnotAPI.Product",
+                        "usr": "c:@M@KnotAPI@E@Product"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KnotAPI@E@Product@ProductSubscription_manager",
+            "mangledName": "$s7KnotAPI7ProductO20subscription_manageryA2CmF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "transactions_link",
+            "printedName": "transactions_link",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KnotAPI.Product.Type) -> KnotAPI.Product",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "KnotAPI.Product",
+                    "usr": "c:@M@KnotAPI@E@Product"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KnotAPI.Product.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "KnotAPI.Product",
+                        "usr": "c:@M@KnotAPI@E@Product"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@KnotAPI@E@Product@ProductTransactions_link",
+            "mangledName": "$s7KnotAPI7ProductO17transactions_linkyA2CmF",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KnotAPI7ProductO8rawValueSSvp",
+            "mangledName": "$s7KnotAPI7ProductO8rawValueSSvp",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI7ProductO8rawValueSSvg",
+                "mangledName": "$s7KnotAPI7ProductO8rawValueSSvg",
+                "moduleName": "KnotAPI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KnotAPI.Product?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "KnotAPI.Product",
+                    "usr": "c:@M@KnotAPI@E@Product"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7KnotAPI7ProductO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7KnotAPI7ProductO8rawValueACSgSS_tcfc",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[KnotAPI.Product]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "KnotAPI.Product",
+                    "usr": "c:@M@KnotAPI@E@Product"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KnotAPI7ProductO8allCasesSayACGvpZ",
+            "mangledName": "$s7KnotAPI7ProductO8allCasesSayACGvpZ",
+            "moduleName": "KnotAPI",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KnotAPI.Product]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "KnotAPI.Product",
+                        "usr": "c:@M@KnotAPI@E@Product"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI7ProductO8allCasesSayACGvgZ",
+                "mangledName": "$s7KnotAPI7ProductO8allCasesSayACGvgZ",
+                "moduleName": "KnotAPI",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@KnotAPI@E@Product",
+        "mangledName": "$s7KnotAPI7ProductO",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[KnotAPI.Product]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Product",
+                        "printedName": "KnotAPI.Product",
+                        "usr": "c:@M@KnotAPI@E@Product"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -644,6 +984,16 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1747,16 +2097,6 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2807,16 +3147,6 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2878,19 +3208,19 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SubscriptionCancelerViewController",
-        "printedName": "SubscriptionCancelerViewController",
+        "name": "SubscriptionManagerViewController",
+        "printedName": "SubscriptionManagerViewController",
         "children": [
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:)",
+            "printedName": "init(sessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:delegate:useCategories:useSelection:useSingleFlow:useSearch:logo:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerViewController",
-                "printedName": "KnotAPI.SubscriptionCancelerViewController",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController"
+                "name": "SubscriptionManagerViewController",
+                "printedName": "KnotAPI.SubscriptionManagerViewController",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerViewController"
               },
               {
                 "kind": "TypeNominal",
@@ -3018,29 +3348,23 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Environment",
+                "printedName": "KnotAPI.Environment",
+                "usr": "c:@M@KnotAPI@E@Environment"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KnotAPI.SubscriptionCancelerDelegate?",
+                "printedName": "KnotAPI.SubscriptionManagerDelegate?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "SubscriptionCancelerDelegate",
-                    "printedName": "KnotAPI.SubscriptionCancelerDelegate",
-                    "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate"
+                    "name": "SubscriptionManagerDelegate",
+                    "printedName": "KnotAPI.SubscriptionManagerDelegate",
+                    "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate"
                   }
                 ],
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "KnotAPI.Environment",
-                "usr": "c:@M@KnotAPI@E@Environment"
               },
               {
                 "kind": "TypeNominal",
@@ -3074,10 +3398,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName13buttonCorners0R8FontSize0R8Paddings6amount8delegate11environment13useCategories0Z9Selection0Z10SingleFlow0Z6Search4logoACSS_SSSaySiGSaySSGSSSgA2XSo8NSNumberCSgA_A_SbAA0cD8Delegate_pSgAA11EnvironmentOS4bSStcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerViewController(im)initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:delegate:useCategories:useSelection:useSingleFlow:useSearch:logo:",
+            "mangledName": "$s7KnotAPI33SubscriptionManagerViewControllerC9sessionId06clientH011merchantIds0J5Names12primaryColor04textN011companyName13buttonCorners0R8FontSize0R8Paddings11environment8delegate13useCategories0Y9Selection0Y10SingleFlow0Y6Search4logoACSS_SSSaySiGSaySSGSSSgA2WSo8NSNumberCSgA2zA11EnvironmentOAA0cD8Delegate_pSgS4bSStcfc",
             "moduleName": "KnotAPI",
-            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:amount:delegate:environment:useCategories:useSelection:useSingleFlow:useSearch:logo:",
+            "objc_name": "initWithSessionId:clientId:merchantIds:merchantNames:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:delegate:useCategories:useSelection:useSingleFlow:useSearch:logo:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -3103,8 +3427,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7KnotAPI34SubscriptionCancelerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
+            "usr": "s:7KnotAPI33SubscriptionManagerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
+            "mangledName": "$s7KnotAPI33SubscriptionManagerViewControllerC12handleEvents7messageySo15WKScriptMessageC_tKF",
             "moduleName": "KnotAPI",
             "overriding": true,
             "declAttributes": [
@@ -3133,8 +3457,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)viewWillDisappear:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC17viewWillDisappearyySbF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerViewController(im)viewWillDisappear:",
+            "mangledName": "$s7KnotAPI33SubscriptionManagerViewControllerC17viewWillDisappearyySbF",
             "moduleName": "KnotAPI",
             "overriding": true,
             "objc_name": "viewWillDisappear:",
@@ -3154,9 +3478,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerViewController",
-                "printedName": "KnotAPI.SubscriptionCancelerViewController",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController"
+                "name": "SubscriptionManagerViewController",
+                "printedName": "KnotAPI.SubscriptionManagerViewController",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerViewController"
               },
               {
                 "kind": "TypeNominal",
@@ -3274,8 +3598,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController(im)initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
-            "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC9sessionId06clientH012primaryColor04textK011companyName13buttonCorners0O8FontSize0O8Paddings11environment6webUrl10userScriptACSS_S2SSgA2OSo8NSNumberCSgA2rA11EnvironmentOS2Stcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerViewController(im)initWithSessionId:clientId:primaryColor:textColor:companyName:buttonCorners:buttonFontSize:buttonPaddings:environment:webUrl:userScript:",
+            "mangledName": "$s7KnotAPI33SubscriptionManagerViewControllerC9sessionId06clientH012primaryColor04textK011companyName13buttonCorners0O8FontSize0O8Paddings11environment6webUrl10userScriptACSS_S2SSgA2OSo8NSNumberCSgA2rA11EnvironmentOS2Stcfc",
             "moduleName": "KnotAPI",
             "overriding": true,
             "implicit": true,
@@ -3289,8 +3613,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerViewController",
-        "mangledName": "$s7KnotAPI34SubscriptionCancelerViewControllerC",
+        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerViewController",
+        "mangledName": "$s7KnotAPI33SubscriptionManagerViewControllerC",
         "moduleName": "KnotAPI",
         "declAttributes": [
           "Custom",
@@ -3556,23 +3880,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KnotAPI"
       },
       {
         "kind": "Import",
@@ -4102,8 +4409,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SubscriptionCancelerDelegate",
-        "printedName": "SubscriptionCancelerDelegate",
+        "name": "SubscriptionManagerDelegate",
+        "printedName": "SubscriptionManagerDelegate",
         "children": [
           {
             "kind": "Function",
@@ -4123,11 +4430,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate(im)onSuccessWithMerchant:",
-            "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP9onSuccess8merchantySS_tF",
+            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate(im)onSuccessWithMerchant:",
+            "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP9onSuccess8merchantySS_tF",
             "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionCancelerDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionCancelerDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionManagerDelegate>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -4159,11 +4466,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate(im)onErrorWithError:message:",
-            "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP7onError5error7messageySS_SStF",
+            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate(im)onErrorWithError:message:",
+            "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP7onError5error7messageySS_SStF",
             "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionCancelerDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionCancelerDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionManagerDelegate>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -4195,11 +4502,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate(im)onEventWithEvent:message:",
-            "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP7onEvent5event7messageySS_SStF",
+            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate(im)onEventWithEvent:message:",
+            "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP7onEvent5event7messageySS_SStF",
             "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionCancelerDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionCancelerDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionManagerDelegate>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -4219,11 +4526,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate(im)onExit",
-            "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP6onExityyF",
+            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate(im)onExit",
+            "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP6onExityyF",
             "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionCancelerDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionCancelerDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionManagerDelegate>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -4243,11 +4550,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate(im)onFinished",
-            "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP10onFinishedyyF",
+            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate(im)onFinished",
+            "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP10onFinishedyyF",
             "moduleName": "KnotAPI",
-            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionCancelerDelegate>",
-            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionCancelerDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : KnotAPI.SubscriptionManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : KnotAPI.SubscriptionManagerDelegate>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
@@ -4257,8 +4564,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate",
-        "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP",
+        "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate",
+        "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP",
         "moduleName": "KnotAPI",
         "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
         "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
@@ -4271,6 +4578,16 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "KnotAPI",
         "declAttributes": [
@@ -4316,10 +4633,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "KnotAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "KnotAPI"
       },
       {
         "kind": "Import",
@@ -4330,9 +4644,127 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SubscriptionCancelerSession",
-        "printedName": "SubscriptionCancelerSession",
+        "name": "SubscriptionManagerSession",
+        "printedName": "SubscriptionManagerSession",
         "children": [
+          {
+            "kind": "Var",
+            "name": "vc",
+            "printedName": "vc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KnotAPI.KnotViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KnotViewController",
+                    "printedName": "KnotAPI.KnotViewController",
+                    "usr": "c:@M@KnotAPI@objc(cs)KnotViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(py)vc",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC2vcAA0A14ViewControllerCSgvp",
+            "moduleName": "KnotAPI",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KnotAPI.KnotViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KnotViewController",
+                        "printedName": "KnotAPI.KnotViewController",
+                        "usr": "c:@M@KnotAPI@objc(cs)KnotViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)vc",
+                "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC2vcAA0A14ViewControllerCSgvg",
+                "moduleName": "KnotAPI",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KnotAPI.KnotViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KnotViewController",
+                        "printedName": "KnotAPI.KnotViewController",
+                        "usr": "c:@M@KnotAPI@objc(cs)KnotViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setVc:",
+                "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC2vcAA0A14ViewControllerCSgvs",
+                "moduleName": "KnotAPI",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI26SubscriptionManagerSessionC2vcAA0A14ViewControllerCSgvM",
+                "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC2vcAA0A14ViewControllerCSgvM",
+                "moduleName": "KnotAPI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -4340,9 +4772,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerSession",
-                "printedName": "KnotAPI.SubscriptionCancelerSession",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession"
+                "name": "SubscriptionManagerSession",
+                "printedName": "KnotAPI.SubscriptionManagerSession",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession"
               },
               {
                 "kind": "TypeNominal",
@@ -4364,8 +4796,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)initWithSessionId:clientId:environment:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC9sessionId06clientG011environmentACSS_SSAA11EnvironmentOtcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)initWithSessionId:clientId:environment:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC9sessionId06clientG011environmentACSS_SSAA11EnvironmentOtcfc",
             "moduleName": "KnotAPI",
             "overriding": true,
             "objc_name": "initWithSessionId:clientId:environment:",
@@ -4395,8 +4827,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setPrimaryColorWithPrimaryColor:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC15setPrimaryColor07primaryH0ySS_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setPrimaryColorWithPrimaryColor:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC15setPrimaryColor07primaryH0ySS_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setPrimaryColorWithPrimaryColor:",
             "declAttributes": [
@@ -4424,8 +4856,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setTextColorWithTextColor:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC12setTextColor04textH0ySS_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setTextColorWithTextColor:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC12setTextColor04textH0ySS_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setTextColorWithTextColor:",
             "declAttributes": [
@@ -4453,8 +4885,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setCompanyNameWithCompanyName:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC14setCompanyName07companyH0ySS_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setCompanyNameWithCompanyName:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC14setCompanyName07companyH0ySS_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setCompanyNameWithCompanyName:",
             "declAttributes": [
@@ -4482,8 +4914,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setButtonCornersWithButtonCorners:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC16setButtonCorners06buttonH0ySo8NSNumberC_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setButtonCornersWithButtonCorners:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC16setButtonCorners06buttonH0ySo8NSNumberC_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setButtonCornersWithButtonCorners:",
             "declAttributes": [
@@ -4511,8 +4943,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setButtonFontSizeWithButtonFontSize:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC17setButtonFontSize06buttonhI0ySo8NSNumberC_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setButtonFontSizeWithButtonFontSize:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC17setButtonFontSize06buttonhI0ySo8NSNumberC_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setButtonFontSizeWithButtonFontSize:",
             "declAttributes": [
@@ -4540,8 +4972,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setButtonPaddingsWithButtonPaddings:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC17setButtonPaddings06buttonH0ySo8NSNumberC_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setButtonPaddingsWithButtonPaddings:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC17setButtonPaddings06buttonH0ySo8NSNumberC_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setButtonPaddingsWithButtonPaddings:",
             "declAttributes": [
@@ -4553,37 +4985,8 @@
           },
           {
             "kind": "Function",
-            "name": "setAmount",
-            "printedName": "setAmount(amount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setAmountWithAmount:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC9setAmount6amountySb_tF",
-            "moduleName": "KnotAPI",
-            "objc_name": "setAmountWithAmount:",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "setConfiguration",
-            "printedName": "setConfiguration(configuration:)",
+            "printedName": "setConfiguration(config:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4592,16 +4995,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerConfiguration",
-                "printedName": "KnotAPI.SubscriptionCancelerConfiguration",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration"
+                "name": "SubscriptionManagerConfiguration",
+                "printedName": "KnotAPI.SubscriptionManagerConfiguration",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setConfigurationWithConfiguration:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC16setConfiguration13configurationyAA0cdG0C_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setConfigurationWithConfig:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC16setConfiguration6configyAA0cdG0C_tF",
             "moduleName": "KnotAPI",
-            "objc_name": "setConfigurationWithConfiguration:",
+            "objc_name": "setConfigurationWithConfig:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -4635,8 +5038,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setMerchantIdsWithMerchantIds:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC14setMerchantIds08merchantH0ySaySiG_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setMerchantIdsWithMerchantIds:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC14setMerchantIds08merchantH0ySaySiG_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setMerchantIdsWithMerchantIds:",
             "declAttributes": [
@@ -4672,8 +5075,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)setMerchantNamesWithMerchantNames:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC16setMerchantNames08merchantH0ySaySSG_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)setMerchantNamesWithMerchantNames:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC16setMerchantNames08merchantH0ySaySSG_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setMerchantNamesWithMerchantNames:",
             "declAttributes": [
@@ -4685,8 +5088,8 @@
           },
           {
             "kind": "Function",
-            "name": "openSubscriptionCanceler",
-            "printedName": "openSubscriptionCanceler()",
+            "name": "openSubscriptionManager",
+            "printedName": "openSubscriptionManager()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4695,9 +5098,67 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)openSubscriptionCanceler",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC04opencD0yyF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)openSubscriptionManager",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC04opencD0yyF",
             "moduleName": "KnotAPI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openSubscriptionManager",
+            "printedName": "openSubscriptionManager(entryPoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)openSubscriptionManagerWithEntryPoint:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC04opencD010entryPointySS_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "openSubscriptionManagerWithEntryPoint:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateSession",
+            "printedName": "updateSession(sessionId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)updateSessionWithSessionId:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC06updateE09sessionIdySS_tF",
+            "moduleName": "KnotAPI",
+            "objc_name": "updateSessionWithSessionId:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -4723,8 +5184,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)onSuccessWithMerchant:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC9onSuccess8merchantySS_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)onSuccessWithMerchant:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC9onSuccess8merchantySS_tF",
             "moduleName": "KnotAPI",
             "objc_name": "onSuccessWithMerchant:",
             "declAttributes": [
@@ -4758,8 +5219,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)onErrorWithError:message:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC7onError5error7messageySS_SStF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)onErrorWithError:message:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC7onError5error7messageySS_SStF",
             "moduleName": "KnotAPI",
             "objc_name": "onErrorWithError:message:",
             "declAttributes": [
@@ -4793,8 +5254,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)onEventWithEvent:message:",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC7onEvent5event7messageySS_SStF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)onEventWithEvent:message:",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC7onEvent5event7messageySS_SStF",
             "moduleName": "KnotAPI",
             "objc_name": "onEventWithEvent:message:",
             "declAttributes": [
@@ -4816,8 +5277,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)onExit",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC6onExityyF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)onExit",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC6onExityyF",
             "moduleName": "KnotAPI",
             "objc_name": "onExit",
             "declAttributes": [
@@ -4839,8 +5300,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession(im)onFinished",
-            "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC10onFinishedyyF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession(im)onFinished",
+            "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC10onFinishedyyF",
             "moduleName": "KnotAPI",
             "objc_name": "onFinished",
             "declAttributes": [
@@ -4852,8 +5313,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerSession",
-        "mangledName": "$s7KnotAPI27SubscriptionCancelerSessionC",
+        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerSession",
+        "mangledName": "$s7KnotAPI26SubscriptionManagerSessionC",
         "moduleName": "KnotAPI",
         "declAttributes": [
           "Custom",
@@ -4869,10 +5330,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "SubscriptionCancelerDelegate",
-            "printedName": "SubscriptionCancelerDelegate",
-            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionCancelerDelegate",
-            "mangledName": "$s7KnotAPI28SubscriptionCancelerDelegateP"
+            "name": "SubscriptionManagerDelegate",
+            "printedName": "SubscriptionManagerDelegate",
+            "usr": "c:@M@KnotAPI@objc(pl)SubscriptionManagerDelegate",
+            "mangledName": "$s7KnotAPI27SubscriptionManagerDelegateP"
           },
           {
             "kind": "Conformance",
@@ -5576,8 +6037,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SubscriptionCancelerConfiguration",
-        "printedName": "SubscriptionCancelerConfiguration",
+        "name": "SubscriptionManagerConfiguration",
+        "printedName": "SubscriptionManagerConfiguration",
         "children": [
           {
             "kind": "Constructor",
@@ -5586,14 +6047,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SubscriptionCancelerConfiguration",
-                "printedName": "KnotAPI.SubscriptionCancelerConfiguration",
-                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration"
+                "name": "SubscriptionManagerConfiguration",
+                "printedName": "KnotAPI.SubscriptionManagerConfiguration",
+                "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)init",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationCACycfc",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration(im)init",
+            "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationCACycfc",
             "moduleName": "KnotAPI",
             "overriding": true,
             "objc_name": "init",
@@ -5635,8 +6096,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnSuccessOnSuccess:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC12setOnSuccess02onH0yySSc_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration(im)setOnSuccessOnSuccess:",
+            "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationC12setOnSuccess02onH0yySSc_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setOnSuccessOnSuccess:",
             "declAttributes": [
@@ -5688,8 +6149,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnErrorOnError:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC10setOnError02onH0yySS_SStc_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration(im)setOnErrorOnError:",
+            "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationC10setOnError02onH0yySS_SStc_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setOnErrorOnError:",
             "declAttributes": [
@@ -5741,8 +6202,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnEventOnEvent:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC10setOnEvent02onH0yySS_SStc_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration(im)setOnEventOnEvent:",
+            "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationC10setOnEvent02onH0yySS_SStc_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setOnEventOnEvent:",
             "declAttributes": [
@@ -5780,8 +6241,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnExitOnExit:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC9setOnExit02onH0yyyc_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration(im)setOnExitOnExit:",
+            "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationC9setOnExit02onH0yyyc_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setOnExitOnExit:",
             "declAttributes": [
@@ -5819,8 +6280,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration(im)setOnFinishedOnFinished:",
-            "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC13setOnFinished02onH0yyyc_tF",
+            "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration(im)setOnFinishedOnFinished:",
+            "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationC13setOnFinished02onH0yyyc_tF",
             "moduleName": "KnotAPI",
             "objc_name": "setOnFinishedOnFinished:",
             "declAttributes": [
@@ -5831,8 +6292,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionCancelerConfiguration",
-        "mangledName": "$s7KnotAPI33SubscriptionCancelerConfigurationC",
+        "usr": "c:@M@KnotAPI@objc(cs)SubscriptionManagerConfiguration",
+        "mangledName": "$s7KnotAPI32SubscriptionManagerConfigurationC",
         "moduleName": "KnotAPI",
         "declAttributes": [
           "AccessControl",
@@ -6504,6 +6965,20 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 20,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
+      "kind": "IntegerLiteral",
+      "offset": 208,
+      "length": 17,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/SSO\/SSOPopupViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 320,
@@ -6541,58 +7016,65 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 503,
+      "offset": 536,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 541,
+      "offset": 574,
       "length": 12,
       "value": "\"isUrlRegex\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 594,
+      "offset": 627,
       "length": 20,
       "value": "\"onDidFinishLoading\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 648,
+      "offset": 681,
       "length": 13,
       "value": "\"redirectUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 700,
+      "offset": 733,
       "length": 18,
       "value": "\"sendLoginCookies\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 756,
+      "offset": 789,
       "length": 17,
       "value": "\"extraCookiesKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 812,
+      "offset": 845,
       "length": 18,
       "value": "\"savedCookieNames\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 861,
+      "offset": 894,
       "length": 10,
       "value": "\"complete\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/PageActionTrigger.swift",
+      "kind": "StringLiteral",
+      "offset": 934,
+      "length": 9,
+      "value": "\"failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/GoogleMassSwitcherViewModel.swift",
@@ -6600,6 +7082,13 @@
       "offset": 140,
       "length": 27,
       "value": "\"KnotAPI.GoogleMassSwitcherViewModel\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/FailurePayload.swift",
+      "kind": "BooleanLiteral",
+      "offset": 215,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/ConfigScriptTrigger.swift",
@@ -6821,21 +7310,21 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 5710,
+      "offset": 5758,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 17986,
+      "offset": 18171,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/MerchantViewModelBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 29439,
+      "offset": 29760,
       "length": 5,
       "value": "false"
     },
@@ -6878,6 +7367,13 @@
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/Events\/MerchantLogEvent.swift",
       "kind": "StringLiteral",
       "offset": 248,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Generic\/Events\/MerchantLogEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 273,
       "length": 2,
       "value": "\"\""
     },
@@ -6981,15 +7477,29 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1239,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1284,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
       "kind": "Dictionary",
-      "offset": 1254,
+      "offset": 1337,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Merchant.swift",
       "kind": "Array",
-      "offset": 1290,
+      "offset": 1373,
       "length": 2,
       "value": "[]"
     },
@@ -7232,20 +7742,6 @@
       "value": "\"KnotAPI.LyftSSOViewModel\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/GoogleAccountViewModel.swift",
-      "kind": "Array",
-      "offset": 272,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/GoogleAccountViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 111,
-      "length": 22,
-      "value": "\"KnotAPI.GoogleAccountViewModel\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/UberSSOViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 394,
@@ -7421,18 +7917,11 @@
       "value": "\"png\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/SubscriptionCancelerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 234,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/SubscriptionCancelerViewController.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/SubscriptionManagerViewController.swift",
       "kind": "StringLiteral",
-      "offset": 153,
-      "length": 34,
-      "value": "\"KnotAPI.SubscriptionCancelerViewController\""
+      "offset": 54,
+      "length": 33,
+      "value": "\"KnotAPI.SubscriptionManagerViewController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/WebFlowContainer.swift",
@@ -7545,13 +8034,6 @@
       "offset": 114,
       "length": 16,
       "value": "\"KnotAPI.BestBuyViewModel\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/YTPremiumViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 136,
-      "length": 18,
-      "value": "\"KnotAPI.YTPremiumViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/KrogerViewModel.swift",
@@ -7673,11 +8155,11 @@
       "value": "\"KnotAPI.SiriusViewModel\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/SubscriptionCancelerSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 438,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/GoogleViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 113,
+      "length": 15,
+      "value": "\"KnotAPI.GoogleViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/SafewayViewModel.swift",

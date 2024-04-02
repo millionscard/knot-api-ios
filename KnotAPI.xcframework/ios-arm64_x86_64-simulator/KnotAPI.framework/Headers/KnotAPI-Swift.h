@@ -352,9 +352,15 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+typedef SWIFT_ENUM(NSInteger, Product, open) {
+  ProductCard_switcher = 0,
+  ProductSubscription_manager = 1,
+  ProductTransactions_link = 2,
+};
 
-SWIFT_CLASS("_TtC7KnotAPI33SubscriptionCancelerConfiguration")
-@interface SubscriptionCancelerConfiguration : NSObject
+
+SWIFT_CLASS("_TtC7KnotAPI32SubscriptionManagerConfiguration")
+@interface SubscriptionManagerConfiguration : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
 - (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
@@ -364,8 +370,8 @@ SWIFT_CLASS("_TtC7KnotAPI33SubscriptionCancelerConfiguration")
 @end
 
 
-SWIFT_PROTOCOL("_TtP7KnotAPI28SubscriptionCancelerDelegate_")
-@protocol SubscriptionCancelerDelegate <NSObject>
+SWIFT_PROTOCOL("_TtP7KnotAPI27SubscriptionManagerDelegate_")
+@protocol SubscriptionManagerDelegate <NSObject>
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -374,8 +380,9 @@ SWIFT_PROTOCOL("_TtP7KnotAPI28SubscriptionCancelerDelegate_")
 @end
 
 
-SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
-@interface SubscriptionCancelerSession : KnotProduct <SubscriptionCancelerDelegate>
+SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
+@interface SubscriptionManagerSession : KnotProduct <SubscriptionManagerDelegate>
+@property (nonatomic, strong) KnotViewController * _Nullable vc;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -383,11 +390,12 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 - (void)setButtonCornersWithButtonCorners:(NSNumber * _Nonnull)buttonCorners;
 - (void)setButtonFontSizeWithButtonFontSize:(NSNumber * _Nonnull)buttonFontSize;
 - (void)setButtonPaddingsWithButtonPaddings:(NSNumber * _Nonnull)buttonPaddings;
-- (void)setAmountWithAmount:(BOOL)amount;
-- (void)setConfigurationWithConfiguration:(SubscriptionCancelerConfiguration * _Nonnull)configuration;
+- (void)setConfigurationWithConfig:(SubscriptionManagerConfiguration * _Nonnull)config;
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
-- (void)openSubscriptionCanceler;
+- (void)openSubscriptionManager;
+- (void)openSubscriptionManagerWithEntryPoint:(NSString * _Nonnull)entryPoint;
+- (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -396,9 +404,9 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 @end
 
 
-SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
-@interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC7KnotAPI33SubscriptionManagerViewController")
+@interface SubscriptionManagerViewController : KnotViewController <WKHTTPCookieStoreObserver>
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment delegate:(id <SubscriptionManagerDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
@@ -770,9 +778,15 @@ SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+typedef SWIFT_ENUM(NSInteger, Product, open) {
+  ProductCard_switcher = 0,
+  ProductSubscription_manager = 1,
+  ProductTransactions_link = 2,
+};
 
-SWIFT_CLASS("_TtC7KnotAPI33SubscriptionCancelerConfiguration")
-@interface SubscriptionCancelerConfiguration : NSObject
+
+SWIFT_CLASS("_TtC7KnotAPI32SubscriptionManagerConfiguration")
+@interface SubscriptionManagerConfiguration : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
 - (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
@@ -782,8 +796,8 @@ SWIFT_CLASS("_TtC7KnotAPI33SubscriptionCancelerConfiguration")
 @end
 
 
-SWIFT_PROTOCOL("_TtP7KnotAPI28SubscriptionCancelerDelegate_")
-@protocol SubscriptionCancelerDelegate <NSObject>
+SWIFT_PROTOCOL("_TtP7KnotAPI27SubscriptionManagerDelegate_")
+@protocol SubscriptionManagerDelegate <NSObject>
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -792,8 +806,9 @@ SWIFT_PROTOCOL("_TtP7KnotAPI28SubscriptionCancelerDelegate_")
 @end
 
 
-SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
-@interface SubscriptionCancelerSession : KnotProduct <SubscriptionCancelerDelegate>
+SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
+@interface SubscriptionManagerSession : KnotProduct <SubscriptionManagerDelegate>
+@property (nonatomic, strong) KnotViewController * _Nullable vc;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -801,11 +816,12 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 - (void)setButtonCornersWithButtonCorners:(NSNumber * _Nonnull)buttonCorners;
 - (void)setButtonFontSizeWithButtonFontSize:(NSNumber * _Nonnull)buttonFontSize;
 - (void)setButtonPaddingsWithButtonPaddings:(NSNumber * _Nonnull)buttonPaddings;
-- (void)setAmountWithAmount:(BOOL)amount;
-- (void)setConfigurationWithConfiguration:(SubscriptionCancelerConfiguration * _Nonnull)configuration;
+- (void)setConfigurationWithConfig:(SubscriptionManagerConfiguration * _Nonnull)config;
 - (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
-- (void)openSubscriptionCanceler;
+- (void)openSubscriptionManager;
+- (void)openSubscriptionManagerWithEntryPoint:(NSString * _Nonnull)entryPoint;
+- (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
 - (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
 - (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
 - (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
@@ -814,9 +830,9 @@ SWIFT_CLASS("_TtC7KnotAPI27SubscriptionCancelerSession")
 @end
 
 
-SWIFT_CLASS("_TtC7KnotAPI34SubscriptionCancelerViewController")
-@interface SubscriptionCancelerViewController : KnotViewController
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings amount:(BOOL)amount delegate:(id <SubscriptionCancelerDelegate> _Nullable)delegate environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC7KnotAPI33SubscriptionManagerViewController")
+@interface SubscriptionManagerViewController : KnotViewController <WKHTTPCookieStoreObserver>
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment delegate:(id <SubscriptionManagerDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end

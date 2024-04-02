@@ -4,21 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		EgxQ5YSHNfdmb7/Ykm05t0rbhjY=
+		</data>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
-		aPOq2wVy49sHV1Ia0/lRKY5uJRc=
+		bniAjVh7do5YH4s9MLouBT4W5rY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8+kokjkOi99PSEhoavF4SvoxTxM=
+		1ExHn0I3doKLpTCkk5I9V0ux1HQ=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		mgLEti69XWdl/GEAuzQidi3DaGs=
+		B0YiwoveyXTgAQCLBldRTxWrie8=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		tOCtQN0zZ+caxCIjhs4MCIyE8vY=
+		MR1/bKsBP00in5rL7PgF/ImC82A=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,15 +30,19 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		tOCtQN0zZ+caxCIjhs4MCIyE8vY=
+		MR1/bKsBP00in5rL7PgF/ImC82A=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		XSNMMsl2GjnD/nG9uErKN7Zlcbc=
+		m1rW29NnnGNhJvktoxylsp3/rYI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		0OoBob83zUU37xEhVltmFQL2/vY=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		oPkIC+zLCddIi94JnGDxVn8BAgM=
 		</data>
 		<key>animation_640_lchm0dij.gif</key>
 		<data>
@@ -59,25 +67,32 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CTalbGaol1krj4g17YDgH6kEtFQbl5OEesMPlzFc6yk=
+			</data>
+		</dict>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6OmWWgW8Hjb9DJgo+eq8+jXspMM7u8el2KHgxCVig88=
+			48Hzer3RwFUEPMSTV2ONwJsht5++U5NIXZ8orQFlOe4=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQctmd2ehiGEPH7oiYCp6Mrhk9pqp0MH4DTCDXj+mbQ=
+			HW+w4JOea5IRAQmrPHAZwxZ43kjeONpurH36cvmiYxg=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tvfs88ffUChtS43CHh+MzcUWRssQTypglraJSuuxCpo=
+			4buoPzk9VkGTCWWVrK4MJTwh8tfWbgaRC3A7tUJdW24=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -91,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tvfs88ffUChtS43CHh+MzcUWRssQTypglraJSuuxCpo=
+			4buoPzk9VkGTCWWVrK4MJTwh8tfWbgaRC3A7tUJdW24=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			viyuDtH6oLHUI8IeNBh7DZ3Wk38rEusCbJvgeM6YQ+s=
+			ulyxfeLERnat7OpxHpsNdmc0CuJxUO3iAx23Ek49Dc8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -106,6 +121,13 @@
 			<key>hash2</key>
 			<data>
 			bsCBw/wUsSgw3fnalm7AH29wZXtRD2Nzlxo4EJNit/A=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A17WYkNho4BZ/jhutNsBjClqCc0nXSP1u3fGajQNUmc=
 			</data>
 		</dict>
 		<key>animation_640_lchm0dij.gif</key>
