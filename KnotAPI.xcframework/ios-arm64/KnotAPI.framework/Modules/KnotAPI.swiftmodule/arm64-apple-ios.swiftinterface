@@ -1,16 +1,20 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KnotAPI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Combine
+import DeveloperToolsSupport
 import Foundation
 import ImageIO
+import Network
 import SafariServices
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os
 @objc @_inheritsConvenienceInitializers public class CardSwitcherConfiguration : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -57,15 +61,15 @@ import os
   @_Concurrency.MainActor(unsafe) @objc public func onFinished()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate, UIKit.UIWebViewDelegate {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotViewController : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, webUrl: Swift.String, userScript: Swift.String)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor(unsafe) public func handleEvents(message: WebKit.WKScriptMessage) throws
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
   @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
@@ -83,7 +87,7 @@ import os
   @objc func onFinished()
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerViewController : KnotAPI.KnotViewController, WebKit.WKHTTPCookieStoreObserver {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, delegate: KnotAPI.SubscriptionManagerDelegate?, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, delegate: (any KnotAPI.SubscriptionManagerDelegate)?, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc deinit
