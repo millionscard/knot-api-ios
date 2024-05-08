@@ -302,16 +302,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSString;
-
-SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
-@protocol CardOnFileDelegate <NSObject>
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
-@end
-
 @class UIViewController;
 @class UIPresentationController;
 
@@ -335,8 +325,9 @@ enum Environment : NSInteger;
 @class CardSwitcherConfiguration;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
-@interface CardOnFileSwitcherSession : KnotProduct <CardOnFileDelegate>
-@property (nonatomic, strong) KnotViewController * _Nullable vc;
+@interface CardOnFileSwitcherSession : KnotProduct
+@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
+- (KnotViewController * _Nonnull)createCardSwitcherVC SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -349,11 +340,6 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nullable)maybeEntryPoint;
 - (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
 @end
 
 
@@ -362,7 +348,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardSwitcherConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
 - (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
-- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onEvent;
+- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable))onEvent;
 - (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
 - (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
 @end
@@ -409,25 +395,16 @@ SWIFT_CLASS("_TtC7KnotAPI32SubscriptionManagerConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
 - (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
-- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onEvent;
+- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable))onEvent;
 - (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
 - (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
 @end
 
 
-SWIFT_PROTOCOL("_TtP7KnotAPI27SubscriptionManagerDelegate_")
-@protocol SubscriptionManagerDelegate <NSObject>
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
-@end
-
-
 SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
-@interface SubscriptionManagerSession : KnotProduct <SubscriptionManagerDelegate>
-@property (nonatomic, strong) KnotViewController * _Nullable vc;
+@interface SubscriptionManagerSession : KnotProduct
+@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
+- (KnotViewController * _Nonnull)createSubscriptionManagerVC SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -441,17 +418,12 @@ SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
 - (void)openSubscriptionManager;
 - (void)openSubscriptionManagerWithEntryPoint:(NSString * _Nonnull)entryPoint;
 - (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
 @end
 
 
 SWIFT_CLASS("_TtC7KnotAPI33SubscriptionManagerViewController")
 @interface SubscriptionManagerViewController : KnotViewController <WKHTTPCookieStoreObserver>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment delegate:(id <SubscriptionManagerDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end
@@ -775,16 +747,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSString;
-
-SWIFT_PROTOCOL("_TtP7KnotAPI18CardOnFileDelegate_")
-@protocol CardOnFileDelegate <NSObject>
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
-@end
-
 @class UIViewController;
 @class UIPresentationController;
 
@@ -808,8 +770,9 @@ enum Environment : NSInteger;
 @class CardSwitcherConfiguration;
 
 SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
-@interface CardOnFileSwitcherSession : KnotProduct <CardOnFileDelegate>
-@property (nonatomic, strong) KnotViewController * _Nullable vc;
+@interface CardOnFileSwitcherSession : KnotProduct
+@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
+- (KnotViewController * _Nonnull)createCardSwitcherVC SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -822,11 +785,6 @@ SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
 - (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
 - (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nullable)maybeEntryPoint;
 - (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
 @end
 
 
@@ -835,7 +793,7 @@ SWIFT_CLASS("_TtC7KnotAPI25CardSwitcherConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
 - (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
-- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onEvent;
+- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable))onEvent;
 - (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
 - (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
 @end
@@ -882,25 +840,16 @@ SWIFT_CLASS("_TtC7KnotAPI32SubscriptionManagerConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
 - (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
-- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onEvent;
+- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable))onEvent;
 - (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
 - (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
 @end
 
 
-SWIFT_PROTOCOL("_TtP7KnotAPI27SubscriptionManagerDelegate_")
-@protocol SubscriptionManagerDelegate <NSObject>
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
-@end
-
-
 SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
-@interface SubscriptionManagerSession : KnotProduct <SubscriptionManagerDelegate>
-@property (nonatomic, strong) KnotViewController * _Nullable vc;
+@interface SubscriptionManagerSession : KnotProduct
+@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
+- (KnotViewController * _Nonnull)createSubscriptionManagerVC SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
 - (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
@@ -914,17 +863,12 @@ SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
 - (void)openSubscriptionManager;
 - (void)openSubscriptionManagerWithEntryPoint:(NSString * _Nonnull)entryPoint;
 - (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
-- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
-- (void)onErrorWithError:(NSString * _Nonnull)error message:(NSString * _Nonnull)message;
-- (void)onEventWithEvent:(NSString * _Nonnull)event message:(NSString * _Nonnull)message;
-- (void)onExit;
-- (void)onFinished;
 @end
 
 
 SWIFT_CLASS("_TtC7KnotAPI33SubscriptionManagerViewController")
 @interface SubscriptionManagerViewController : KnotViewController <WKHTTPCookieStoreObserver>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment delegate:(id <SubscriptionManagerDelegate> _Nullable)delegate useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
 - (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
 @end

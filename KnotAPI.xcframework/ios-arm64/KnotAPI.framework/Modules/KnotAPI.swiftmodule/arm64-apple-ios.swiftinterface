@@ -20,7 +20,7 @@ import os
   @objc override dynamic public init()
   @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
   @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
-  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)
   @objc public func setOnExit(onExit: @escaping () -> Swift.Void)
   @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
   @objc deinit
@@ -39,9 +39,11 @@ import os
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct, KnotAPI.CardOnFileDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController?
-  @_Concurrency.MainActor(unsafe) public func createCardSwitcherVC() -> KnotAPI.KnotViewController
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct {
+  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public func createCardSwitcherVC() -> KnotAPI.KnotViewController
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
@@ -54,11 +56,6 @@ import os
   @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
   @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher(entryPoint maybeEntryPoint: Swift.String? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onExit()
-  @_Concurrency.MainActor(unsafe) @objc public func onFinished()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotViewController : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
@@ -79,15 +76,8 @@ import os
   @_Concurrency.MainActor(unsafe) public func updateSessionId(sessionId: Swift.String)
   @objc deinit
 }
-@objc public protocol CardOnFileDelegate : ObjectiveC.NSObjectProtocol {
-  @objc func onSuccess(merchant: Swift.String)
-  @objc func onError(error: Swift.String, message: Swift.String)
-  @objc func onEvent(event: Swift.String, message: Swift.String)
-  @objc func onExit()
-  @objc func onFinished()
-}
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerViewController : KnotAPI.KnotViewController, WebKit.WKHTTPCookieStoreObserver {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, delegate: (any KnotAPI.SubscriptionManagerDelegate)?, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
   @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc deinit
@@ -114,15 +104,11 @@ extension UIKit.UIDevice {
   }
   @objc deinit
 }
-@objc public protocol SubscriptionManagerDelegate : ObjectiveC.NSObjectProtocol {
-  @objc func onSuccess(merchant: Swift.String)
-  @objc func onError(error: Swift.String, message: Swift.String)
-  @objc func onEvent(event: Swift.String, message: Swift.String)
-  @objc func onExit()
-  @objc func onFinished()
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerSession : KnotAPI.KnotProduct, KnotAPI.SubscriptionManagerDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController?
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerSession : KnotAPI.KnotProduct {
+  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public func createSubscriptionManagerVC() -> KnotAPI.KnotViewController
   @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
   @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
@@ -136,11 +122,6 @@ extension UIKit.UIDevice {
   @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionManager()
   @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionManager(entryPoint: Swift.String)
   @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onSuccess(merchant: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onError(error: Swift.String, message: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onEvent(event: Swift.String, message: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc public func onExit()
-  @_Concurrency.MainActor(unsafe) @objc public func onFinished()
   @objc deinit
 }
 @objc public enum Environment : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
@@ -166,7 +147,7 @@ infix operator =~ : DefaultPrecedence
   @objc override dynamic public init()
   @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
   @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
-  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
+  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)
   @objc public func setOnExit(onExit: @escaping () -> Swift.Void)
   @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
   @objc deinit

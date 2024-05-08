@@ -10,19 +10,19 @@
 		</data>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
-		rm2izdPzBbFgG+nD2pHhIv/Xvn0=
+		9CD/DCPey0mDpSiwxZUkHzIMS8c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TlCdLivtk3K7qE+vWZBlO29cqwg=
+		N8ZUdNIU7LbEPrP6/uxBWp+A1ik=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		693xyZCQ8vttGwl5CjlVhvLS7w4=
+		AyGo+RNpio27sZqlOzO8j2KstTk=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+lB+Th6LS/VG4GEKzvPdsnhnAHQ=
+		fj7dmDQAHEBQy/RdPrYsOaW4dXs=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+lB+Th6LS/VG4GEKzvPdsnhnAHQ=
+		fj7dmDQAHEBQy/RdPrYsOaW4dXs=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RSRVAky9A6o6Bwo9OqGeDDWEIt8=
+		dfsC165PhAcXZTQwHU31AM5aSgo=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		693xyZCQ8vttGwl5CjlVhvLS7w4=
+		AyGo+RNpio27sZqlOzO8j2KstTk=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TP04gxGrZdwpSHi2+/VhqDeuSwM=
+		S8ZOVOKvYFu1BNneDn5UwA4jYhY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TP04gxGrZdwpSHi2+/VhqDeuSwM=
+		S8ZOVOKvYFu1BNneDn5UwA4jYhY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M6aHX61IqGAijSNJttq1roeekTE=
+		9Xdw47ODPnaKVDm95H56pDdjIP4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,21 +98,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4FCIQsrp5bKYiABPw5YpoNrujiocbhjFsYJl4S4903I=
+			m2P92IUMm/P5bZkBBXz/FKTmVSc8gTYUiawvudrkQSA=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WsrXrdw4yiahVpZ9bJ+UI8Rb6wct1EGLiM1jKGQ6CmA=
+			RtXqP+VkijBN0FJS/7DCPIE3Mr7x9R37J6vLD+mgxVs=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1eQhOHU5KxUr3yrYqYg9ZqOGkmZjl0hTjBSbcBBINMQ=
+			3ux043lk71j5Gz0NmjWTmAoF4HsVuHhfxuhTvGtnllQ=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -126,28 +126,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1eQhOHU5KxUr3yrYqYg9ZqOGkmZjl0hTjBSbcBBINMQ=
+			3ux043lk71j5Gz0NmjWTmAoF4HsVuHhfxuhTvGtnllQ=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8/zMEDplCA/uIUfzHETdjrx/rPW7fEjZ+/4VIfJSYJw=
+			s5YswC/Dm4AUJm6fdSnT98UyTYev+RE7LKZxqOYMgck=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WsrXrdw4yiahVpZ9bJ+UI8Rb6wct1EGLiM1jKGQ6CmA=
+			RtXqP+VkijBN0FJS/7DCPIE3Mr7x9R37J6vLD+mgxVs=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QJHVa0J2EZ1pYvYoU5Gvt2WjM4deV0AKi/LLup6JGA=
+			+B8df1rvN882jro8FXYyoH363PenDmLn9Ssx6PqDKNI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -161,14 +161,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QJHVa0J2EZ1pYvYoU5Gvt2WjM4deV0AKi/LLup6JGA=
+			+B8df1rvN882jro8FXYyoH363PenDmLn9Ssx6PqDKNI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xp/mYzePwqtf4dqfUc29mbybjpZXTIvZ73LFXy/b5g4=
+			vqaBTMOgqEidmOI8bQI1gCZ0FUxfjdyCyDvEYbK+xHU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
