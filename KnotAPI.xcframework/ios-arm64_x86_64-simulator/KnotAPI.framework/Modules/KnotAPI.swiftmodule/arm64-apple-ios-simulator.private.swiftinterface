@@ -5,7 +5,6 @@
 import Combine
 import DeveloperToolsSupport
 import Foundation
-import ImageIO
 import Network
 import SafariServices
 import Swift
@@ -15,14 +14,33 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import os
-@objc @_inheritsConvenienceInitializers public class CardSwitcherConfiguration : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
-  @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
-  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)
-  @objc public func setOnExit(onExit: @escaping () -> Swift.Void)
-  @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
+@_hasMissingDesignatedInitializers @objc public class KnotSession : ObjectiveC.NSObject {
+  @objc public var sessionId: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var clientId: Swift.String
+  @objc public var environment: KnotAPI.Environment
+  @objc public var useCategories: Swift.Bool
+  @objc public var useSelection: Swift.Bool
+  @objc public var useSingleFlow: Swift.Bool
+  @objc public var useSearch: Swift.Bool
+  @objc public var openWithFullScreen: Swift.Bool
+  @objc public var logo: Swift.String
+  @objc public var primaryColor: Swift.String?
+  @objc public var textColor: Swift.String?
+  @objc public var companyName: Swift.String?
+  @objc public var buttonCorners: Foundation.NSNumber?
+  @objc public var buttonFontSize: Foundation.NSNumber?
+  @objc public var buttonPaddings: Foundation.NSNumber?
+  @objc public var merchantIds: [Swift.Int]?
+  @objc public var merchantNames: [Swift.String]?
+  @objc public var onSuccess: ((_ merchant: Swift.String) -> Swift.Void)?
+  @objc public var onError: ((_ error: Swift.String, _ message: Swift.String) -> Swift.Void)?
+  @objc public var onEvent: ((_ event: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)?
+  @objc public var onExit: (() -> Swift.Void)?
+  @objc public var onFinished: (() -> Swift.Void)?
+  @objc public var entryPoint: Swift.String?
   @objc deinit
 }
 @objc public enum Product : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
@@ -39,49 +57,6 @@ import os
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardOnFileSwitcherSession : KnotAPI.KnotProduct {
-  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController? {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor(unsafe) public func createCardSwitcherVC() -> KnotAPI.KnotViewController
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
-  @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setCompanyName(companyName: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setButtonCorners(buttonCorners: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(config: KnotAPI.CardSwitcherConfiguration)
-  @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
-  @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
-  @objc @_Concurrency.MainActor(unsafe) public func openCardOnFileSwitcher(entryPoint maybeEntryPoint: Swift.String? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotViewController : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-    @objc set
-  }
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, webUrl: Swift.String, userScript: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) public func handleEvents(message: WebKit.WKScriptMessage) throws
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) public func onClose()
-  @_Concurrency.MainActor(unsafe) public func updateSessionId(sessionId: Swift.String)
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerViewController : KnotAPI.KnotViewController, WebKit.WKHTTPCookieStoreObserver {
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, merchantIds: [Swift.Int], merchantNames: [Swift.String], primaryColor: Swift.String?, textColor: Swift.String?, companyName: Swift.String?, buttonCorners: Foundation.NSNumber?, buttonFontSize: Foundation.NSNumber?, buttonPaddings: Foundation.NSNumber?, environment: KnotAPI.Environment, useCategories: Swift.Bool, useSelection: Swift.Bool, useSingleFlow: Swift.Bool, useSearch: Swift.Bool, logo: Swift.String)
-  @_Concurrency.MainActor(unsafe) override public func handleEvents(message: WebKit.WKScriptMessage) throws
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @objc deinit
-}
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
@@ -89,40 +64,6 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public var modelIdentifier: Swift.String {
     get
   }
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class KnotProduct : ObjectiveC.NSObject, UIKit.UIViewControllerTransitioningDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public func setUseCategories(useCategories: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func setUseSelection(useSelection: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func setUseSingleFlow(useSingleFlow: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func setUseSearch(useSearch: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func setLogo(logo: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setOpenWithFullScreen(openWithFullScreen: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func presentViewController(_ vc: UIKit.UIViewController, openWithFullScreen: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc public func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
-  @_Concurrency.MainActor(unsafe) public static var version: Swift.String? {
-    get
-  }
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SubscriptionManagerSession : KnotAPI.KnotProduct {
-  @objc @_Concurrency.MainActor(unsafe) public var vc: KnotAPI.KnotViewController? {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor(unsafe) public func createSubscriptionManagerVC() -> KnotAPI.KnotViewController
-  @objc @_Concurrency.MainActor(unsafe) public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment)
-  @objc @_Concurrency.MainActor(unsafe) public func setPrimaryColor(primaryColor: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setTextColor(textColor: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setCompanyName(companyName: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func setButtonCorners(buttonCorners: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setButtonFontSize(buttonFontSize: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setButtonPaddings(buttonPaddings: Foundation.NSNumber)
-  @objc @_Concurrency.MainActor(unsafe) public func setConfiguration(config: KnotAPI.SubscriptionManagerConfiguration)
-  @objc @_Concurrency.MainActor(unsafe) public func setMerchantIds(merchantIds: [Swift.Int])
-  @objc @_Concurrency.MainActor(unsafe) public func setMerchantNames(merchantNames: [Swift.String])
-  @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionManager()
-  @objc @_Concurrency.MainActor(unsafe) public func openSubscriptionManager(entryPoint: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public func updateSession(sessionId: Swift.String)
-  @objc deinit
 }
 @objc public enum Environment : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
   case sandbox
@@ -143,13 +84,12 @@ extension UIKit.UIImage {
   public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
 }
 infix operator =~ : DefaultPrecedence
-@objc @_inheritsConvenienceInitializers public class SubscriptionManagerConfiguration : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc public func setOnSuccess(onSuccess: @escaping (_ merchant: Swift.String) -> Swift.Void)
-  @objc public func setOnError(onError: @escaping (_ error: Swift.String, _ message: Swift.String) -> Swift.Void)
-  @objc public func setOnEvent(onEvent: @escaping (_ error: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)
-  @objc public func setOnExit(onExit: @escaping () -> Swift.Void)
-  @objc public func setOnFinished(onFinished: @escaping () -> Swift.Void)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Knot : ObjectiveC.NSObject {
+  @objc public class func createCardSwitcherSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
+  @objc public class func createSubscriptionManagerSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
+  @objc public class func createViewController(session: KnotAPI.KnotSession) -> UIKit.UIViewController
+  @objc public class func open(session: KnotAPI.KnotSession)
+  @objc public class func SDKVersion() -> Swift.String?
   @objc deinit
 }
 extension KnotAPI.Product : Swift.Equatable {}

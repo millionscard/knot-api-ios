@@ -279,8 +279,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
-@import UIKit;
-@import WebKit;
 #endif
 
 #endif
@@ -301,86 +299,56 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class NSString;
-@class UIViewController;
-@class UIPresentationController;
-
-SWIFT_CLASS("_TtC7KnotAPI11KnotProduct")
-@interface KnotProduct : NSObject <UIViewControllerTransitioningDelegate>
-- (void)setUseCategoriesWithUseCategories:(BOOL)useCategories;
-- (void)setUseSelectionWithUseSelection:(BOOL)useSelection;
-- (void)setUseSingleFlowWithUseSingleFlow:(BOOL)useSingleFlow;
-- (void)setUseSearchWithUseSearch:(BOOL)useSearch;
-- (void)setLogoWithLogo:(NSString * _Nonnull)logo;
-- (void)setOpenWithFullScreenWithOpenWithFullScreen:(BOOL)openWithFullScreen;
-- (void)presentViewController:(UIViewController * _Nonnull)vc openWithFullScreen:(BOOL)openWithFullScreen;
-- (UIPresentationController * _Nullable)presentationControllerForPresentedViewController:(UIViewController * _Nonnull)presented presentingViewController:(UIViewController * _Nullable)presenting sourceViewController:(UIViewController * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class KnotViewController;
-enum Environment : NSInteger;
-@class NSNumber;
-@class CardSwitcherConfiguration;
-
-SWIFT_CLASS("_TtC7KnotAPI25CardOnFileSwitcherSession")
-@interface CardOnFileSwitcherSession : KnotProduct
-@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
-- (KnotViewController * _Nonnull)createCardSwitcherVC SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
-- (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
-- (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
-- (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
-- (void)setButtonCornersWithButtonCorners:(NSNumber * _Nonnull)buttonCorners;
-- (void)setButtonFontSizeWithButtonFontSize:(NSNumber * _Nonnull)buttonFontSize;
-- (void)setButtonPaddingsWithButtonPaddings:(NSNumber * _Nonnull)buttonPaddings;
-- (void)setConfigurationWithConfig:(CardSwitcherConfiguration * _Nonnull)config;
-- (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
-- (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
-- (void)openCardOnFileSwitcherWithEntryPoint:(NSString * _Nullable)maybeEntryPoint;
-- (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
-@end
-
-
-SWIFT_CLASS("_TtC7KnotAPI25CardSwitcherConfiguration")
-@interface CardSwitcherConfiguration : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
-- (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
-- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable))onEvent;
-- (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
-- (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
-@end
-
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
   EnvironmentProduction = 1,
   EnvironmentDevelopment = 2,
 };
 
+@class NSString;
+@class KnotSession;
+@class UIViewController;
 
-@class NSCoder;
-@class WKWebView;
-@class WKWebViewConfiguration;
-@class WKNavigationAction;
-@class WKWindowFeatures;
-@class WKNavigation;
-@class NSBundle;
+SWIFT_CLASS("_TtC7KnotAPI4Knot")
+@interface Knot : NSObject
++ (KnotSession * _Nonnull)createCardSwitcherSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
++ (KnotSession * _Nonnull)createSubscriptionManagerSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nonnull)createViewControllerWithSession:(KnotSession * _Nonnull)session SWIFT_WARN_UNUSED_RESULT;
++ (void)openWithSession:(KnotSession * _Nonnull)session;
++ (NSString * _Nullable)SDKVersion SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
-SWIFT_CLASS("_TtC7KnotAPI18KnotViewController")
-@interface KnotViewController : UIViewController <WKNavigationDelegate, WKUIDelegate>
-@property (nonatomic) UIInterfaceOrientationMask supportedInterfaceOrientations;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)loadView;
-- (void)viewDidLoad;
-- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
-- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@class NSNumber;
+
+SWIFT_CLASS("_TtC7KnotAPI11KnotSession")
+@interface KnotSession : NSObject
+@property (nonatomic, copy) NSString * _Nonnull sessionId;
+@property (nonatomic, copy) NSString * _Nonnull clientId;
+@property (nonatomic) enum Environment environment;
+@property (nonatomic) BOOL useCategories;
+@property (nonatomic) BOOL useSelection;
+@property (nonatomic) BOOL useSingleFlow;
+@property (nonatomic) BOOL useSearch;
+@property (nonatomic) BOOL openWithFullScreen;
+@property (nonatomic, copy) NSString * _Nonnull logo;
+@property (nonatomic, copy) NSString * _Nullable primaryColor;
+@property (nonatomic, copy) NSString * _Nullable textColor;
+@property (nonatomic, copy) NSString * _Nullable companyName;
+@property (nonatomic, strong) NSNumber * _Nullable buttonCorners;
+@property (nonatomic, strong) NSNumber * _Nullable buttonFontSize;
+@property (nonatomic, strong) NSNumber * _Nullable buttonPaddings;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable merchantIds;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable merchantNames;
+@property (nonatomic, copy) void (^ _Nullable onSuccess)(NSString * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onError)(NSString * _Nonnull, NSString * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable onEvent)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable);
+@property (nonatomic, copy) void (^ _Nullable onExit)(void);
+@property (nonatomic, copy) void (^ _Nullable onFinished)(void);
+@property (nonatomic, copy) NSString * _Nullable entryPoint;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, Product, open) {
@@ -388,45 +356,6 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
   ProductSubscription_manager = 1,
   ProductTransactions_link = 2,
 };
-
-
-SWIFT_CLASS("_TtC7KnotAPI32SubscriptionManagerConfiguration")
-@interface SubscriptionManagerConfiguration : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setOnSuccessOnSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess;
-- (void)setOnErrorOnError:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull))onError;
-- (void)setOnEventOnEvent:(void (^ _Nonnull)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable))onEvent;
-- (void)setOnExitOnExit:(void (^ _Nonnull)(void))onExit;
-- (void)setOnFinishedOnFinished:(void (^ _Nonnull)(void))onFinished;
-@end
-
-
-SWIFT_CLASS("_TtC7KnotAPI26SubscriptionManagerSession")
-@interface SubscriptionManagerSession : KnotProduct
-@property (nonatomic, readonly, strong) KnotViewController * _Nullable vc;
-- (KnotViewController * _Nonnull)createSubscriptionManagerVC SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
-- (void)setPrimaryColorWithPrimaryColor:(NSString * _Nonnull)primaryColor;
-- (void)setTextColorWithTextColor:(NSString * _Nonnull)textColor;
-- (void)setCompanyNameWithCompanyName:(NSString * _Nonnull)companyName;
-- (void)setButtonCornersWithButtonCorners:(NSNumber * _Nonnull)buttonCorners;
-- (void)setButtonFontSizeWithButtonFontSize:(NSNumber * _Nonnull)buttonFontSize;
-- (void)setButtonPaddingsWithButtonPaddings:(NSNumber * _Nonnull)buttonPaddings;
-- (void)setConfigurationWithConfig:(SubscriptionManagerConfiguration * _Nonnull)config;
-- (void)setMerchantIdsWithMerchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds;
-- (void)setMerchantNamesWithMerchantNames:(NSArray<NSString *> * _Nonnull)merchantNames;
-- (void)openSubscriptionManager;
-- (void)openSubscriptionManagerWithEntryPoint:(NSString * _Nonnull)entryPoint;
-- (void)updateSessionWithSessionId:(NSString * _Nonnull)sessionId;
-@end
-
-
-SWIFT_CLASS("_TtC7KnotAPI33SubscriptionManagerViewController")
-@interface SubscriptionManagerViewController : KnotViewController <WKHTTPCookieStoreObserver>
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId merchantIds:(NSArray<NSNumber *> * _Nonnull)merchantIds merchantNames:(NSArray<NSString *> * _Nonnull)merchantNames primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment useCategories:(BOOL)useCategories useSelection:(BOOL)useSelection useSingleFlow:(BOOL)useSingleFlow useSearch:(BOOL)useSearch logo:(NSString * _Nonnull)logo OBJC_DESIGNATED_INITIALIZER;
-- (void)viewWillDisappear:(BOOL)animated;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId primaryColor:(NSString * _Nullable)primaryColor textColor:(NSString * _Nullable)textColor companyName:(NSString * _Nullable)companyName buttonCorners:(NSNumber * _Nullable)buttonCorners buttonFontSize:(NSNumber * _Nullable)buttonFontSize buttonPaddings:(NSNumber * _Nullable)buttonPaddings environment:(enum Environment)environment webUrl:(NSString * _Nonnull)webUrl userScript:(NSString * _Nonnull)userScript SWIFT_UNAVAILABLE;
-@end
 
 
 
