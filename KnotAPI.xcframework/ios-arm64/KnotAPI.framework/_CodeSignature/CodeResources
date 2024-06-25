@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9p2oUjCe3jHR+I4Q9SGj1bBINmM=
+		sloCNMQcwYP2hge6+YyZIMsEbDY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		baPlyAvyfEMkSoUaGUEsYxL3zgU=
+		8lG0QiUVFcqzZWUnXjQxmLa6NDw=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fvxcE+mwZ7iyl+HaCjjjC3Vfge8=
+		ikZlhpUTxc+P1QsahREntcmzV0A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yXtiLjg4cGn8+5iBjzWlJ0pBn4CTliQLOOkXg6L/DiQ=
+			IGmd6ZmN8gCpyFCEjRmMlXMjBx4tmkZguQc6G9fv9HY=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fxw1NdOUOjD8sRJ27QVsxn/d32q2WeqkUChaG+cfRms=
+			UBk5zYw2DaokRAtk0WwKSPRGTffi1n4K6RzVzAFoHSY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
