@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KnotAPI
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KnotAPI
 import Combine
 import DeveloperToolsSupport
 import Foundation
@@ -15,31 +14,16 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @objc public class KnotSession : ObjectiveC.NSObject {
-  @objc public var sessionId: Swift.String {
-    @objc get
-    @objc set
-  }
+  @objc public var sessionId: Swift.String
   @objc public var clientId: Swift.String
   @objc public var environment: KnotAPI.Environment
   @objc public var useCategories: Swift.Bool
-  @objc public var useSelection: Swift.Bool
-  @objc public var useSingleFlow: Swift.Bool
   @objc public var useSearch: Swift.Bool
-  @objc public var openWithFullScreen: Swift.Bool
-  @objc public var logo: Swift.String
-  @objc public var primaryColor: Swift.String?
-  @objc public var textColor: Swift.String?
-  @objc public var companyName: Swift.String?
-  @objc public var buttonCorners: Foundation.NSNumber?
-  @objc public var buttonFontSize: Foundation.NSNumber?
-  @objc public var buttonPaddings: Foundation.NSNumber?
   @objc public var merchantIds: [Swift.Int]?
-  @objc public var merchantNames: [Swift.String]?
   @objc public var onSuccess: ((_ merchant: Swift.String) -> Swift.Void)?
   @objc public var onError: ((_ error: Swift.String, _ message: Swift.String) -> Swift.Void)?
   @objc public var onEvent: ((_ event: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)?
   @objc public var onExit: (() -> Swift.Void)?
-  @objc public var onFinished: (() -> Swift.Void)?
   @objc public var entryPoint: Swift.String?
   @objc deinit
 }
@@ -89,6 +73,7 @@ infix operator =~ : DefaultPrecedence
   @objc public class func createSubscriptionManagerSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
   @objc public class func createViewController(session: KnotAPI.KnotSession) -> UIKit.UIViewController
   @objc public class func open(session: KnotAPI.KnotSession)
+  @objc public class func close()
   @objc public class func SDKVersion() -> Swift.String?
   @objc deinit
 }
