@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bKNs23xHtI8QO+VLXIdJNV9DvaM=
+		JWYhLICR0GXrAKMshgfvZNf+q54=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9eHsmu5FLc5BGjSCsJowX/PU+Wo=
+		JwKX/yqJcBwpmrITeKVlZgmCvZM=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/jdV1GklWc1vdRZjGWQoU999gWA=
+		us6Ile0NSJqwWwvhWQoOLqfoWSk=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9eHsmu5FLc5BGjSCsJowX/PU+Wo=
+		JwKX/yqJcBwpmrITeKVlZgmCvZM=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5ZUWWVhWdgNtT3LZGN08RYIzTNU=
+		HcoJHC8A6LKDqZXF83GZaBH8iJ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dSc0Zw3r5RAUYe7bMrfDFSmoVeNWSf5E9MQcq5jO3Fg=
+			oqUUsJBP0D/iLziwh99j5qsPB0NqsRZ18K5+SGa2G3k=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DSARmlufJ8MNxDV+L/yAlPSX+Et/tm2ZvstrYkXi9L0=
+			BIYogdAEHGKwsoun8yB5FvLLD/pmuqrglBBoCVdZPeQ=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dSc0Zw3r5RAUYe7bMrfDFSmoVeNWSf5E9MQcq5jO3Fg=
+			oqUUsJBP0D/iLziwh99j5qsPB0NqsRZ18K5+SGa2G3k=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lk3XdwJokRVKqtYb5KWPtv5sD8jyUKNB4lcYRnPY8fo=
+			6JqE8cedaWG18RgHBoVgkcksbRF31aA5B/eGae/9K6U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
