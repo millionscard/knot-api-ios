@@ -44,6 +44,15 @@ import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
+public enum AnalyticsEventType : Swift.String {
+  case identify
+  case track
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public var modelIdentifier: Swift.String {
     get
@@ -79,5 +88,8 @@ infix operator =~ : DefaultPrecedence
 }
 extension KnotAPI.Product : Swift.Equatable {}
 extension KnotAPI.Product : Swift.Hashable {}
+extension KnotAPI.AnalyticsEventType : Swift.Equatable {}
+extension KnotAPI.AnalyticsEventType : Swift.Hashable {}
+extension KnotAPI.AnalyticsEventType : Swift.RawRepresentable {}
 extension KnotAPI.Environment : Swift.Equatable {}
 extension KnotAPI.Environment : Swift.Hashable {}
