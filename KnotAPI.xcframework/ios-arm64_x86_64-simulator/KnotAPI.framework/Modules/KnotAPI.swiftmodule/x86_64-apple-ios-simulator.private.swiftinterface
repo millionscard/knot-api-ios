@@ -22,7 +22,7 @@ import _SwiftConcurrencyShims
   @objc public var merchantIds: [Swift.Int]?
   @objc public var onSuccess: ((_ merchant: Swift.String) -> Swift.Void)?
   @objc public var onError: ((_ error: Swift.String, _ message: Swift.String) -> Swift.Void)?
-  @objc public var onEvent: ((_ event: Swift.String, _ message: Swift.String, _ taskId: Swift.String?) -> Swift.Void)?
+  @objc public var onEvent: ((_ event: Swift.String, _ message: Swift.String, _ taskId: Swift.String?, _ sendCard: Swift.Bool) -> Swift.Void)?
   @objc public var onExit: (() -> Swift.Void)?
   @objc public var entryPoint: Swift.String?
   @objc deinit

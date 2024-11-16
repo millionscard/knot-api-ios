@@ -332,7 +332,7 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotSession")
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nullable merchantIds;
 @property (nonatomic, copy) void (^ _Nullable onSuccess)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onError)(NSString * _Nonnull, NSString * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable onEvent)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable);
+@property (nonatomic, copy) void (^ _Nullable onEvent)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, BOOL);
 @property (nonatomic, copy) void (^ _Nullable onExit)(void);
 @property (nonatomic, copy) NSString * _Nullable entryPoint;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -694,7 +694,7 @@ SWIFT_CLASS("_TtC7KnotAPI11KnotSession")
 @property (nonatomic, copy) NSArray<NSNumber *> * _Nullable merchantIds;
 @property (nonatomic, copy) void (^ _Nullable onSuccess)(NSString * _Nonnull);
 @property (nonatomic, copy) void (^ _Nullable onError)(NSString * _Nonnull, NSString * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable onEvent)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable);
+@property (nonatomic, copy) void (^ _Nullable onEvent)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, BOOL);
 @property (nonatomic, copy) void (^ _Nullable onExit)(void);
 @property (nonatomic, copy) NSString * _Nullable entryPoint;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
