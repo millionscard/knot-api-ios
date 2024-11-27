@@ -80,6 +80,7 @@ infix operator =~ : DefaultPrecedence
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Knot : ObjectiveC.NSObject {
   @objc public class func createCardSwitcherSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
   @objc public class func createSubscriptionManagerSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
+  @objc public class func createTransactionsLinkSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
   @objc public class func createViewController(session: KnotAPI.KnotSession) -> UIKit.UIViewController
   @objc public class func open(session: KnotAPI.KnotSession)
   @objc public class func close()

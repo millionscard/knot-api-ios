@@ -4368,6 +4368,48 @@
           },
           {
             "kind": "Function",
+            "name": "createTransactionsLinkSession",
+            "printedName": "createTransactionsLinkSession(id:clientId:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KnotSession",
+                "printedName": "KnotAPI.KnotSession",
+                "usr": "c:@M@KnotAPI@objc(cs)KnotSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "KnotAPI.Environment",
+                "usr": "c:@M@KnotAPI@E@Environment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KnotAPI@objc(cs)Knot(cm)createTransactionsLinkSessionWithId:clientId:environment:",
+            "mangledName": "$s7KnotAPI0A0C29createTransactionsLinkSession2id8clientId11environmentAA0aF0CSS_SSAA11EnvironmentOtFZ",
+            "moduleName": "KnotAPI",
+            "static": true,
+            "objc_name": "createTransactionsLinkSessionWithId:clientId:environment:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "createViewController",
             "printedName": "createViewController(session:)",
             "children": [
@@ -5960,14 +6002,14 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7279,
+      "offset": 7344,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotViewController.swift",
       "kind": "Dictionary",
-      "offset": 7363,
+      "offset": 7428,
       "length": 3,
       "value": "[]"
     },

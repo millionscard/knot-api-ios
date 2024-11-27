@@ -313,6 +313,7 @@ SWIFT_CLASS("_TtC7KnotAPI4Knot")
 @interface Knot : NSObject
 + (KnotSession * _Nonnull)createCardSwitcherSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
 + (KnotSession * _Nonnull)createSubscriptionManagerSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
++ (KnotSession * _Nonnull)createTransactionsLinkSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
 + (UIViewController * _Nonnull)createViewControllerWithSession:(KnotSession * _Nonnull)session SWIFT_WARN_UNUSED_RESULT;
 + (void)openWithSession:(KnotSession * _Nonnull)session;
 + (void)close;
