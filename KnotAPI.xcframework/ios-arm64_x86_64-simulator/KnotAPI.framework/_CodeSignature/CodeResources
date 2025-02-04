@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jjB3ZvNz15ToHmdvp2BxMxJPJao=
+		FVyRMPOII7p/AD/SuKIq6DP9q0A=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		y72fR5/O2wz9rcWU8ykhH5RGrec=
+		pV/QXORVLWCARSipMJ9LqpVZNCo=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		68PvBW68OByUN7DW6p8f/YkbrDM=
+		K0c9WJaNW8gGl2RZva7WJllWGeI=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		y72fR5/O2wz9rcWU8ykhH5RGrec=
+		pV/QXORVLWCARSipMJ9LqpVZNCo=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T3ToJW5NaGadOAcFBJEynhTSld8=
+		m3+tEryBMYpnsFKc5HgJyeUN/Og=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BEDAfnPgvimsn2PRR15QX/uz2Bfpji8RM3BK+y/Hn9g=
+			tsvnO9DZynPRX0MgczQ+jFikZDEWiK73F3hc6oZC6Fs=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YuQiHh+v/FHHVqNOB8roEMCv4gYU6+OSFmvINoDUBIY=
+			vO2b6RQxZRYMvUWaTJupgKUl4Qo540gLGND0RmF3IgM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BEDAfnPgvimsn2PRR15QX/uz2Bfpji8RM3BK+y/Hn9g=
+			tsvnO9DZynPRX0MgczQ+jFikZDEWiK73F3hc6oZC6Fs=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Kz4G4a41I/47ExqpcIWY3S0kWxXJTqMr+wXIrhYg+g=
+			DZsiI2Sm/AR+NpxPG/pdncZ0kWkrnERf2p/GBmCErD8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
