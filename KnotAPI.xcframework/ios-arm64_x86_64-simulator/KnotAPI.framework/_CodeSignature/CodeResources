@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jjB3ZvNz15ToHmdvp2BxMxJPJao=
+		FVyRMPOII7p/AD/SuKIq6DP9q0A=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		y72fR5/O2wz9rcWU8ykhH5RGrec=
+		qZRds6pb+IFUOmLQIea+DlvSqt0=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		68PvBW68OByUN7DW6p8f/YkbrDM=
+		F1+OtbUlu4y2Cx2WKd/BRdZyswU=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		y72fR5/O2wz9rcWU8ykhH5RGrec=
+		qZRds6pb+IFUOmLQIea+DlvSqt0=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		T3ToJW5NaGadOAcFBJEynhTSld8=
+		4Qou3skFbiZzHjGnuL3nCIxPxNQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BEDAfnPgvimsn2PRR15QX/uz2Bfpji8RM3BK+y/Hn9g=
+			LIO9T/uN+Mu0xF1sEh/bMay6+Nw5bUPqNNE69d5HmFw=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YuQiHh+v/FHHVqNOB8roEMCv4gYU6+OSFmvINoDUBIY=
+			vgmv+YwFh48qzVpz4AZXBuxlX5lCld/HZBVIVCZnRi8=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BEDAfnPgvimsn2PRR15QX/uz2Bfpji8RM3BK+y/Hn9g=
+			LIO9T/uN+Mu0xF1sEh/bMay6+Nw5bUPqNNE69d5HmFw=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Kz4G4a41I/47ExqpcIWY3S0kWxXJTqMr+wXIrhYg+g=
+			nwMGMrvAFHN/FMaW4gNVmx8TwvQA+y+9Z2XBV2U12h4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
