@@ -322,6 +322,19 @@ SWIFT_CLASS("_TtC7KnotAPI4Knot")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents possible errors that can occur in the SDK.
+typedef SWIFT_ENUM(NSInteger, KnotError, open) {
+/// Indicates that the session is invalid.
+  KnotErrorInvalidSession = 0,
+/// Indicates that the session has expired.
+  KnotErrorExpiredSession = 1,
+/// Indicates that the client ID is invalid or missing.
+  KnotErrorInvalidClientId = 2,
+/// Represents an internal or unknown error.
+  KnotErrorInternalError = 3,
+};
+static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
+
 
 SWIFT_CLASS("_TtC7KnotAPI11KnotSession")
 @interface KnotSession : NSObject

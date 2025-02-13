@@ -41,6 +41,26 @@ import _SwiftConcurrencyShims
     get
   }
 }
+@objc public enum KnotError : Swift.Int, Swift.Error {
+  case invalidSession
+  case expiredSession
+  case invalidClientId
+  case internalError
+  public var errorDescription: Swift.String {
+    get
+  }
+  public var errorCode: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public static var _nsErrorDomain: Swift.String {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
@@ -89,6 +109,9 @@ infix operator =~ : DefaultPrecedence
 }
 extension KnotAPI.Product : Swift.Equatable {}
 extension KnotAPI.Product : Swift.Hashable {}
+extension KnotAPI.KnotError : Swift.Equatable {}
+extension KnotAPI.KnotError : Swift.Hashable {}
+extension KnotAPI.KnotError : Swift.RawRepresentable {}
 extension KnotAPI.AnalyticsEventType : Swift.Equatable {}
 extension KnotAPI.AnalyticsEventType : Swift.Hashable {}
 extension KnotAPI.AnalyticsEventType : Swift.RawRepresentable {}
