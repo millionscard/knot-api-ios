@@ -301,23 +301,76 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentSandbox = 0,
+/// KnotAPI’s production environment
   EnvironmentProduction = 1,
+/// KnotAPI’s development environment
   EnvironmentDevelopment = 2,
 };
 
-@class NSString;
-@class KnotSession;
+@class KnotConfiguration;
+@protocol KnotEventDelegate;
 @class UIViewController;
+@class NSString;
 
+/// The <code>Knot</code> class is the primary entry point for customers interacting with KnotAPI’s Card Switcher, Mass Switcher, and Transaction Link products.
+/// Applications can call its <code>open(configuration:, delegate)</code> function to instantiate a particular KnotAPI product flow,
+/// and receive event notifications via a <code>KnotEventDelegate</code>.
 SWIFT_CLASS("_TtC7KnotAPI4Knot")
 @interface Knot : NSObject
-+ (KnotSession * _Nonnull)createCardSwitcherSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
-+ (KnotSession * _Nonnull)createSubscriptionManagerSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
-+ (KnotSession * _Nonnull)createTransactionsLinkSessionWithId:(NSString * _Nonnull)id clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment SWIFT_WARN_UNUSED_RESULT;
-+ (UIViewController * _Nonnull)createViewControllerWithSession:(KnotSession * _Nonnull)session SWIFT_WARN_UNUSED_RESULT;
-+ (void)openWithSession:(KnotSession * _Nonnull)session;
+/// Private initializer.
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Start a KnotAPI product flow with the necessary configurations and optionally receive delegate notifications.
+/// \param configuration A <code>KnotConfiguration</code> specifiing the product and environment settings.
+///
+/// \param delegate An optional <code>KnotEventDelegate</code> used to receive merchant related events.
+///
++ (void)openWithConfiguration:(KnotConfiguration * _Nonnull)configuration delegate:(id <KnotEventDelegate> _Nullable)delegate;
+/// A factory method to create a configured <code>UIViewController</code> that will present the KnotAPI flow within the view controller.
+/// Use this factory method if you do not want to want KnotAPI to present the flow modally. You are responsible for presenting and
+/// dismissing the flow.
+/// <ul>
+///   <li>
+///     Returns a UIViewController configured for the requested product KnotAPI flow.
+///   </li>
+/// </ul>
+/// \param configuration A <code>KnotConfiguration</code> specifiing the product and environment settings.
+///
+/// \param delegate An optional <code>KnotEventDelegate</code> used to receive merchant related events.
+///
++ (UIViewController * _Nonnull)createKnotViewControllerWithConfiguration:(KnotConfiguration * _Nonnull)configuration delegate:(id <KnotEventDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
+/// Dismiss a presented KnotAPI flow.
 + (void)close;
+/// Retrieves the KnotAPI SDK version string.
+/// <ul>
+///   <li>
+///     Returns an optional SDK version name string.
+///   </li>
+/// </ul>
 + (NSString * _Nullable)SDKVersion SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+enum Product : NSInteger;
+
+/// A configuration used to initialize the KnotAPI SDK flow.
+SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
+@interface KnotConfiguration : NSObject
+/// Session ID. Generally provided by your backend integration.
+@property (nonatomic, readonly, copy) NSString * _Nonnull sessionId;
+/// The client ID for your organization. This value is dependent on the environment you are intending to use.
+@property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
+/// The KnotAPI <code>Environment</code> .
+@property (nonatomic, readonly) enum Environment environment;
+/// The particular KnotAPI <code>Product</code> you intend to use.
+@property (nonatomic, readonly) enum Product product;
+/// A flag to enable the display of KnotAPI merchant categories in the flow.
+@property (nonatomic, readonly) BOOL useCategories;
+/// A flag to show, or hide a search bar in the flow.
+@property (nonatomic, readonly) BOOL useSearch;
+/// Limit the display of merchants to the defined IDs.
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable merchantIds;
+@property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -336,21 +389,61 @@ typedef SWIFT_ENUM(NSInteger, KnotError, open) {
 static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
 
 
-SWIFT_CLASS("_TtC7KnotAPI11KnotSession")
-@interface KnotSession : NSObject
-@property (nonatomic, copy) NSString * _Nonnull sessionId;
-@property (nonatomic, copy) NSString * _Nonnull clientId;
-@property (nonatomic) enum Environment environment;
-@property (nonatomic) BOOL useCategories;
-@property (nonatomic) BOOL useSearch;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable merchantIds;
-@property (nonatomic, copy) void (^ _Nullable onSuccess)(NSString * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable onError)(NSString * _Nonnull, NSString * _Nonnull);
-@property (nonatomic, copy) void (^ _Nullable onEvent)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, BOOL);
-@property (nonatomic, copy) void (^ _Nullable onExit)(void);
-@property (nonatomic, copy) NSString * _Nullable entryPoint;
+/// Intended as a base class that reflects its public properties in a dictionary. It is primarily used for React Native compliance.
+SWIFT_CLASS("_TtC7KnotAPI11Reflectable")
+@interface Reflectable : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDictionary;
+
+/// Represents a Knot event received during user interaction within the Knot SDK.
+SWIFT_CLASS("_TtC7KnotAPI9KnotEvent")
+@interface KnotEvent : Reflectable
+/// The environment the event originated from.
+@property (nonatomic, readonly) enum Environment environment;
+/// The product the event originated from.
+@property (nonatomic, readonly) enum Product product;
+/// The primary event code.
+@property (nonatomic, readonly, copy) NSString * _Nonnull event;
+/// The merchant associated with the event (if applicable).
+@property (nonatomic, readonly, copy) NSString * _Nullable merchant;
+/// Addional metadata related to the event, stored as an Objective-C compatible dictionary.
+@property (nonatomic, readonly, strong) NSDictionary * _Nonnull metaData;
+/// The identifier associated with this event.
+@property (nonatomic, readonly, copy) NSString * _Nullable taskId;
+/// Initializes a <code>KnotEvent</code> object.
+/// \param event The event code.
+///
+/// \param merchant The merchant name.
+///
+/// \param metaData Additional metadata in dictionary format.
+///
+/// \param taskId The associated task identifier.
+///
+- (nonnull instancetype)initWithEnvironment:(enum Environment)environment product:(enum Product)product event:(NSString * _Nonnull)event merchant:(NSString * _Nullable)merchant metaData:(NSDictionary * _Nonnull)metaData taskId:(NSString * _Nullable)taskId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// KnotAPI delegate to receive event callbacks.
+SWIFT_PROTOCOL("_TtP7KnotAPI17KnotEventDelegate_")
+@protocol KnotEventDelegate
+/// Notified in the event a merchant has successfully authenticated.
+/// \param merchant The merchant name.
+///
+- (void)onSuccessWithMerchant:(NSString * _Nonnull)merchant;
+/// Notified when a error has occurred while interacting with the merchant.
+/// \param error A <code>KnotError</code> describing the error experienced while interacting with the merchant.
+///
+- (void)onErrorWithError:(enum KnotError)error;
+/// Notifies the listerner regarding various merchant interaction events.
+/// \param event A <code>KnotEvent</code> describing merchant interaction events.
+///
+- (void)onEventWithEvent:(KnotEvent * _Nonnull)event;
+/// Notified when the KnotAPI webview has been dismissed by user of SDK action.
+- (void)onExit;
 @end
 
 typedef SWIFT_ENUM(NSInteger, Product, open) {
@@ -358,6 +451,7 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
   ProductSubscription_manager = 1,
   ProductTransactions_link = 2,
 };
+
 
 
 
