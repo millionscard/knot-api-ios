@@ -1,4 +1,0 @@
-framework module KnotAPI {
-  header "KnotAPI-Swift.h"
-  requires objc
-}
