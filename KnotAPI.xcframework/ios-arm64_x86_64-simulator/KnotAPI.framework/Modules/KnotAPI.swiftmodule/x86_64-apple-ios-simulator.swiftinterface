@@ -13,21 +13,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers @objc public class KnotSession : ObjectiveC.NSObject {
-  @objc public var sessionId: Swift.String
-  @objc public var clientId: Swift.String
-  @objc public var environment: KnotAPI.Environment
-  @objc public var useCategories: Swift.Bool
-  @objc public var useSearch: Swift.Bool
-  @objc public var merchantIds: [Swift.Int]?
-  @objc public var onSuccess: ((_ merchant: Swift.String) -> Swift.Void)?
-  @objc public var onError: ((_ error: Swift.String, _ message: Swift.String) -> Swift.Void)?
-  @objc public var onEvent: ((_ event: Swift.String, _ message: Swift.String, _ taskId: Swift.String?, _ sendCard: Swift.Bool) -> Swift.Void)?
-  @objc public var onExit: (() -> Swift.Void)?
-  @objc public var entryPoint: Swift.String?
-  @objc deinit
-}
-@objc public enum Product : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
+@objc public enum Product : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable, Swift.CustomStringConvertible {
   case card_switcher
   case subscription_manager
   case transactions_link
@@ -36,6 +22,9 @@ import _SwiftConcurrencyShims
     get
   }
   public init?(rawValue: KnotAPI.Product.RawValue)
+  public var description: Swift.String {
+    get
+  }
   public typealias AllCases = [KnotAPI.Product]
   public static var allCases: [KnotAPI.Product] {
     get
@@ -61,6 +50,16 @@ import _SwiftConcurrencyShims
     get
   }
 }
+@objc public class KnotEvent : KnotAPI.Reflectable {
+  @objc final public let environment: KnotAPI.Environment
+  @objc final public let product: KnotAPI.Product
+  @objc final public let event: Swift.String
+  @objc final public let merchant: Swift.String?
+  @objc final public let metaData: Foundation.NSDictionary
+  @objc final public let taskId: Swift.String?
+  @objc public init(environment: KnotAPI.Environment, product: KnotAPI.Product, event: Swift.String, merchant: Swift.String?, metaData: Foundation.NSDictionary, taskId: Swift.String?)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
   @objc deinit
 }
@@ -78,7 +77,12 @@ extension UIKit.UIDevice {
     get
   }
 }
-@objc public enum Environment : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
+@_inheritsConvenienceInitializers @objc public class Reflectable : ObjectiveC.NSObject {
+  public func toDictionary() -> [Swift.String : Any]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum Environment : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable, Swift.CustomStringConvertible {
   case sandbox
   case production
   case development
@@ -87,6 +91,9 @@ extension UIKit.UIDevice {
     get
   }
   public init?(rawValue: KnotAPI.Environment.RawValue)
+  public var description: Swift.String {
+    get
+  }
   public typealias AllCases = [KnotAPI.Environment]
   public static var allCases: [KnotAPI.Environment] {
     get
@@ -98,13 +105,28 @@ extension UIKit.UIImage {
 }
 infix operator =~ : DefaultPrecedence
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Knot : ObjectiveC.NSObject {
-  @objc public class func createCardSwitcherSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
-  @objc public class func createSubscriptionManagerSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
-  @objc public class func createTransactionsLinkSession(id: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment) -> KnotAPI.KnotSession
-  @objc public class func createViewController(session: KnotAPI.KnotSession) -> UIKit.UIViewController
-  @objc public class func open(session: KnotAPI.KnotSession)
+  @objc public class func open(configuration: KnotAPI.KnotConfiguration, delegate: (any KnotAPI.KnotEventDelegate)?)
+  @objc public class func createKnotViewController(configuration: KnotAPI.KnotConfiguration, delegate: (any KnotAPI.KnotEventDelegate)?) -> UIKit.UIViewController
   @objc public class func close()
   @objc public class func SDKVersion() -> Swift.String?
+  @objc deinit
+}
+@objc public protocol KnotEventDelegate {
+  @objc func onSuccess(merchant: Swift.String)
+  @objc func onError(error: KnotAPI.KnotError)
+  @objc func onEvent(event: KnotAPI.KnotEvent)
+  @objc func onExit()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class KnotConfiguration : ObjectiveC.NSObject {
+  @objc final public let sessionId: Swift.String
+  @objc final public let clientId: Swift.String
+  @objc final public let environment: KnotAPI.Environment
+  @objc final public let product: KnotAPI.Product
+  @objc final public let useCategories: Swift.Bool
+  @objc final public let useSearch: Swift.Bool
+  @objc final public let merchantIds: [Swift.Int]?
+  @objc final public let entryPoint: Swift.String?
+  public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?)
   @objc deinit
 }
 extension KnotAPI.Product : Swift.Equatable {}
