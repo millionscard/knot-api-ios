@@ -448,8 +448,7 @@ SWIFT_PROTOCOL("_TtP7KnotAPI17KnotEventDelegate_")
 
 typedef SWIFT_ENUM(NSInteger, Product, open) {
   ProductCard_switcher = 0,
-  ProductSubscription_manager = 1,
-  ProductTransactions_link = 2,
+  ProductTransaction_link = 1,
 };
 
 

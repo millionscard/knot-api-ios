@@ -372,8 +372,8 @@
           },
           {
             "kind": "Var",
-            "name": "subscription_manager",
-            "printedName": "subscription_manager",
+            "name": "transaction_link",
+            "printedName": "transaction_link",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -403,59 +403,19 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@KnotAPI@E@Product@ProductSubscription_manager",
-            "mangledName": "$s7KnotAPI7ProductO20subscription_manageryA2CmF",
+            "usr": "c:@M@KnotAPI@E@Product@ProductTransaction_link",
+            "mangledName": "$s7KnotAPI7ProductO16transaction_linkyA2CmF",
             "moduleName": "KnotAPI",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
-            "name": "transactions_link",
-            "printedName": "transactions_link",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KnotAPI.Product.Type) -> KnotAPI.Product",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Product",
-                    "printedName": "KnotAPI.Product",
-                    "usr": "c:@M@KnotAPI@E@Product"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KnotAPI.Product.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Product",
-                        "printedName": "KnotAPI.Product",
-                        "usr": "c:@M@KnotAPI@E@Product"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@KnotAPI@E@Product@ProductTransactions_link",
-            "mangledName": "$s7KnotAPI7ProductO17transactions_linkyA2CmF",
-            "moduleName": "KnotAPI",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
+            "name": "stringValue",
+            "printedName": "stringValue",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -465,8 +425,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7KnotAPI7ProductO8rawValueSSvp",
-            "mangledName": "$s7KnotAPI7ProductO8rawValueSSvp",
+            "usr": "s:7KnotAPI7ProductO11stringValueSSvp",
+            "mangledName": "$s7KnotAPI7ProductO11stringValueSSvp",
             "moduleName": "KnotAPI",
             "declAttributes": [
               "AccessControl"
@@ -485,8 +445,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7KnotAPI7ProductO8rawValueSSvg",
-                "mangledName": "$s7KnotAPI7ProductO8rawValueSSvg",
+                "usr": "s:7KnotAPI7ProductO11stringValueSSvg",
+                "mangledName": "$s7KnotAPI7ProductO11stringValueSSvg",
                 "moduleName": "KnotAPI",
                 "accessorKind": "get"
               }
@@ -495,7 +455,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(rawValue:)",
+            "printedName": "init(stringValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -519,8 +479,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7KnotAPI7ProductO8rawValueACSgSS_tcfc",
-            "mangledName": "$s7KnotAPI7ProductO8rawValueACSgSS_tcfc",
+            "usr": "s:7KnotAPI7ProductO11stringValueACSgSS_tcfc",
+            "mangledName": "$s7KnotAPI7ProductO11stringValueACSgSS_tcfc",
             "moduleName": "KnotAPI",
             "declAttributes": [
               "AccessControl"
@@ -592,7 +552,13 @@
             "mangledName": "$s7KnotAPI7ProductO8allCasesSayACGvpZ",
             "moduleName": "KnotAPI",
             "static": true,
-            "implicit": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -619,6 +585,78 @@
                 "mangledName": "$s7KnotAPI7ProductO8allCasesSayACGvgZ",
                 "moduleName": "KnotAPI",
                 "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KnotAPI.Product?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Product",
+                    "printedName": "KnotAPI.Product",
+                    "usr": "c:@M@KnotAPI@E@Product"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7KnotAPI7ProductO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7KnotAPI7ProductO8rawValueACSgSi_tcfc",
+            "moduleName": "KnotAPI",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KnotAPI7ProductO8rawValueSivp",
+            "mangledName": "$s7KnotAPI7ProductO8rawValueSivp",
+            "moduleName": "KnotAPI",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI7ProductO8rawValueSivg",
+                "mangledName": "$s7KnotAPI7ProductO8rawValueSivg",
+                "moduleName": "KnotAPI",
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -662,54 +700,34 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[KnotAPI.Product]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Product",
-                        "printedName": "KnotAPI.Product",
-                        "usr": "c:@M@KnotAPI@E@Product"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
       },
       {
         "kind": "Import",
@@ -3422,8 +3440,8 @@
           },
           {
             "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
+            "name": "stringValue",
+            "printedName": "stringValue",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3433,8 +3451,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7KnotAPI11EnvironmentO8rawValueSSvp",
-            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSSvp",
+            "usr": "s:7KnotAPI11EnvironmentO11stringValueSSvp",
+            "mangledName": "$s7KnotAPI11EnvironmentO11stringValueSSvp",
             "moduleName": "KnotAPI",
             "declAttributes": [
               "AccessControl",
@@ -3454,8 +3472,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7KnotAPI11EnvironmentO8rawValueSSvg",
-                "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSSvg",
+                "usr": "s:7KnotAPI11EnvironmentO11stringValueSSvg",
+                "mangledName": "$s7KnotAPI11EnvironmentO11stringValueSSvg",
                 "moduleName": "KnotAPI",
                 "accessorKind": "get"
               }
@@ -3464,7 +3482,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(rawValue:)",
+            "printedName": "init(stringValue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3488,8 +3506,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7KnotAPI11EnvironmentO8rawValueACSgSS_tcfc",
-            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueACSgSS_tcfc",
+            "usr": "s:7KnotAPI11EnvironmentO11stringValueACSgSS_tcfc",
+            "mangledName": "$s7KnotAPI11EnvironmentO11stringValueACSgSS_tcfc",
             "moduleName": "KnotAPI",
             "declAttributes": [
               "AccessControl",
@@ -3562,7 +3580,13 @@
             "mangledName": "$s7KnotAPI11EnvironmentO8allCasesSayACGvpZ",
             "moduleName": "KnotAPI",
             "static": true,
-            "implicit": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3589,6 +3613,78 @@
                 "mangledName": "$s7KnotAPI11EnvironmentO8allCasesSayACGvgZ",
                 "moduleName": "KnotAPI",
                 "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KnotAPI.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "KnotAPI.Environment",
+                    "usr": "c:@M@KnotAPI@E@Environment"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7KnotAPI11EnvironmentO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueACSgSi_tcfc",
+            "moduleName": "KnotAPI",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7KnotAPI11EnvironmentO8rawValueSivp",
+            "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSivp",
+            "moduleName": "KnotAPI",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7KnotAPI11EnvironmentO8rawValueSivg",
+                "mangledName": "$s7KnotAPI11EnvironmentO8rawValueSivg",
+                "moduleName": "KnotAPI",
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -3631,52 +3727,15 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[KnotAPI.Environment]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "KnotAPI.Environment",
-                        "usr": "c:@M@KnotAPI@E@Environment"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -5651,16 +5710,23 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
       "kind": "IntegerLiteral",
-      "offset": 203,
-      "length": 20,
+      "offset": 178,
+      "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
       "kind": "IntegerLiteral",
-      "offset": 233,
-      "length": 17,
-      "value": "2"
+      "offset": 178,
+      "length": 16,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/Uber\/IntentRedirectUberLoginViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 273,
+      "length": 32,
+      "value": "\"KnotAPI.IntentRedirectUberLoginViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
@@ -6008,63 +6074,63 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "FloatLiteral",
-      "offset": 2057,
+      "offset": 2231,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2102,
+      "offset": 2276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2108,
+      "offset": 2282,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2145,
+      "offset": 2319,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "FloatLiteral",
-      "offset": 2384,
+      "offset": 2558,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "FloatLiteral",
-      "offset": 2433,
+      "offset": 2607,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "FloatLiteral",
-      "offset": 2562,
+      "offset": 2736,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "FloatLiteral",
-      "offset": 2659,
+      "offset": 2833,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Views\/KnotAppView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1481,
+      "offset": 1655,
       "length": 5,
       "value": "false"
     },
@@ -6790,18 +6856,18 @@
       "value": "\"KnotAPI.LyftSSOViewModel\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/UberSSOViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/Uber\/LegacyUberLoginViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2191,
+      "offset": 2199,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/UberSSOViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/Uber\/LegacyUberLoginViewModel.swift",
       "kind": "StringLiteral",
       "offset": 388,
-      "length": 16,
-      "value": "\"KnotAPI.UberSSOViewModel\""
+      "length": 24,
+      "value": "\"KnotAPI.LegacyUberLoginViewModel\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Services\/AssetService.swift",
@@ -7282,14 +7348,28 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 237,
+      "offset": 180,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 304,
+      "offset": 247,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 180,
+      "length": 10,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 247,
       "length": 11,
       "value": "2"
     },

@@ -13,20 +13,20 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public enum Product : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable, Swift.CustomStringConvertible {
+@objc public enum Product : Swift.Int {
   case card_switcher
-  case subscription_manager
-  case transactions_link
-  public typealias RawValue = Swift.String
-  public var rawValue: KnotAPI.Product.RawValue {
+  case transaction_link
+  public var stringValue: Swift.String {
     get
   }
-  public init?(rawValue: KnotAPI.Product.RawValue)
+  public init?(stringValue: Swift.String)
   public var description: Swift.String {
     get
   }
-  public typealias AllCases = [KnotAPI.Product]
-  public static var allCases: [KnotAPI.Product] {
+  public static let allCases: [KnotAPI.Product]
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -82,20 +82,21 @@ extension UIKit.UIDevice {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum Environment : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable, Swift.CustomStringConvertible {
+@objc public enum Environment : Swift.Int {
   case sandbox
   case production
   case development
-  public typealias RawValue = Swift.String
-  public var rawValue: KnotAPI.Environment.RawValue {
+  public var stringValue: Swift.String {
     get
   }
-  public init?(rawValue: KnotAPI.Environment.RawValue)
+  public init?(stringValue: Swift.String)
   public var description: Swift.String {
     get
   }
-  public typealias AllCases = [KnotAPI.Environment]
-  public static var allCases: [KnotAPI.Environment] {
+  public static let allCases: [KnotAPI.Environment]
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -131,6 +132,7 @@ infix operator =~ : DefaultPrecedence
 }
 extension KnotAPI.Product : Swift.Equatable {}
 extension KnotAPI.Product : Swift.Hashable {}
+extension KnotAPI.Product : Swift.RawRepresentable {}
 extension KnotAPI.KnotError : Swift.Equatable {}
 extension KnotAPI.KnotError : Swift.Hashable {}
 extension KnotAPI.KnotError : Swift.RawRepresentable {}
@@ -139,3 +141,4 @@ extension KnotAPI.AnalyticsEventType : Swift.Hashable {}
 extension KnotAPI.AnalyticsEventType : Swift.RawRepresentable {}
 extension KnotAPI.Environment : Swift.Equatable {}
 extension KnotAPI.Environment : Swift.Hashable {}
+extension KnotAPI.Environment : Swift.RawRepresentable {}
