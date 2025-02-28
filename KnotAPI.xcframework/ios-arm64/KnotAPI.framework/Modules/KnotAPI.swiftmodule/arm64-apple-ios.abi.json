@@ -366,6 +366,7 @@
             "mangledName": "$s7KnotAPI7ProductO13card_switcheryA2CmF",
             "moduleName": "KnotAPI",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 0
@@ -429,7 +430,8 @@
             "mangledName": "$s7KnotAPI7ProductO11stringValueSSvp",
             "moduleName": "KnotAPI",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -483,7 +485,8 @@
             "mangledName": "$s7KnotAPI7ProductO11stringValueACSgSS_tcfc",
             "moduleName": "KnotAPI",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -504,7 +507,8 @@
             "mangledName": "$s7KnotAPI7ProductO11descriptionSSvp",
             "moduleName": "KnotAPI",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -555,7 +559,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3350,6 +3355,7 @@
             "mangledName": "$s7KnotAPI11EnvironmentO7sandboxyA2CmF",
             "moduleName": "KnotAPI",
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "fixedbinaryorder": 0
@@ -3583,7 +3589,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3697,7 +3704,8 @@
         "moduleName": "KnotAPI",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -4974,11 +4982,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7KnotAPI0A13ConfigurationC9sessionId06clientE011environment10entryPoint7product13useCategories0K6Search11merchantIdsACSS_SSAA11EnvironmentOSSSgAA7ProductOS2bSaySiGSgtcfc",
+            "usr": "c:@M@KnotAPI@objc(cs)KnotConfiguration(im)initWithSessionId:clientId:environment:entryPoint:product:useCategories:useSearch:merchantIds:",
             "mangledName": "$s7KnotAPI0A13ConfigurationC9sessionId06clientE011environment10entryPoint7product13useCategories0K6Search11merchantIdsACSS_SSAA11EnvironmentOSSSgAA7ProductOS2bSaySiGSgtcfc",
             "moduleName": "KnotAPI",
+            "objc_name": "initWithSessionId:clientId:environment:entryPoint:product:useCategories:useSearch:merchantIds:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "init_kind": "Designated"
@@ -5710,14 +5720,14 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
       "kind": "IntegerLiteral",
-      "offset": 178,
+      "offset": 285,
       "length": 16,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
       "kind": "IntegerLiteral",
-      "offset": 178,
+      "offset": 285,
       "length": 16,
       "value": "1"
     },
@@ -7348,28 +7358,28 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 180,
+      "offset": 274,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 247,
+      "offset": 341,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 180,
+      "offset": 274,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Environment.swift",
       "kind": "IntegerLiteral",
-      "offset": 247,
+      "offset": 341,
       "length": 11,
       "value": "2"
     },

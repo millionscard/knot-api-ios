@@ -127,7 +127,7 @@ infix operator =~ : DefaultPrecedence
   @objc final public let useSearch: Swift.Bool
   @objc final public let merchantIds: [Swift.Int]?
   @objc final public let entryPoint: Swift.String?
-  public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?)
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?)
   @objc deinit
 }
 extension KnotAPI.Product : Swift.Equatable {}

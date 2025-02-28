@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
-		0PShfvo6wBRzbjLzZ10v6GXMdls=
+		cbzY3+9Gy2rn+YBbwPPQby992NA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		YjWSs2zvdLRSNVnt/jYLviyF56I=
+		Knkoz9oaYOs3cGU1Ijoo68qZwSc=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ocwUKCuE0nLdPwGByvjJEgwA8b8=
+		y9L0dQKBvc63Bn9B1tpVxebRmok=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		brVQlFW6DDYvPJWgPqzxUdZsSl4=
+		pYDDt+DUsUctSKA0fjKLM+MCLHg=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ocwUKCuE0nLdPwGByvjJEgwA8b8=
+		y9L0dQKBvc63Bn9B1tpVxebRmok=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		omY7vjJdKmtwSiY9W4dmvyR5mXM=
+		vMt7O7M4HQAFvgJJ3trp8ZfF3EI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,42 +82,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fzF0TSqUG99sC1b/hztHDFLKPHq9vd/XWCE4QW6Uqzc=
+			NlUEHEpmGzGb0K/R/NHNgb68x8mWJ/Ys0oCxM1ZFDko=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sTxm9fKQmKupQTh0Hx7UTfhtb+O5U73+n/7JO5UG56Q=
+			3k1F4pPOwZN/4siZw/AbiGgM1jT0w3hbcxdk9P5wGb4=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WxSM05cot/KiywExDTef74lt5uW7yFZKNH3+H2qd1cM=
+			XjcabqGnIR20SIyQtu9JCGu/SCSJxZwQzmld+MKgFEI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FWs2NrMMZcvb4T/NDvgbAEg3L8oF7ibW7Oi13Ar40+A=
+			imhQQlOznriyMETDPW7qzVyekvqes4ynUg7I4m3pgyM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WxSM05cot/KiywExDTef74lt5uW7yFZKNH3+H2qd1cM=
+			XjcabqGnIR20SIyQtu9JCGu/SCSJxZwQzmld+MKgFEI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vn6X9Cdcc3SFeWbuYPZI0+k1V12PO9BXPfJkMHI5gWM=
+			5nabsHKT2jKbNLF1TuiA1vSJaWWhp5tfk0cMjCpoJpQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

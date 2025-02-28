@@ -299,7 +299,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+/// The Knot SDK environment for session instantiation.
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
+/// KnotAPI’s staging environment
   EnvironmentSandbox = 0,
 /// KnotAPI’s production environment
   EnvironmentProduction = 1,
@@ -371,6 +373,24 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 /// Limit the display of merchants to the defined IDs.
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable merchantIds;
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
+/// Configuration initializer.
+/// \param sessionId The session ID used to start the product flow.
+///
+/// \param clientId The client ID for your organization. This value is dependent on the environment you are intending to use.
+///
+/// \param environment The KnotAPI environment .
+///
+/// \param entryPoint A session window entry point.
+///
+/// \param product The particular KnotAPI product you intend to use.
+///
+/// \param useCategories A flag to enable the display of KnotAPI merchant categories in the flow.
+///
+/// \param useSearch A flag to show, or hide a search bar in the flow.
+///
+/// \param merchantIds Limit the display of merchants to the defined IDs.
+///
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -446,8 +466,11 @@ SWIFT_PROTOCOL("_TtP7KnotAPI17KnotEventDelegate_")
 - (void)onExit;
 @end
 
+/// Knot Link products available for SDK session instantiation.
 typedef SWIFT_ENUM(NSInteger, Product, open) {
+/// Knot Card Switcher product.
   ProductCard_switcher = 0,
+/// Knot Transaction Link product.
   ProductTransaction_link = 1,
 };
 
@@ -769,7 +792,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+/// The Knot SDK environment for session instantiation.
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
+/// KnotAPI’s staging environment
   EnvironmentSandbox = 0,
 /// KnotAPI’s production environment
   EnvironmentProduction = 1,
@@ -841,6 +866,24 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 /// Limit the display of merchants to the defined IDs.
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable merchantIds;
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
+/// Configuration initializer.
+/// \param sessionId The session ID used to start the product flow.
+///
+/// \param clientId The client ID for your organization. This value is dependent on the environment you are intending to use.
+///
+/// \param environment The KnotAPI environment .
+///
+/// \param entryPoint A session window entry point.
+///
+/// \param product The particular KnotAPI product you intend to use.
+///
+/// \param useCategories A flag to enable the display of KnotAPI merchant categories in the flow.
+///
+/// \param useSearch A flag to show, or hide a search bar in the flow.
+///
+/// \param merchantIds Limit the display of merchants to the defined IDs.
+///
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -916,8 +959,11 @@ SWIFT_PROTOCOL("_TtP7KnotAPI17KnotEventDelegate_")
 - (void)onExit;
 @end
 
+/// Knot Link products available for SDK session instantiation.
 typedef SWIFT_ENUM(NSInteger, Product, open) {
+/// Knot Card Switcher product.
   ProductCard_switcher = 0,
+/// Knot Transaction Link product.
   ProductTransaction_link = 1,
 };
 
