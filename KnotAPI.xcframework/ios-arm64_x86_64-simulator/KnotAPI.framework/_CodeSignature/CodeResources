@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bYDxfypE5EOkaNM06HqHMOJOM6w=
+		d3K+aLPlTWPAEHeYSQHMoO8DQf0=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ygx5EIPcN4Gu3gip2k7nDFjqanY=
+		d2zGCzy7S+atX9Mg3IgPGWhRtfg=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3l8Lmx2yhyy2SZEDJKjp55kfjpM=
+		q2JuQ0VzUozAJi4SOPozTT1uAwo=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ygx5EIPcN4Gu3gip2k7nDFjqanY=
+		d2zGCzy7S+atX9Mg3IgPGWhRtfg=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FLY4wJADaiiZuBxaQJjbNGK3NKg=
+		DtiBKOFsU+u1TL0U1v9JYsOegTY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BLW3HhKfl6n7DfpTFhl0VqXXg8K2ssjzvKOD8H+sbFU=
+			M+pgZiuRwKztAOFQJovREFgAYfH00QDN5qgazXSIaoA=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oo6VIf7tpCvJ+Main03+JOQY8VsyYMqm+D41shlIqGA=
+			vZJaEGS9HTJw5ThWhydDqXsB4G2Qe6GWjUKexRePrrA=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BLW3HhKfl6n7DfpTFhl0VqXXg8K2ssjzvKOD8H+sbFU=
+			M+pgZiuRwKztAOFQJovREFgAYfH00QDN5qgazXSIaoA=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2oKlJ6I7+TSk+LyC+8Bs25g+le8HmSuA4a/JaLcwB4=
+			0Jr8tWFFMptdkwUS4cZWyRalQJsLpgasNc+bW5EGqP4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
