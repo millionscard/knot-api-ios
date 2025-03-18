@@ -7567,56 +7567,56 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 709,
+      "offset": 676,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 763,
+      "offset": 730,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 963,
+      "offset": 930,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1185,
+      "offset": 1152,
       "length": 26,
       "value": "\"Loading SDK URL \""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1210,
+      "offset": 1177,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1326,
+      "offset": 1293,
       "length": 30,
       "value": "\" took \""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1352,
+      "offset": 1319,
       "length": 2,
       "value": "\" ms\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Primary\/KnotAppViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1913,
+      "offset": 1880,
       "length": 1,
       "value": "0"
     },
