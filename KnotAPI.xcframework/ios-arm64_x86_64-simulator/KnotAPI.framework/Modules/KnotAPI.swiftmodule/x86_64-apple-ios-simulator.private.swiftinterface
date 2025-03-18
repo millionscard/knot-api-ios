@@ -35,6 +35,7 @@ import _SwiftConcurrencyShims
   case expiredSession
   case invalidClientId
   case internalError
+  case merchantIdNotFound
   public var errorDescription: Swift.String {
     get
   }

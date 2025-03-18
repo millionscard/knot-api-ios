@@ -405,6 +405,8 @@ typedef SWIFT_ENUM(NSInteger, KnotError, open) {
   KnotErrorInvalidClientId = 2,
 /// Represents an internal or unknown error.
   KnotErrorInternalError = 3,
+/// Represents merchant id not found.
+  KnotErrorMerchantIdNotFound = 4,
 };
 static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
 
@@ -898,6 +900,8 @@ typedef SWIFT_ENUM(NSInteger, KnotError, open) {
   KnotErrorInvalidClientId = 2,
 /// Represents an internal or unknown error.
   KnotErrorInternalError = 3,
+/// Represents merchant id not found.
+  KnotErrorMerchantIdNotFound = 4,
 };
 static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
 
