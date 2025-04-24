@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		werOYbHa/Mm+7jIOq5DdeetIoaM=
+		pMoXHBNWVXFUTif0NQD37zwxuug=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zVMt4mGCQKM1277bwBdN17//HQg=
+		/DTInSJydp0UZnPY+4GjAND4KHA=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vEj2/c538uHLq6QuTKQVTWZ6puc=
+		lYfnvOcwTSwA64XJnw3kvczt2iw=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zVMt4mGCQKM1277bwBdN17//HQg=
+		/DTInSJydp0UZnPY+4GjAND4KHA=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aj8v4aqCjiokFAdORT1U9MushQw=
+		VngiyjzFFaoXhKChWbeEOHse4FQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NcgJ3jK9LIbSF2X5KZjuhFlSvoS0eq1PZw6rVig1Mck=
+			wHsVJZ1eB4QCJJYpxX0XDf4BjiSGJTKosj50kG3fB0s=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iw1+91DjJG41oC7GBLNvyH3DFkNYs1uT3f9TVO2MZb0=
+			ym4gLmWPzpeHzdrHxQecGkFmxjbXw+MKees6SwiLpNA=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NcgJ3jK9LIbSF2X5KZjuhFlSvoS0eq1PZw6rVig1Mck=
+			wHsVJZ1eB4QCJJYpxX0XDf4BjiSGJTKosj50kG3fB0s=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h3FgqTH4woB0nDDYrMcVGF9U08SnYg3lJcU3Qusxh64=
+			KT0aoSjiLpxjCpGKdojW72y0vhRUyCNEGTPkiMm5qwo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
