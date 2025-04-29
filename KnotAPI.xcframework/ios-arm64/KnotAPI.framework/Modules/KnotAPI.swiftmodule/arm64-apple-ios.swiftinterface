@@ -36,6 +36,9 @@ import _SwiftConcurrencyShims
   case invalidClientId
   case internalError
   case merchantIdNotFound
+  case invalidCardName
+  case invalidCustomerName
+  case invalidLogoId
   public var errorDescription: Swift.String {
     get
   }
@@ -56,9 +59,10 @@ import _SwiftConcurrencyShims
   @objc final public let product: KnotAPI.Product
   @objc final public let event: Swift.String
   @objc final public let merchant: Swift.String?
+  @objc final public let merchantId: Swift.String?
   @objc final public let metaData: Foundation.NSDictionary
   @objc final public let taskId: Swift.String?
-  @objc public init(environment: KnotAPI.Environment, product: KnotAPI.Product, event: Swift.String, merchant: Swift.String?, metaData: Foundation.NSDictionary, taskId: Swift.String?)
+  @objc public init(environment: KnotAPI.Environment, product: KnotAPI.Product, event: Swift.String, merchant: Swift.String?, merchantId: Swift.String?, metaData: Foundation.NSDictionary, taskId: Swift.String?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
@@ -128,7 +132,15 @@ infix operator =~ : DefaultPrecedence
   @objc final public let useSearch: Swift.Bool
   @objc final public let merchantIds: [Swift.Int]?
   @objc final public let entryPoint: Swift.String?
-  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?)
+  @objc final public let customerConfiguration: KnotAPI.CustomerConfiguration?
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil)
+  @objc deinit
+}
+@objc public class CustomerConfiguration : ObjectiveC.NSObject {
+  @objc final public let cardName: Swift.String?
+  @objc final public let customerName: Swift.String?
+  @objc final public let logoId: Swift.String?
+  @objc public init(cardName: Swift.String?, customerName: Swift.String?, logoId: Swift.String?)
   @objc deinit
 }
 extension KnotAPI.Product : Swift.Equatable {}

@@ -299,6 +299,29 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+/// A configuration used to initialize the KnotAPI SDK flow.
+SWIFT_CLASS("_TtC7KnotAPI21CustomerConfiguration")
+@interface CustomerConfiguration : NSObject
+/// Name of the card. Can be {@code null}.
+@property (nonatomic, readonly, copy) NSString * _Nullable cardName;
+/// Name of the customer. Can be {@code null}.
+@property (nonatomic, readonly, copy) NSString * _Nullable customerName;
+/// Logo ID associated with the customer. Can be {@code null}.
+@property (nonatomic, readonly, copy) NSString * _Nullable logoId;
+/// Configuration initializer.
+/// \param cardName Name of the card.
+///
+/// \param customerName Name of the customer.
+///
+/// \param logoId Logo ID associated with the customer
+///
+- (nonnull instancetype)initWithCardName:(NSString * _Nullable)cardName customerName:(NSString * _Nullable)customerName logoId:(NSString * _Nullable)logoId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// The Knot SDK environment for session instantiation.
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
 /// KnotAPI’s staging environment
@@ -312,7 +335,6 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 @class KnotConfiguration;
 @protocol KnotEventDelegate;
 @class UIViewController;
-@class NSString;
 
 /// The <code>Knot</code> class is the primary entry point for customers interacting with KnotAPI’s Card Switcher, Mass Switcher, and Transaction Link products.
 /// Applications can call its <code>open(configuration:, delegate)</code> function to instantiate a particular KnotAPI product flow,
@@ -373,6 +395,8 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 /// Limit the display of merchants to the defined IDs.
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable merchantIds;
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
+/// Customer configuration that includes card name, customer name, and logo ID.
+@property (nonatomic, readonly, strong) CustomerConfiguration * _Nullable customerConfiguration;
 /// Configuration initializer.
 /// \param sessionId The session ID used to start the product flow.
 ///
@@ -390,7 +414,7 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 ///
 /// \param merchantIds Limit the display of merchants to the defined IDs.
 ///
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -407,6 +431,12 @@ typedef SWIFT_ENUM(NSInteger, KnotError, open) {
   KnotErrorInternalError = 3,
 /// Represents merchant id not found.
   KnotErrorMerchantIdNotFound = 4,
+/// Represents invalid card name.
+  KnotErrorInvalidCardName = 5,
+/// Represents invalid customer name.
+  KnotErrorInvalidCustomerName = 6,
+/// Represents invalid logo id.
+  KnotErrorInvalidLogoId = 7,
 };
 static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
 
@@ -430,6 +460,8 @@ SWIFT_CLASS("_TtC7KnotAPI9KnotEvent")
 @property (nonatomic, readonly, copy) NSString * _Nonnull event;
 /// The merchant associated with the event (if applicable).
 @property (nonatomic, readonly, copy) NSString * _Nullable merchant;
+/// The merchant ID associated with the event (if applicable).
+@property (nonatomic, readonly, copy) NSString * _Nullable merchantId;
 /// Addional metadata related to the event, stored as an Objective-C compatible dictionary.
 @property (nonatomic, readonly, strong) NSDictionary * _Nonnull metaData;
 /// The identifier associated with this event.
@@ -437,13 +469,13 @@ SWIFT_CLASS("_TtC7KnotAPI9KnotEvent")
 /// Initializes a <code>KnotEvent</code> object.
 /// \param event The event code.
 ///
-/// \param merchant The merchant name.
+/// \param merchant The merchant event info.
 ///
 /// \param metaData Additional metadata in dictionary format.
 ///
 /// \param taskId The associated task identifier.
 ///
-- (nonnull instancetype)initWithEnvironment:(enum Environment)environment product:(enum Product)product event:(NSString * _Nonnull)event merchant:(NSString * _Nullable)merchant metaData:(NSDictionary * _Nonnull)metaData taskId:(NSString * _Nullable)taskId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithEnvironment:(enum Environment)environment product:(enum Product)product event:(NSString * _Nonnull)event merchant:(NSString * _Nullable)merchant merchantId:(NSString * _Nullable)merchantId metaData:(NSDictionary * _Nonnull)metaData taskId:(NSString * _Nullable)taskId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -794,6 +826,29 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSString;
+
+/// A configuration used to initialize the KnotAPI SDK flow.
+SWIFT_CLASS("_TtC7KnotAPI21CustomerConfiguration")
+@interface CustomerConfiguration : NSObject
+/// Name of the card. Can be {@code null}.
+@property (nonatomic, readonly, copy) NSString * _Nullable cardName;
+/// Name of the customer. Can be {@code null}.
+@property (nonatomic, readonly, copy) NSString * _Nullable customerName;
+/// Logo ID associated with the customer. Can be {@code null}.
+@property (nonatomic, readonly, copy) NSString * _Nullable logoId;
+/// Configuration initializer.
+/// \param cardName Name of the card.
+///
+/// \param customerName Name of the customer.
+///
+/// \param logoId Logo ID associated with the customer
+///
+- (nonnull instancetype)initWithCardName:(NSString * _Nullable)cardName customerName:(NSString * _Nullable)customerName logoId:(NSString * _Nullable)logoId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 /// The Knot SDK environment for session instantiation.
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
 /// KnotAPI’s staging environment
@@ -807,7 +862,6 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 @class KnotConfiguration;
 @protocol KnotEventDelegate;
 @class UIViewController;
-@class NSString;
 
 /// The <code>Knot</code> class is the primary entry point for customers interacting with KnotAPI’s Card Switcher, Mass Switcher, and Transaction Link products.
 /// Applications can call its <code>open(configuration:, delegate)</code> function to instantiate a particular KnotAPI product flow,
@@ -868,6 +922,8 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 /// Limit the display of merchants to the defined IDs.
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable merchantIds;
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
+/// Customer configuration that includes card name, customer name, and logo ID.
+@property (nonatomic, readonly, strong) CustomerConfiguration * _Nullable customerConfiguration;
 /// Configuration initializer.
 /// \param sessionId The session ID used to start the product flow.
 ///
@@ -885,7 +941,7 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 ///
 /// \param merchantIds Limit the display of merchants to the defined IDs.
 ///
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -902,6 +958,12 @@ typedef SWIFT_ENUM(NSInteger, KnotError, open) {
   KnotErrorInternalError = 3,
 /// Represents merchant id not found.
   KnotErrorMerchantIdNotFound = 4,
+/// Represents invalid card name.
+  KnotErrorInvalidCardName = 5,
+/// Represents invalid customer name.
+  KnotErrorInvalidCustomerName = 6,
+/// Represents invalid logo id.
+  KnotErrorInvalidLogoId = 7,
 };
 static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
 
@@ -925,6 +987,8 @@ SWIFT_CLASS("_TtC7KnotAPI9KnotEvent")
 @property (nonatomic, readonly, copy) NSString * _Nonnull event;
 /// The merchant associated with the event (if applicable).
 @property (nonatomic, readonly, copy) NSString * _Nullable merchant;
+/// The merchant ID associated with the event (if applicable).
+@property (nonatomic, readonly, copy) NSString * _Nullable merchantId;
 /// Addional metadata related to the event, stored as an Objective-C compatible dictionary.
 @property (nonatomic, readonly, strong) NSDictionary * _Nonnull metaData;
 /// The identifier associated with this event.
@@ -932,13 +996,13 @@ SWIFT_CLASS("_TtC7KnotAPI9KnotEvent")
 /// Initializes a <code>KnotEvent</code> object.
 /// \param event The event code.
 ///
-/// \param merchant The merchant name.
+/// \param merchant The merchant event info.
 ///
 /// \param metaData Additional metadata in dictionary format.
 ///
 /// \param taskId The associated task identifier.
 ///
-- (nonnull instancetype)initWithEnvironment:(enum Environment)environment product:(enum Product)product event:(NSString * _Nonnull)event merchant:(NSString * _Nullable)merchant metaData:(NSDictionary * _Nonnull)metaData taskId:(NSString * _Nullable)taskId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithEnvironment:(enum Environment)environment product:(enum Product)product event:(NSString * _Nonnull)event merchant:(NSString * _Nullable)merchant merchantId:(NSString * _Nullable)merchantId metaData:(NSDictionary * _Nonnull)metaData taskId:(NSString * _Nullable)taskId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
