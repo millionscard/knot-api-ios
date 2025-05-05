@@ -6558,28 +6558,28 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 561,
       "length": 18,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 624,
+      "offset": 632,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 692,
+      "offset": 700,
       "length": 19,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 758,
+      "offset": 766,
       "length": 13,
       "value": "7"
     },
@@ -6607,28 +6607,28 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 561,
       "length": 18,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 624,
+      "offset": 632,
       "length": 15,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 692,
+      "offset": 700,
       "length": 19,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotError.swift",
       "kind": "IntegerLiteral",
-      "offset": 758,
+      "offset": 766,
       "length": 13,
       "value": "7"
     },
@@ -7594,7 +7594,7 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionOperation.swift",
       "kind": "StringLiteral",
-      "offset": 12140,
+      "offset": 12141,
       "length": 30,
       "value": "\"KnotAPI.TerminatingPageActionOperation\""
     },
