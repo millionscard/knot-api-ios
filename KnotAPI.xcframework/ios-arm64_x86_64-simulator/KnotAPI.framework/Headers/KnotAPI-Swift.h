@@ -341,7 +341,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 /// and receive event notifications via a <code>KnotEventDelegate</code>.
 SWIFT_CLASS("_TtC7KnotAPI4Knot")
 @interface Knot : NSObject
-/// Private initializer.
+/// Private initializer.-
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Start a KnotAPI product flow with the necessary configurations and optionally receive delegate notifications.
@@ -507,6 +507,7 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
 /// Knot Transaction Link product.
   ProductTransaction_link = 1,
 };
+
 
 
 
@@ -868,7 +869,7 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
 /// and receive event notifications via a <code>KnotEventDelegate</code>.
 SWIFT_CLASS("_TtC7KnotAPI4Knot")
 @interface Knot : NSObject
-/// Private initializer.
+/// Private initializer.-
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Start a KnotAPI product flow with the necessary configurations and optionally receive delegate notifications.
@@ -1034,6 +1035,7 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
 /// Knot Transaction Link product.
   ProductTransaction_link = 1,
 };
+
 
 
 
