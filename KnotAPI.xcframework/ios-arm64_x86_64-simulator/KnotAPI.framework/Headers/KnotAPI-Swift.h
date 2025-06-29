@@ -386,8 +386,7 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
 /// The KnotAPI <code>Environment</code> .
 @property (nonatomic, readonly) enum Environment environment;
-/// The particular KnotAPI <code>Product</code> you intend to use.
-@property (nonatomic, readonly) enum Product product;
+@property (nonatomic, readonly) enum Product product SWIFT_DEPRECATED_MSG("The variable will be removed in the next major version");
 /// A flag to enable the display of KnotAPI merchant categories in the flow.
 @property (nonatomic, readonly) BOOL useCategories;
 /// A flag to show, or hide a search bar in the flow.
@@ -397,6 +396,7 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
 /// Customer configuration that includes card name, customer name, and logo ID.
 @property (nonatomic, readonly, strong) CustomerConfiguration * _Nullable customerConfiguration;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("The init will be removed in the next major version. Use initializer without the product variable moving forward.");
 /// Configuration initializer.
 /// \param sessionId The session ID used to start the product flow.
 ///
@@ -406,15 +406,13 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 ///
 /// \param entryPoint A session window entry point.
 ///
-/// \param product The particular KnotAPI product you intend to use.
-///
 /// \param useCategories A flag to enable the display of KnotAPI merchant categories in the flow.
 ///
 /// \param useSearch A flag to show, or hide a search bar in the flow.
 ///
 /// \param merchantIds Limit the display of merchants to the defined IDs.
 ///
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -506,6 +504,8 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
   ProductCard_switcher = 0,
 /// Knot Transaction Link product.
   ProductTransaction_link = 1,
+/// Knot Link product.
+  ProductLink = 2,
 };
 
 
@@ -914,8 +914,7 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
 /// The KnotAPI <code>Environment</code> .
 @property (nonatomic, readonly) enum Environment environment;
-/// The particular KnotAPI <code>Product</code> you intend to use.
-@property (nonatomic, readonly) enum Product product;
+@property (nonatomic, readonly) enum Product product SWIFT_DEPRECATED_MSG("The variable will be removed in the next major version");
 /// A flag to enable the display of KnotAPI merchant categories in the flow.
 @property (nonatomic, readonly) BOOL useCategories;
 /// A flag to show, or hide a search bar in the flow.
@@ -925,6 +924,7 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
 /// Customer configuration that includes card name, customer name, and logo ID.
 @property (nonatomic, readonly, strong) CustomerConfiguration * _Nullable customerConfiguration;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("The init will be removed in the next major version. Use initializer without the product variable moving forward.");
 /// Configuration initializer.
 /// \param sessionId The session ID used to start the product flow.
 ///
@@ -934,15 +934,13 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 ///
 /// \param entryPoint A session window entry point.
 ///
-/// \param product The particular KnotAPI product you intend to use.
-///
 /// \param useCategories A flag to enable the display of KnotAPI merchant categories in the flow.
 ///
 /// \param useSearch A flag to show, or hide a search bar in the flow.
 ///
 /// \param merchantIds Limit the display of merchants to the defined IDs.
 ///
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1034,6 +1032,8 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
   ProductCard_switcher = 0,
 /// Knot Transaction Link product.
   ProductTransaction_link = 1,
+/// Knot Link product.
+  ProductLink = 2,
 };
 
 

@@ -16,6 +16,7 @@ import _SwiftConcurrencyShims
 @objc public enum Product : Swift.Int {
   case card_switcher
   case transaction_link
+  case link
   public var stringValue: Swift.String {
     get
   }
@@ -127,13 +128,16 @@ infix operator =~ : DefaultPrecedence
   @objc final public let sessionId: Swift.String
   @objc final public let clientId: Swift.String
   @objc final public let environment: KnotAPI.Environment
+  @available(*, deprecated, message: "The variable will be removed in the next major version")
   @objc final public let product: KnotAPI.Product
   @objc final public let useCategories: Swift.Bool
   @objc final public let useSearch: Swift.Bool
   @objc final public let merchantIds: [Swift.Int]?
   @objc final public let entryPoint: Swift.String?
   @objc final public let customerConfiguration: KnotAPI.CustomerConfiguration?
+  @available(*, deprecated, message: "The init will be removed in the next major version. Use initializer without the product variable moving forward.")
   @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil)
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil)
   @objc deinit
 }
 @objc public class CustomerConfiguration : ObjectiveC.NSObject {
