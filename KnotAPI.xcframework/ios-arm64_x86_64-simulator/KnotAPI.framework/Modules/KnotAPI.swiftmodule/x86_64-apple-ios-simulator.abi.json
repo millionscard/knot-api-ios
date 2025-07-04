@@ -6703,6 +6703,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/SevenElevenViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 176,
+      "length": 20,
+      "value": "\"KnotAPI.SevenElevenViewModel\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
@@ -8062,6 +8069,13 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/LyftSSOViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2019,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/LyftSSOViewModel.swift",
       "kind": "StringLiteral",
       "offset": 132,
       "length": 16,
@@ -8784,84 +8798,84 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3449,
+      "offset": 3530,
       "length": 562,
       "value": "\"    function adjustViewPort() {\n        try {\n            var meta = document.createElement('meta');\n            meta.setAttribute('name', 'viewport');\n            meta.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover');\n            const head = document.querySelector('head');\n            head.appendChild(meta);\n\n        } catch(e) {\n            console.log(e)\n        }\n    };a\n    adjustViewPort()\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4045,
+      "offset": 4126,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "Array",
-      "offset": 4251,
+      "offset": 4332,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5314,
+      "offset": 5395,
       "length": 15,
       "value": "\"scriptTrigger\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "Array",
-      "offset": 6062,
+      "offset": 6143,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "Array",
-      "offset": 6136,
+      "offset": 6217,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6209,
+      "offset": 6290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6258,
+      "offset": 6339,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6303,
+      "offset": 6384,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7520,
+      "offset": 7601,
       "length": 13,
       "value": "\"intercepted\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "Dictionary",
-      "offset": 7582,
+      "offset": 7663,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 39214,
+      "offset": 41566,
       "length": 5,
       "value": "false"
     },
