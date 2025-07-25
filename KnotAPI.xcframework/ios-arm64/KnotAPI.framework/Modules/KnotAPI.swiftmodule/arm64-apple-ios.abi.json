@@ -1542,6 +1542,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KnotAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KnotAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "KnotEvent",
         "printedName": "KnotEvent",
@@ -7081,6 +7098,20 @@
       "value": "\"KnotAPI.MacysViewModel\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AppleViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 35,
+      "value": "\"https:\/\/account.apple.com\/sign-in\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/AppleViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 57,
+      "value": "\"https:\/\/idmsa.apple.com\/appleauth\/auth\/authorize\/signin\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/KnotEvent.swift",
       "kind": "StringLiteral",
       "offset": 203,
@@ -8273,14 +8304,14 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Helpers\/ScriptMessageHandlerContainer.swift",
       "kind": "StringLiteral",
-      "offset": 441,
+      "offset": 436,
       "length": 20,
       "value": "\"KnotAPI.ScriptMessageHandler\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Helpers\/ScriptMessageHandlerContainer.swift",
       "kind": "Dictionary",
-      "offset": 1044,
+      "offset": 968,
       "length": 3,
       "value": "[]"
     },
@@ -8875,7 +8906,7 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 41566,
+      "offset": 42584,
       "length": 5,
       "value": "false"
     },
