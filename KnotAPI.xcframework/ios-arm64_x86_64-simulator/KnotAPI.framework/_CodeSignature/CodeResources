@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		s5vhTxmgclh64YGWuWOx28WQfg8=
+		dWckOgHO1209J05kiKhJBlcA7EE=
 		</data>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iEeV9fVhJ+YunXeoq+zhqbzSrYQ=
+		TVdYa+19fNXuLXiilX9s3BYu8sU=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Eazv6rUdvMjcpb8EZgpOt0ztOnM=
+		X4hL3zavGNmamQBeogfRMEyC9/0=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/BhAcicYGmBLvxEizo4fRiugawE=
+		4koiNgKL7Uug7tchBYs1TqhL97I=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Eazv6rUdvMjcpb8EZgpOt0ztOnM=
+		X4hL3zavGNmamQBeogfRMEyC9/0=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		G2bUHdmgAJbfJEcLOW0dcBhYT9c=
+		ZXqOq8m7gqej1kyijFozrQ3wGKM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>animation_640_lchm0dij.gif</key>
 		<data>
-		PWqCUXRCms26GNRgDqdd13nsKPY=
+		sSTuvwHvx7H0W+/zQIwYfSpcYNs=
 		</data>
 		<key>back_button.png</key>
 		<data>
-		G3mvRWpkLaV1vx6MOEhZ20JXeng=
+		DfK24aD7fijTRQiv+IVHuuQXHyM=
 		</data>
 		<key>close-dialog-icon.png</key>
 		<data>
@@ -78,15 +78,15 @@
 		</data>
 		<key>close_icon.png</key>
 		<data>
-		Malxa7ykdX/NEAUiWAlpQ1DhmdA=
+		X9pRtHoQG0P9AoEczk9mG+jqTls=
 		</data>
 		<key>close_icon_white.png</key>
 		<data>
-		OonGE71oIfJzH/NrLF7sHG3F8EE=
+		RhNXu2Y3ZBL+wvEy6+fF796JMXE=
 		</data>
 		<key>knot_logo.png</key>
 		<data>
-		i4y8gmI1wkSWtl2gSTLW9PXmkik=
+		NhgnRzEPJT4AP6kv+NUSkF8dV8c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -95,7 +95,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gPtcf8jSi/299RKQNXuoSBnKIZjKtixbGb4q8RmPEtA=
+			1auvNKSdJK6e3736ZIeee1FpdHmC/l5LCMGBlXPROrI=
 			</data>
 		</dict>
 		<key>Headers/KnotAPI-Swift.h</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZ3tLAmaap0nGwTmNKjpRvm11d+bKbt534JHm7a4BVw=
+			SmYdmUayuF3RxA+HeeNWOQnNxN+5hchwL6wZXsU5nDI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aMayLRpkDyD3HiTu8HOeBr4gTEFydYj3LyDBOYHkGY0=
+			XNaQvafl1SikkrS77t4fgtDb+MfzL1LnIDpyOv4hPas=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZ3tLAmaap0nGwTmNKjpRvm11d+bKbt534JHm7a4BVw=
+			SmYdmUayuF3RxA+HeeNWOQnNxN+5hchwL6wZXsU5nDI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3X6TaAMYEya2kTgksHN6/8OyPzxx5XTY8WhRB1gU1g=
+			A5YwVn9F4eV3avbRtEGFLkA5rJajeujRjvsBLdWUimk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -193,14 +193,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHuoDtNeBRBm9AqP8cNYgAzYwBLk4TgtBsJWjj8V+34=
+			jO85sXMr+oO7SrU9mJYPVb17bgu1fSscdNbnWNJkMgA=
 			</data>
 		</dict>
 		<key>back_button.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			79k/aPlbLLSzb8HURPFIPqGeIPojx/5ouCvjiLvcnec=
+			+cqXeW1VFfu1KoAaAfqV451+D0vduLEFS4l+GHaD0wI=
 			</data>
 		</dict>
 		<key>close-dialog-icon.png</key>
@@ -214,21 +214,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qBtz5sc6PvJvr7BgCRaIpZsk1aBPXw0gNg+3fWZPy3g=
+			8NwXFHzxgyzI5K/L7RiF9D3mGnvRMPlhL8jr+g3x4DE=
 			</data>
 		</dict>
 		<key>close_icon_white.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGkYK2KXJtLVRjo5uDa/Dp+Z6qIkfG7uXmc9Zn7eoIc=
+			TIzAvRh6WQSfswVE6n1PqVksiuohdM2nvcTGGVJVmDc=
 			</data>
 		</dict>
 		<key>knot_logo.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OppkLEuLPV/OdRTggYBrQY7jmxqFLL9fwPtRHXRNzEI=
+			tQ0UoaEl+TzNv4xEr0ffPL9mLNQ/U223jBII/TkBqUI=
 			</data>
 		</dict>
 	</dict>

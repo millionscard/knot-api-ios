@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		s5vhTxmgclh64YGWuWOx28WQfg8=
+		dWckOgHO1209J05kiKhJBlcA7EE=
 		</data>
 		<key>Headers/KnotAPI-Swift.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SlFukUSM5cRYTfi7+NwXcOyEIdA=
+		jgqwCEeraUDAIRsmKE4rK0T1Aas=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		JRDGY0Q9RF7vWuplDwttX2gZR/Q=
+		r663B0LrMIX+BBu097aIZ6KNpNg=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OFXHjEz/neXOMqV2WFlVR1OlFVA=
+		VmqvoElPTYti0Knf3JrJdU6uhk8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>animation_640_lchm0dij.gif</key>
 		<data>
-		PWqCUXRCms26GNRgDqdd13nsKPY=
+		sSTuvwHvx7H0W+/zQIwYfSpcYNs=
 		</data>
 		<key>back_button.png</key>
 		<data>
-		G3mvRWpkLaV1vx6MOEhZ20JXeng=
+		DfK24aD7fijTRQiv+IVHuuQXHyM=
 		</data>
 		<key>close-dialog-icon.png</key>
 		<data>
@@ -58,15 +58,15 @@
 		</data>
 		<key>close_icon.png</key>
 		<data>
-		Malxa7ykdX/NEAUiWAlpQ1DhmdA=
+		X9pRtHoQG0P9AoEczk9mG+jqTls=
 		</data>
 		<key>close_icon_white.png</key>
 		<data>
-		OonGE71oIfJzH/NrLF7sHG3F8EE=
+		RhNXu2Y3ZBL+wvEy6+fF796JMXE=
 		</data>
 		<key>knot_logo.png</key>
 		<data>
-		i4y8gmI1wkSWtl2gSTLW9PXmkik=
+		NhgnRzEPJT4AP6kv+NUSkF8dV8c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gPtcf8jSi/299RKQNXuoSBnKIZjKtixbGb4q8RmPEtA=
+			1auvNKSdJK6e3736ZIeee1FpdHmC/l5LCMGBlXPROrI=
 			</data>
 		</dict>
 		<key>Headers/KnotAPI-Swift.h</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d9DGXlGmA/EagGLPxp1VbZJrtlhFrgnZVezqXSS3HEg=
+			CaF1gwFhWB7MBaOItpAZK8ghaIA/X3qpXvm+zxWAmqE=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qO5VtRyVTHRFFBN4g8krh5nlRimL/fKhMftGe6LB3rM=
+			tfpgxnVLFGPX1OZ00qJGgSjhifDI1JEYfPFPT0MYrJA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHuoDtNeBRBm9AqP8cNYgAzYwBLk4TgtBsJWjj8V+34=
+			jO85sXMr+oO7SrU9mJYPVb17bgu1fSscdNbnWNJkMgA=
 			</data>
 		</dict>
 		<key>back_button.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			79k/aPlbLLSzb8HURPFIPqGeIPojx/5ouCvjiLvcnec=
+			+cqXeW1VFfu1KoAaAfqV451+D0vduLEFS4l+GHaD0wI=
 			</data>
 		</dict>
 		<key>close-dialog-icon.png</key>
@@ -159,21 +159,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qBtz5sc6PvJvr7BgCRaIpZsk1aBPXw0gNg+3fWZPy3g=
+			8NwXFHzxgyzI5K/L7RiF9D3mGnvRMPlhL8jr+g3x4DE=
 			</data>
 		</dict>
 		<key>close_icon_white.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGkYK2KXJtLVRjo5uDa/Dp+Z6qIkfG7uXmc9Zn7eoIc=
+			TIzAvRh6WQSfswVE6n1PqVksiuohdM2nvcTGGVJVmDc=
 			</data>
 		</dict>
 		<key>knot_logo.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OppkLEuLPV/OdRTggYBrQY7jmxqFLL9fwPtRHXRNzEI=
+			tQ0UoaEl+TzNv4xEr0ffPL9mLNQ/U223jBII/TkBqUI=
 			</data>
 		</dict>
 	</dict>

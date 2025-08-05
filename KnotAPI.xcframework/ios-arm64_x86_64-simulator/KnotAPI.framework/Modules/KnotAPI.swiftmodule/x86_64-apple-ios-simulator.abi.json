@@ -6918,121 +6918,128 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "BooleanLiteral",
-      "offset": 966,
+      "offset": 1262,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1107,
+      "offset": 1403,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1145,
+      "offset": 1441,
       "length": 12,
       "value": "\"isUrlRegex\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1198,
+      "offset": 1494,
       "length": 20,
       "value": "\"onDidFinishLoading\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1252,
+      "offset": 1548,
       "length": 13,
       "value": "\"redirectUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1304,
+      "offset": 1600,
       "length": 18,
       "value": "\"sendLoginCookies\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1361,
+      "offset": 1657,
       "length": 18,
       "value": "\"sendLocalStorage\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1420,
+      "offset": 1716,
       "length": 20,
       "value": "\"sendSessionStorage\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1774,
       "length": 17,
       "value": "\"extraCookiesKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 1830,
       "length": 18,
       "value": "\"savedCookieNames\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1583,
+      "offset": 1879,
       "length": 10,
       "value": "\"complete\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1623,
+      "offset": 1919,
       "length": 9,
       "value": "\"failure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1670,
+      "offset": 1966,
       "length": 17,
       "value": "\"cookiePredicate\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1723,
+      "offset": 2019,
       "length": 15,
       "value": "\"cookieTimeout\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1779,
+      "offset": 2075,
       "length": 20,
       "value": "\"localStorageParams\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1841,
+      "offset": 2137,
       "length": 22,
       "value": "\"sessionStorageParams\""
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
       "kind": "StringLiteral",
-      "offset": 1903,
+      "offset": 2199,
       "length": 19,
       "value": "\"isStorageRequired\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/PageActionTrigger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14382,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/Merchants\/GoogleMassSwitcherViewModel.swift",
@@ -7303,14 +7310,21 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/MerchantFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 217,
+      "offset": 255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/MerchantFlow.swift",
       "kind": "BooleanLiteral",
-      "offset": 456,
+      "offset": 305,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/MerchantFlow.swift",
+      "kind": "BooleanLiteral",
+      "offset": 583,
       "length": 5,
       "value": "false"
     },
@@ -8906,7 +8920,7 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/ViewModels\/MerchantActionViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 42584,
+      "offset": 42724,
       "length": 5,
       "value": "false"
     },
