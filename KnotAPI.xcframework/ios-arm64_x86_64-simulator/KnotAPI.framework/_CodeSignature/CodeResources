@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rJfskK2gsXMXmwrjX1tEKp0H+OY=
+		+2tZfNKTy9Yg22Yvzylxz9bmjPA=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		X4hL3zavGNmamQBeogfRMEyC9/0=
+		Cw8mwFUIObNIxm5jTq2Yq1KBb8s=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IAeYaiMY3gKliBtHccGi3Byoy84=
+		Nlo0UFvtrr9/OM8WN0TPfyOW00M=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		X4hL3zavGNmamQBeogfRMEyC9/0=
+		Cw8mwFUIObNIxm5jTq2Yq1KBb8s=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		40nMesUxUWWQUleA86/olMX1a9c=
+		0+2K1bKlrxqYT5z6bHzrX3OoLlI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SmYdmUayuF3RxA+HeeNWOQnNxN+5hchwL6wZXsU5nDI=
+			UBH13WYcTah24I2QnpxvxnAGNfMXvUYbNCBLSS8beDQ=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kE+KG0K74JoRYN2YrnI1VEIx4ylp2mPtaB+jOmaHQHs=
+			fyfv32wKR1m7/ndN7sw0bYv1yW8YCc0+8/u3Do15wvo=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SmYdmUayuF3RxA+HeeNWOQnNxN+5hchwL6wZXsU5nDI=
+			UBH13WYcTah24I2QnpxvxnAGNfMXvUYbNCBLSS8beDQ=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dfGNmMB7mpXamJ2Y/UPDn9hYPQZLb2ptpLczXHCNcOg=
+			0XRRAqnBZgvFYS+wOfhGvQxSWOpicmEVEUTa+eTK12I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
