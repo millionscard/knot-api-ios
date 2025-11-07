@@ -357,13 +357,15 @@ SWIFT_CLASS("_TtC7KnotAPI4Knot")
 /// A factory method to create a configured <code>UIViewController</code> that will present the KnotAPI flow within the view controller.
 /// Use this factory method if you do not want to want KnotAPI to present the flow modally. You are responsible for presenting and
 /// dismissing the flow.
+/// <ul>
+///   <li>
+///     Returns a UIViewController configured for the requested product KnotAPI flow.
+///   </li>
+/// </ul>
 /// \param configuration A <code>KnotConfiguration</code> specifiing the product and environment settings.
 ///
 /// \param delegate An optional <code>KnotEventDelegate</code> used to receive merchant related events.
 ///
-///
-/// returns:
-/// UIViewController configured for the requested product KnotAPI flow.
 + (UIViewController * _Nonnull)createKnotViewControllerWithConfiguration:(KnotConfiguration * _Nonnull)configuration delegate:(id <KnotEventDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
 /// Dismiss a presented KnotAPI flow.
 + (void)close;
@@ -872,13 +874,15 @@ SWIFT_CLASS("_TtC7KnotAPI4Knot")
 /// A factory method to create a configured <code>UIViewController</code> that will present the KnotAPI flow within the view controller.
 /// Use this factory method if you do not want to want KnotAPI to present the flow modally. You are responsible for presenting and
 /// dismissing the flow.
+/// <ul>
+///   <li>
+///     Returns a UIViewController configured for the requested product KnotAPI flow.
+///   </li>
+/// </ul>
 /// \param configuration A <code>KnotConfiguration</code> specifiing the product and environment settings.
 ///
 /// \param delegate An optional <code>KnotEventDelegate</code> used to receive merchant related events.
 ///
-///
-/// returns:
-/// UIViewController configured for the requested product KnotAPI flow.
 + (UIViewController * _Nonnull)createKnotViewControllerWithConfiguration:(KnotConfiguration * _Nonnull)configuration delegate:(id <KnotEventDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
 /// Dismiss a presented KnotAPI flow.
 + (void)close;
