@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KC7TfzTVwNe0864uMCQBlL9hRJM=
+		sJNHi1lxJxxMrAemfdpbuK+5YDs=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2GjBBaYLkOzKCiOnCHD8M3N5rm4=
+		milX60UHiK49IPMr3ypio7QSWEo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w0ah/3qjYwpepIoDOF1ixkUP1SNoH2l1+anOJHz+72I=
+			IDCArKskaRbDIX0kQr0VFOQnv/8tgzviFh5vx6utl1M=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OmsEDpE7ubydMUkEqn+yl2MKGXW5K4LttTKc/z97sy8=
+			SXMx0dVuOuB+LIcpUENaGqTjnJScDZU4DdoCYwcrdbQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
