@@ -15,6 +15,25 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class KnotSpinnerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var strokeColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var isAnimating: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToWindow()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency final public func startAnimating()
+  @_Concurrency.MainActor @preconcurrency final public func stopAnimating()
+}
 @objc public enum Product : Swift.Int {
   case card_switcher
   case transaction_link

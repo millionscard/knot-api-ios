@@ -281,8 +281,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -493,6 +495,28 @@ SWIFT_PROTOCOL("_TtP7KnotAPI17KnotEventDelegate_")
 - (void)onEventWithEvent:(KnotEvent * _Nonnull)event;
 /// Notified when the KnotAPI webview has been dismissed by user of SDK action.
 - (void)onExit;
+@end
+
+@class NSCoder;
+/// Core Animation–based Knot spinner that replicates:
+/// <ul>
+///   <li>
+///     Global rotation: 3s linear, infinite
+///   </li>
+///   <li>
+///     Slow circle: 1.75s linear, infinite
+///   </li>
+///   <li>
+///     Fast circle: completes rotation at 65% with ease-in-out, then holds
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC7KnotAPI15KnotSpinnerView")
+@interface KnotSpinnerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)didMoveToWindow;
 @end
 
 /// Knot Link products available for SDK session instantiation.
