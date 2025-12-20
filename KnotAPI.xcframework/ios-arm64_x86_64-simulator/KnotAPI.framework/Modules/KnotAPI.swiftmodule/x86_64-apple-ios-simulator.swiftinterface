@@ -38,6 +38,7 @@ import _SwiftConcurrencyShims
   case card_switcher
   case transaction_link
   case link
+  case vault
   public var stringValue: Swift.String {
     get
   }

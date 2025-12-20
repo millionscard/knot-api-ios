@@ -527,6 +527,8 @@ typedef SWIFT_ENUM(NSInteger, Product, open) {
   ProductTransaction_link = 1,
 /// Knot Link product.
   ProductLink = 2,
+/// Knot Vault product.
+  ProductVault = 3,
 };
 
 #endif
