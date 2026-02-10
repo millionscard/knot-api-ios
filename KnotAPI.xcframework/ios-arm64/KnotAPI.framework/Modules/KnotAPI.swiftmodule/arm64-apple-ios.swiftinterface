@@ -64,6 +64,7 @@ import _SwiftConcurrencyShims
   case invalidCardName
   case invalidCustomerName
   case invalidLogoId
+  case invalidLocale
   public var errorDescription: Swift.String {
     get
   }
@@ -159,9 +160,11 @@ infix operator =~ : DefaultPrecedence
   @objc final public let merchantIds: [Swift.Int]?
   @objc final public let entryPoint: Swift.String?
   @objc final public let customerConfiguration: KnotAPI.CustomerConfiguration?
+  @objc final public let locale: Swift.String?
+  @objc final public let metadata: [Swift.String : Swift.String]?
   @available(*, deprecated, message: "The init will be removed in the next major version. Use initializer without the product variable moving forward.")
-  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil)
-  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil)
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil, locale: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil, locale: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 @objc public class CustomerConfiguration : ObjectiveC.NSObject {
