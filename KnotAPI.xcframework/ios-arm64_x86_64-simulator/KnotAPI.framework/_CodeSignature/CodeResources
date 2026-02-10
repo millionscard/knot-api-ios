@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I7tEF6jd0eLtjQMxPUaGQTPB0so=
+		/XPbuwSE8tSQe7/FDBLa5mLXSkw=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aP0VzSraImrh2tk2HCW8x5NYRdE=
+		+FDSbsfLewh/JaJELCzClNFR+ik=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		icAasaBA7yYKQHqQpKr+j5cV7Bw=
+		5vwnYIgGfxWWKMC5XMce+HK3VOw=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aP0VzSraImrh2tk2HCW8x5NYRdE=
+		+FDSbsfLewh/JaJELCzClNFR+ik=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		A8hqJlRK8XwZuYfeFmiJ7G/t1yU=
+		FBkNHshAFlibmqguDh6c/76W1P8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xBkuj8kWWQ8jxCpQSAdzUaDX4iaBJi6lI0+KpwngCEw=
+			LlGsGe8N1dA1TwdSHP/CwnCrwEi8PgvbTQpCWHOjglM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			piLK8JtipGNYJ1PgMHnPtti2YECnSjery7++pdn/B/Y=
+			Z196pTNFIxsZwoUBTHZkSxUPPBIy6bRZCvlrov2tkpI=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xBkuj8kWWQ8jxCpQSAdzUaDX4iaBJi6lI0+KpwngCEw=
+			LlGsGe8N1dA1TwdSHP/CwnCrwEi8PgvbTQpCWHOjglM=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aBbfPhsDE6vqG+17WLoKNhcPntzY0LtZb5lTdKgyr+U=
+			bcSgDrAQw4T6JE5FrdHqnw0zz3LZGvcvOncf1TOICiE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

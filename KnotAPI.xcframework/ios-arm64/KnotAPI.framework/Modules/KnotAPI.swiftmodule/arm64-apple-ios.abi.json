@@ -8151,21 +8151,21 @@
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Models\/Product.swift",
       "kind": "IntegerLiteral",
-      "offset": 383,
+      "offset": 387,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/NinetyPercentScreenPresentationController.swift",
       "kind": "FloatLiteral",
-      "offset": 2269,
+      "offset": 2273,
       "length": 4,
       "value": "1.00"
     },
     {
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/NinetyPercentScreenPresentationController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2299,
+      "offset": 2303,
       "length": 1,
       "value": "0"
     },
@@ -10294,13 +10294,6 @@
       "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 1498,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/knotapi-ios-sdk\/knotapi-ios-sdk\/src\/KnotAPI\/Controllers\/KnotPresenter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1793,
       "length": 5,
       "value": "false"
     },
