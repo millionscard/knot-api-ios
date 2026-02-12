@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/KnotAPI.framework/KnotAPI</key>
 		<data>
-		VJFhZtHPa6dAtYrwtaQiMpj0pMI=
+		duCfTPYHbMg7tZYiuncbazZU4cw=
 		</data>
 		<key>ios-arm64/KnotAPI.framework/Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -196,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VJFhZtHPa6dAtYrwtaQiMpj0pMI=
+			duCfTPYHbMg7tZYiuncbazZU4cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HNUCP4URhxlVEe/Q3cYluteS4TFVFrL+IQY2kIaBKpM=
+			1ruQYITdz7Otoi2JqVE7tetqaiUHXg+La8BJRBohyRo=
 			</data>
 		</dict>
 		<key>ios-arm64/KnotAPI.framework/Modules/KnotAPI.swiftmodule/arm64-apple-ios.abi.json</key>
