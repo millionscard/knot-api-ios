@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tWlHGygEiuKM6wL+eO6/E0KKSZU=
+		HwoeT6CdNyqBDIlapskfGaJ7w+w=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		UGx3aIHLE/9qjQenvhULBVtolfM=
+		G435jF+RwT9xKOGkiBodWTtLEw8=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PBWE2eOVUAbE4HvDXlPiblyt04A=
+		kXq+OcghlfNUE9VRPmNg+5kSHaY=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		UGx3aIHLE/9qjQenvhULBVtolfM=
+		G435jF+RwT9xKOGkiBodWTtLEw8=
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bW1uvnC31v1g6DisfzeOZEEA+u8=
+		hkepu36V1f9ETiHkEiB+U8z0aho=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9IHzMT/6dxjBtcoDITOe7iEKeMjAcUnq/fRR34nP8h4=
+			+vYJj+8vXCnu8Zo04ugEr8ja5+nPUF+T9Y8b7LW++Zs=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2CR0g75oU6F6vzd+KmNqvWupnzuu3Kf1e+/V66LiS6s=
+			VcRpzhZjA49w1wjxjPutedvsdGrKAwKEgXMOBnihxVc=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9IHzMT/6dxjBtcoDITOe7iEKeMjAcUnq/fRR34nP8h4=
+			+vYJj+8vXCnu8Zo04ugEr8ja5+nPUF+T9Y8b7LW++Zs=
 			</data>
 		</dict>
 		<key>Modules/KnotAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cevp9t01xDbFaPFes4CPU2HUbAEMLrOoo+2SUwdWjj8=
+			o7Q1XkOW5BUsLhKW8oFaX+G5f9F5xIvLSvko+TeS7Qs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
