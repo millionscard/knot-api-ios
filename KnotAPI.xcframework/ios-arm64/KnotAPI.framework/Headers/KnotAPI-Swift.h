@@ -398,7 +398,13 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nullable entryPoint;
 /// Customer configuration that includes card name, customer name, and logo ID.
 @property (nonatomic, readonly, strong) CustomerConfiguration * _Nullable customerConfiguration;
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("The init will be removed in the next major version. Use initializer without the product variable moving forward.");
+/// The locale for language localization (BCP-47 format, e.g., “en-US”, “es-US”).
+/// If nil or not provided, defaults to “en-US”.
+@property (nonatomic, readonly, copy) NSString * _Nullable locale;
+/// Optional metadata to be included in webhook payloads.
+/// Keys and values must be strings. Maximum 10 keys, 500 chars per value.
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable metadata;
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint product:(enum Product)product useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration locale:(NSString * _Nullable)locale metadata:(NSDictionary<NSString *, NSString *> * _Nullable)metadata OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("The init will be removed in the next major version. Use initializer without the product variable moving forward.");
 /// Configuration initializer.
 /// \param sessionId The session ID used to start the product flow.
 ///
@@ -414,7 +420,11 @@ SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
 ///
 /// \param merchantIds Limit the display of merchants to the defined IDs.
 ///
-- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration OBJC_DESIGNATED_INITIALIZER;
+/// \param locale The locale for language localization (BCP-47 format).
+///
+/// \param metadata Optional metadata to be included in webhook payloads.
+///
+- (nonnull instancetype)initWithSessionId:(NSString * _Nonnull)sessionId clientId:(NSString * _Nonnull)clientId environment:(enum Environment)environment entryPoint:(NSString * _Nullable)entryPoint useCategories:(BOOL)useCategories useSearch:(BOOL)useSearch merchantIds:(NSArray<NSNumber *> * _Nullable)merchantIds customerConfiguration:(CustomerConfiguration * _Nullable)customerConfiguration locale:(NSString * _Nullable)locale metadata:(NSDictionary<NSString *, NSString *> * _Nullable)metadata OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -437,6 +447,8 @@ typedef SWIFT_ENUM(NSInteger, KnotError, open) {
   KnotErrorInvalidCustomerName = 6,
 /// Represents invalid logo id.
   KnotErrorInvalidLogoId = 7,
+/// Indicates that the locale is invalid.
+  KnotErrorInvalidLocale = 8,
 };
 static NSString * _Nonnull const KnotErrorDomain = @"KnotAPI.KnotError";
 
@@ -446,7 +458,6 @@ SWIFT_CLASS("_TtC7KnotAPI11Reflectable")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSDictionary;
 /// Represents a Knot event received during user interaction within the Knot SDK.
 SWIFT_CLASS("_TtC7KnotAPI9KnotEvent")
 @interface KnotEvent : Reflectable
