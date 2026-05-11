@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KnotAPI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import Compression
 import DeveloperToolsSupport
@@ -26,7 +26,9 @@ import _SwiftConcurrencyShims
     get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
@@ -44,12 +46,16 @@ import _SwiftConcurrencyShims
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
   public var description: Swift.String {
     get
   }
   public static let allCases: [KnotAPI.Product]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -71,7 +77,9 @@ import _SwiftConcurrencyShims
   public var errorCode: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public static var _nsErrorDomain: Swift.String {
     get
@@ -88,7 +96,9 @@ import _SwiftConcurrencyShims
   @objc final public let merchantId: Swift.String?
   @objc final public let metaData: Foundation.NSDictionary
   @objc final public let taskId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(environment: KnotAPI.Environment, product: KnotAPI.Product, event: Swift.String, merchant: Swift.String?, merchantId: Swift.String?, metaData: Foundation.NSDictionary, taskId: Swift.String?)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KnotapiExceptionHandler {
@@ -97,7 +107,9 @@ import _SwiftConcurrencyShims
 public enum AnalyticsEventType : Swift.String {
   case identify
   case track
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -120,27 +132,41 @@ extension UIKit.UIDevice {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
   public var description: Swift.String {
     get
   }
   public static let allCases: [KnotAPI.Environment]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 extension UIKit.UIImage {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func gifImageWithData(_ data: Foundation.Data) -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func gifImageWithName(_ name: Swift.String) -> UIKit.UIImage?
+  #endif
 }
 infix operator =~ : DefaultPrecedence
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Knot : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func open(configuration: KnotAPI.KnotConfiguration, delegate: (any KnotAPI.KnotEventDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func createKnotViewController(configuration: KnotAPI.KnotConfiguration, delegate: (any KnotAPI.KnotEventDelegate)?) -> UIKit.UIViewController
+  #endif
   @objc public class func close()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func SDKVersion() -> Swift.String?
+  #endif
   @objc deinit
 }
 @objc public protocol KnotEventDelegate {
@@ -162,16 +188,22 @@ infix operator =~ : DefaultPrecedence
   @objc final public let customerConfiguration: KnotAPI.CustomerConfiguration?
   @objc final public let locale: Swift.String?
   @objc final public let metadata: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "The init will be removed in the next major version. Use initializer without the product variable moving forward.")
   @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, product: KnotAPI.Product, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil, locale: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(sessionId: Swift.String, clientId: Swift.String, environment: KnotAPI.Environment, entryPoint: Swift.String?, useCategories: Swift.Bool, useSearch: Swift.Bool, merchantIds: [Swift.Int]?, customerConfiguration: KnotAPI.CustomerConfiguration? = nil, locale: Swift.String? = nil, metadata: [Swift.String : Swift.String]? = nil)
+  #endif
   @objc deinit
 }
 @objc public class CustomerConfiguration : ObjectiveC.NSObject {
   @objc final public let cardName: Swift.String?
   @objc final public let customerName: Swift.String?
   @objc final public let logoId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(cardName: Swift.String?, customerName: Swift.String?, logoId: Swift.String?)
+  #endif
   @objc deinit
 }
 extension KnotAPI.Product : Swift.Equatable {}
