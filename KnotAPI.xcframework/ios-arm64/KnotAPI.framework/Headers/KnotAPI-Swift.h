@@ -378,6 +378,20 @@ SWIFT_CLASS("_TtC7KnotAPI4Knot")
 + (NSString * _Nullable)SDKVersion SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class NSCoder;
+/// Two overlapping arcs under a global rotation (3000ms global, 1750ms slow,
+/// 1750ms fast easing to a full turn by 65% then holding). This base owns the
+/// layers, layout, and animate lifecycle; subclasses supply the visible arc sweep
+/// and drive the rotation.
+SWIFT_CLASS("_TtC7KnotAPI18KnotArcSpinnerView")
+@interface KnotArcSpinnerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (void)layoutSubviews;
+- (void)didMoveToWindow;
+@end
+
 enum Product : NSInteger;
 /// A configuration used to initialize the KnotAPI SDK flow.
 SWIFT_CLASS("_TtC7KnotAPI17KnotConfiguration")
@@ -508,26 +522,23 @@ SWIFT_PROTOCOL("_TtP7KnotAPI17KnotEventDelegate_")
 - (void)onExit;
 @end
 
-@class NSCoder;
-/// Core Animation–based Knot spinner that replicates:
-/// <ul>
-///   <li>
-///     Global rotation: 3s linear, infinite
-///   </li>
-///   <li>
-///     Slow circle: 1.75s linear, infinite
-///   </li>
-///   <li>
-///     Fast circle: completes rotation at 65% with ease-in-out, then holds
-///   </li>
-/// </ul>
-SWIFT_CLASS("_TtC7KnotAPI15KnotSpinnerView")
-@interface KnotSpinnerView : UIView
+/// In-flow / merchant loader: arc driven by the wall clock (epoch ms, the same clock
+/// the webapp uses via <code>Date.now()</code>), so both spinners sit at the same angle at any
+/// instant. That phase-lock makes the merchant→webapp handoff seamless: when this
+/// loader fades, the webapp’s spinner is already at the same angle. WKWebView renders
+/// out-of-process, so the CADisplayLink stays smooth.
+SWIFT_CLASS("_TtC7KnotAPI21KnotLinearSpinnerView")
+@interface KnotLinearSpinnerView : KnotArcSpinnerView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, readonly) CGSize intrinsicContentSize;
-- (void)layoutSubviews;
-- (void)didMoveToWindow;
+@end
+
+/// Startup loader (TransparentLoadingView): 148.24° arc driven by Core Animation.
+/// The in-flow loader uses <code>KnotLinearSpinnerView</code> (wall-clock) for the handoff.
+SWIFT_CLASS("_TtC7KnotAPI15KnotSpinnerView")
+@interface KnotSpinnerView : KnotArcSpinnerView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Knot Link products available for SDK session instantiation.
