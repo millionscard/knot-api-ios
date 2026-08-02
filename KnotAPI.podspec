@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary       = "Connect to your customers online accounts easily"
   s.description   = "Change Card on File Information, Cancel Subscriptions, Change Passwords, and more via Knot."
   s.homepage      = "https://www.knotapi.com/"
-  s.license       = "MIT"
+  s.license       = { :type => "Copyright", :text => "Copyright (c) 2022-2026 MyCard, Inc. All rights reserved." }
   s.author        = "Tarik"
   s.platform      = :ios, "14.0"
   s.swift_version = "5.0"
